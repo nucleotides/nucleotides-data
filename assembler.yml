@@ -1,0 +1,15 @@
+---
+-
+  image:
+    dockerhub: nucleotides/spades
+    repo: https://github.com/nucleotides/docker-spades
+    source: null
+  pmid: 22506599
+  homepage: http://bioinf.spbau.ru/spades
+  description: >
+    The SPAdes assembler is developed by Algorithmic Biology Lab at the St. Petersburg Academic University.
+  procs:
+    - vanilla
+    - single-cell
+    - careful
+    - single-cell-careful
