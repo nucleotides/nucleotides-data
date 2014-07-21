@@ -9,19 +9,20 @@
   description: >
     The SPAdes assembler is developed by Algorithmic Biology Lab at the St. Petersburg Academic University.
   procs:
-    - vanilla
+    - default
     - single-cell
     - careful
     - single-cell-careful
 -
   image:
-    dockerhub: nucleotides/idba
-    repo: https://github.com/nucleotides/docker-idba
+    dockerhub: nucleotides/idba-ud
+    repo: https://github.com/nucleotides/docker-idba-ud
     source: https://code.google.com/p/hku-idba/
   pmid: 22495754
   homepage: http://i.cs.hku.hk/~alse/hkubrg/projects/idba/
   description: >
     IDBA (iterative De Bruijn Graph De Novo Assembler) is developed by the Bioinfomatics Research Group in the department of Computer Science at the University of Hong Kong.
   procs:
-    - idba-ud
+    - default
+    - single-cell
     - idba
