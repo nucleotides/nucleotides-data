@@ -13,3 +13,15 @@
     - single-cell
     - careful
     - single-cell-careful
+-
+  image:
+    dockerhub: nucleotides/idba
+    repo: https://github.com/nucleotides/docker-idba
+    source: https://code.google.com/p/hku-idba/
+  pmid: 22495754
+  homepage: http://i.cs.hku.hk/~alse/hkubrg/projects/idba/
+  description: >
+    IDBA (iterative De Bruijn Graph De Novo Assembler) is developed by the Bioinfomatics Research Group in the department of Computer Science at the University of Hong Kong.
+  procs:
+    - idba-ud
+    - idba
