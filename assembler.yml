@@ -15,8 +15,8 @@
     - single-cell-careful
 -
   image:
-    dockerhub: nucleotides/idba-ud
-    repo: https://github.com/nucleotides/docker-idba-ud
+    dockerhub: nucleotides/idba
+    repo: https://github.com/nucleotides/docker-idba
     source: https://code.google.com/p/hku-idba/
   pmid: 22495754
   homepage: http://i.cs.hku.hk/~alse/hkubrg/projects/idba/
@@ -26,3 +26,14 @@
     - default
     - single-cell
     - idba
+-
+  image:
+    dockerhub: nucleotides/velvet-optimiser
+    repo: https://github.com/nucleotides/docker-velvet-optimiser
+    source: https://github.com/Victorian-Bioinformatics-Consortium/VelvetOptimiser
+  pmid:
+  homepage: http://bioinformatics.net.au/software.velvetoptimiser.shtml
+  description: >
+    The velvet optimiser tools tests multiple kmer values for velvet and returns the best assembly. This assembler is developed by the Victorian Bioinformatics Consortium.
+  procs:
+    - default
