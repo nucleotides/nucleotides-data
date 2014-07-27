@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cat<<RECORD>>assembler.yml
+-
+  image:
+    dockerhub:
+    repo:
+    source:
+  pmid:
+  homepage:
+  description: >
+  procs:
+    - default
+RECORD
