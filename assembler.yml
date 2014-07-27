@@ -37,3 +37,14 @@
     The velvet optimiser tools tests multiple kmer values for velvet and returns the best assembly. This assembler is developed by the Victorian Bioinformatics Consortium.
   procs:
     - default
+-
+  image:
+    dockerhub: nucleotides/velvet
+    repo: https://github.com/nucleotides/docker-velvet
+    source: https://github.com/dzerbino/velvet
+  pmid: 18349386
+  homepage: https://www.ebi.ac.uk/~zerbino/velvet/
+  description: >
+    The velvet assembler was one of the first assemblers created for short read sequecing. Velvet was developed at the European Bioinformatics Institute.
+  procs:
+    - default
