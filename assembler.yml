@@ -60,3 +60,15 @@
   procs:
     - default
     - k-64
+-
+  image:
+    dockerhub: nucleotides/soap-denovo
+    repo: https://github.com/nucleotides/docker-soap-denovo
+    source: http://sourceforge.net/projects/soapdenovo2/files/SOAPdenovo2/
+  pmid: 23587118
+  homepage: http://soap.genomics.org.cn/soapdenovo.html
+  description: >
+    The short oligonucleotide analysis package (SOAP) is developed by BGI HK Research Institute in Hong Kong.
+  procs:
+    - default
+    - kmer-10-cutoff
