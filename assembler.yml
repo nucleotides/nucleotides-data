@@ -48,3 +48,15 @@
     The velvet assembler was one of the first assemblers created for short read sequecing. Velvet was developed at the European Bioinformatics Institute.
   procs:
     - default
+-
+  image:
+    dockerhub: nucleotides/abyss
+    repo: https://github.com/nucleotides/docker-abyss
+    source: https://github.com/bcgsc/abyss/
+    pmid: 19251739
+  homepage: http://www.bcgsc.ca/platform/bioinfo/software/abyss
+  description: >
+    The ABySS (Assembly By Short Sequences) assembler is developed by Canada's Michael Smith Genome Science Centre.
+  procs:
+    - default
+    - k-64
