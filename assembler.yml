@@ -53,7 +53,7 @@
     dockerhub: nucleotides/abyss
     repo: https://github.com/nucleotides/docker-abyss
     source: https://github.com/bcgsc/abyss/
-    pmid: 19251739
+  pmid: 19251739
   homepage: http://www.bcgsc.ca/platform/bioinfo/software/abyss
   description: >
     The ABySS (Assembly By Short Sequences) assembler is developed by Canada's Michael Smith Genome Science Centre.
