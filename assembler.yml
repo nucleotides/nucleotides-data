@@ -72,3 +72,14 @@
   procs:
     - default
     - kmer-10-cutoff
+-
+  image:
+    dockerhub: koadman/docker-a5-miseq
+    repo: https://github.com/koadman/docker-A5-miseq
+    source: http://sourceforge.net/p/ngopt/code/HEAD/tree/trunk/
+  pmid:
+  homepage: http://sf.net/p/ngopt/
+  description: >
+    The A5-miseq pipeline automates all the usual steps in genome assembly and is tuned to assemble microbial genomes from low coverage (<50x) Illumina data on laptop or desktop compute hardware. It was developed by Andrew Tritt and Aaron Darling.
+  procs:
+    - default
