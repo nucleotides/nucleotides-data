@@ -83,3 +83,14 @@
     The A5-miseq pipeline automates all the usual steps in genome assembly and is tuned to assemble microbial genomes from low coverage (<50x) Illumina data on laptop or desktop compute hardware. It was developed by Andrew Tritt and Aaron Darling.
   procs:
     - default
+-
+  image:
+    dockerhub: egoltsman/meraculous2-docker
+    repo:
+    source: https://sourceforge.net/projects/meraculous20/files/
+  pmid: 21876754
+  homepage: http://jgi.doe.gov/our-science/science-programs/plant-genomics/computational-methods-and-systems/
+  description: >
+    Meraculous2 is a scalable and efficient assembler geared for large eukaryotic genomes, developed by DOE Joint Genome Institute.
+  procs:
+    - default
