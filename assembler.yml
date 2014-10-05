@@ -61,7 +61,9 @@
     The ABySS (Assembly By Short Sequences) assembler is developed by Canada's Michael Smith Genome Science Centre.
   procs:
     - default
-    - k-64
+    - adaptive
+    - k-32
+    - k-96
 -
   image:
     dockerhub: nucleotides/soap-denovo
