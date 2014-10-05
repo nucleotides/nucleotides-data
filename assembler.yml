@@ -48,6 +48,8 @@
     The velvet assembler was one of the first assemblers created for short read sequecing. Velvet was developed at the European Bioinformatics Institute.
   procs:
     - default
+    - adaptive
+    - careful
 -
   image:
     dockerhub: nucleotides/abyss
