@@ -45,7 +45,7 @@
   pmid: 18349386
   homepage: https://www.ebi.ac.uk/~zerbino/velvet/
   description: >
-    The velvet assembler was one of the first assemblers created for short read sequecing. Velvet was developed at the European Bioinformatics Institute.
+    The velvet assembler was one of the first assemblers created for short read sequencing. Velvet was developed at the European Bioinformatics Institute.
   procs:
     - default
     - adaptive
