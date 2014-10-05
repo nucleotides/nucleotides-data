@@ -6,6 +6,7 @@
     source: null
   pmid: 22506599
   homepage: http://bioinf.spbau.ru/spades
+  mailing_list:
   description: >
     The SPAdes assembler is developed by Algorithmic Biology Lab at the St. Petersburg Academic University.
   procs:
@@ -20,6 +21,7 @@
     source: https://code.google.com/p/hku-idba/
   pmid: 22495754
   homepage: http://i.cs.hku.hk/~alse/hkubrg/projects/idba/
+  mailing_list: https://groups.google.com/forum/#!forum/hku-idba
   description: >
     IDBA (iterative De Bruijn Graph De Novo Assembler) is developed by the Bioinfomatics Research Group in the department of Computer Science at the University of Hong Kong.
   procs:
@@ -33,6 +35,7 @@
     source: https://github.com/Victorian-Bioinformatics-Consortium/VelvetOptimiser
   pmid:
   homepage: http://bioinformatics.net.au/software.velvetoptimiser.shtml
+  mailing_list:
   description: >
     The velvet optimiser tools tests multiple kmer values for velvet and returns the best assembly. This assembler is developed by the Victorian Bioinformatics Consortium.
   procs:
@@ -57,6 +60,7 @@
     source: https://github.com/bcgsc/abyss/
   pmid: 19251739
   homepage: http://www.bcgsc.ca/platform/bioinfo/software/abyss
+  mailing_list:
   description: >
     The ABySS (Assembly By Short Sequences) assembler is developed by Canada's Michael Smith Genome Science Centre.
   procs:
@@ -71,6 +75,7 @@
     source: http://sourceforge.net/projects/soapdenovo2/files/SOAPdenovo2/
   pmid: 23587118
   homepage: http://soap.genomics.org.cn/soapdenovo.html
+  mailing_list:
   description: >
     The short oligonucleotide analysis package (SOAP) is developed by BGI HK Research Institute in Hong Kong.
   procs:
@@ -83,6 +88,7 @@
     source: http://sourceforge.net/p/ngopt/code/HEAD/tree/trunk/
   pmid:
   homepage: http://sf.net/p/ngopt/
+  mailing_list: https://groups.google.com/forum/#!forum/ngopt
   description: >
     The A5-miseq pipeline automates all the usual steps in genome assembly and is tuned to assemble microbial genomes from low coverage (<50x) Illumina data on laptop or desktop compute hardware. It was developed by Andrew Tritt and Aaron Darling.
   procs:
@@ -94,6 +100,7 @@
     source: https://sourceforge.net/projects/meraculous20/files/
   pmid: 21876754
   homepage: http://jgi.doe.gov/our-science/science-programs/plant-genomics/computational-methods-and-systems/
+  mailing_list:
   description: >
     Meraculous2 is a scalable and efficient assembler geared for large eukaryotic genomes, developed by DOE Joint Genome Institute.
   procs:
