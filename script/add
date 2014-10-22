@@ -8,6 +8,7 @@ cat<<RECORD>>assembler.yml
     source:
   pmid:
   homepage:
+  mailing_list:
   description: >
   procs:
     - default
