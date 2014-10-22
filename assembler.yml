@@ -105,3 +105,15 @@
     Meraculous2 is a scalable and efficient assembler geared for large eukaryotic genomes, developed by DOE Joint Genome Institute.
   procs:
     - default
+-
+  image:
+    dockerhub: ppcherng/squeezambler
+    repo: https://github.com/ppcherng/squeezambler
+    source: http://sourceforge.net/projects/hyda/files/
+  pmid: 23918251
+  homepage: http://chitsazlab.org/software/squeezambler/
+  description: >
+    Squeezamler is a divide-and-conquer algorithm for economical sequencing and assembly of all distinct genomes in a bacterial sample. The key idea here is exploiting sparsity, which is the small number of distinct genomes (~1000) in comparison to the huge number of cells (~100 trillion).
+  procs:
+    - default
+    - careful
