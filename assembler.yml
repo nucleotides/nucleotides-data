@@ -104,7 +104,7 @@
   description: >
     Meraculous2 is a scalable and efficient assembler geared for large eukaryotic genomes, developed by DOE Joint Genome Institute.
   procs:
-    - default
+    - k41
 -
   image:
     dockerhub: ppcherng/squeezambler
