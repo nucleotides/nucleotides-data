@@ -131,3 +131,16 @@
   procs:
     - default
     - careful
+-
+  image:
+    dockerhub: nucleotides/sga
+    repo: https://github.com/nucleotides/docker-sga
+    source: https://github.com/jts/sga
+  pmid: 22156294
+  homepage: https://github.com/jts/sga/wiki
+  mailing_list: https://groups.google.com/forum/#!forum/sga-users
+  description: >
+    De novo sequence assembler using string graphs developed at the Wellcome Trust Sanger Institute in the UK.
+  procs:
+    - default
+    - careful
