@@ -144,3 +144,15 @@
   procs:
     - default
     - careful
+-
+  image:
+    dockerhub: nucleotides/megahit
+    repo: https://github.com/nucleotides/docker-megahit
+    source: https://github.com/voutcn/megahit
+  pmid:
+  homepage:
+  mailing_list:
+  description: >
+    MEGAHIT is a NGS de novo assembler for assembling large and complex metagenomics data in a time- and cost-efficient manner, it is developed in the department of Computer Science at the University of Hong Kong.
+  procs:
+    - default
