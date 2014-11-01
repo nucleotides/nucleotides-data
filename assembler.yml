@@ -156,3 +156,16 @@
     MEGAHIT is a NGS de novo assembler for assembling large and complex metagenomics data in a time- and cost-efficient manner, it is developed in the department of Computer Science at the University of Hong Kong.
   procs:
     - default
+-
+  image:
+    dockerhub: nucleotides/sparse-assembler
+    repo: https://github.com/nucleotides/docker-sparse-assembler
+    source: http://sourceforge.net/projects/sparseassembler/
+  pmid: 22537038
+  homepage: https://sites.google.com/site/sparseassembler/
+  mailing_list:
+  description: >
+    SparseAssembler utilises a sparse k-mer graph structure evolved from the de Bruijn graph and is developed at the Chinese Academy of Sciences in Menglun.
+  procs:
+    - default
+    - careful
