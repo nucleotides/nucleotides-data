@@ -156,6 +156,7 @@
     MEGAHIT is a NGS de novo assembler for assembling large and complex metagenomics data in a time- and cost-efficient manner, it is developed in the department of Computer Science at the University of Hong Kong.
   procs:
     - default
+    - no-mercy
 -
   image:
     dockerhub: nucleotides/sparse-assembler
