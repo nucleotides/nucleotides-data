@@ -123,7 +123,7 @@
     dockerhub: nucleotides/minia
     repo: https://github.com/nucleotides/docker-minia
     source:
-  pmid: 24565280
+  pmid: 24040893
   homepage: http://minia.genouest.org/
   mailing_list: https://www.biostars.org/t/minia/
   description: >
