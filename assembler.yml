@@ -127,7 +127,7 @@
   homepage: http://minia.genouest.org/
   mailing_list: https://www.biostars.org/t/minia/
   description: >
-    Minia is a short-read assembler based on a de Bruijn graph, capable of assembling a human genome on a desktop computer in a day. Minia is developed at the Department of Computer Science at Ben-Gurion University of the Negev.
+    Minia is a short-read assembler based on a de Bruijn graph, capable of assembling a human genome on a desktop computer in a day. Minia is developed at the IRISA institute in France.
   procs:
     - default
     - careful
