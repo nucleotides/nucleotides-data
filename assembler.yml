@@ -121,7 +121,7 @@
 -
   image:
     dockerhub: nucleotides/minia
-    repo: https://github.com/nucleotides/docker-minia
+    repo: https://github.com/rchikhi/docker-minia
     source:
   pmid: 24040893
   homepage: http://minia.genouest.org/
