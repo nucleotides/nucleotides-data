@@ -120,7 +120,7 @@
     - careful
 -
   image:
-    dockerhub: rchikhi/minia
+    dockerhub: rchikhi/docker-minia
     repo: https://github.com/rchikhi/docker-minia
     source:
   pmid: 24040893
