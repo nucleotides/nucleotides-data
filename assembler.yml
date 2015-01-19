@@ -96,7 +96,7 @@
 -
   image:
     dockerhub: egoltsman/meraculous2-docker
-    repo:
+    repo: https://bitbucket.org/egoltsman/meraculous2_docker
     source: https://sourceforge.net/projects/meraculous20/files/
   pmid: 21876754
   homepage: http://jgi.doe.gov/our-science/science-programs/plant-genomics/computational-methods-and-systems/
