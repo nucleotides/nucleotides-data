@@ -60,7 +60,7 @@
     source: https://github.com/bcgsc/abyss/
   pmid: 19251739
   homepage: http://www.bcgsc.ca/platform/bioinfo/software/abyss
-  mailing_list:
+  mailing_list: https://www.biostars.org/t/abyss/
   description: >
     The ABySS (Assembly By Short Sequences) assembler is developed by Canada's Michael Smith Genome Science Centre.
   procs:
