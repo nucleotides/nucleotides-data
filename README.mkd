@@ -1,39 +1,24 @@
 ## Nucleotides Data
 
-This repository contains the input data used in
-[nucleotid.es](http://nucleotid.es). These data are stored in YAML format.
+This repository contains all the input data used by
+[nucleotid.es](http://nucleotid.es). These data are stored as [YAML][] in the
+`data` directory. Each of the data are described in more detain in the
+[specification.mkd][] file.
 
-### assembler.yml
+[YAML]: http://www.yaml.org/
+[specification.mkd]: https://github.com/nucleotides-data/blob/master/specification.mkd
 
-This file contains the list of assemblers used for benchmarking in
-nucleotid.es. This file is a list of dictionaries, where each entry corresponds
-to the metadata for a single assembler. New assembler images are added to
-nucleotid.es by creating a pull request to this file. If you would like to add
-a new assembler please add a new entry using `./script/add`. The fields
-required are as follows:
+## Testing
 
-  * **image**: *Required* a dictionary containing the metadata for the
-    assembler Docker image. This includes the following sub fields:
+All the data have their own schema which can be used for validation. Each
+schema can be found in the `schema` directory and has the same name as the
+corresponding file in the `data` directory. After installing dependencies with
+`./script/bootstrap`, a schema is used to validate a file as follows:
 
-    * **dockerhub** *Required* the Dockerhub repository in the form of
-      username/repository. E.g. nucleotides/velvet.
+    bundle exec kwalify -lf schema/benchmark.yml data/benchmark.yml
 
-    * **repo** *Required* The public repository for the docker image.
+The command `./script/test` will test all data files to ensure they are valid.
+This is the command used by the [continuous integration][ci] service everytime
+there is a commit or pull request.
 
-    * **source** *Optional* The main source code repository for the software in
-      the container.
-
-
-  * **pmid** *Optional* The PubMed identifier for a paper published on this
-    software.
-
-  * **homepage** *Optional* A web page describing this software.
-
-  * **mailing_list** *Optional* A mailing list for users to post questions
-    relating to this software. A BioStar tag is also a useful way for users to
-    get information.
-
-  * **description** *Required* A short text description of this software.
-
-  * **procs** *Required* A list of arguments defining different ways in which
-    the software can be run.
+[ci]: https://circleci.com/gh/nucleotides/nucleotides-data
