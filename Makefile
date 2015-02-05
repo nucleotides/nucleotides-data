@@ -1,6 +1,6 @@
 validate = ! bundle exec kwalify -lf $1 | grep INVALID
 
-data = assembler data_type
+data = assembler data_type benchmark_type
 
 bootstrap: Gemfile.lock
 	mkdir .test_token
