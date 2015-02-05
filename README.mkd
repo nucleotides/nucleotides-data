@@ -18,7 +18,7 @@ corresponding file in the `data` directory. After installing dependencies with
     bundle exec kwalify -lf schema/benchmark.yml data/benchmark.yml
 
 The command `./script/test` will test all data files to ensure they are valid.
-This is the command used by the [continuous integration][ci] service everytime
+This is the command used by the [continuous integration][ci] service every time
 there is a commit or pull request.
 
 [ci]: https://circleci.com/gh/nucleotides/nucleotides-data
