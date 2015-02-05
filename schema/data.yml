@@ -1,0 +1,35 @@
+---
+type: seq
+sequence:
+  - type: map
+    mapping:
+      data_type_id:
+        type: int
+        required: true
+        unique: true
+      description:
+        required: true
+        type: str
+      replicates:
+        required: true
+        type: seq
+        sequence:
+          - type: map
+            required: true
+            mapping:
+              read_number:
+                type: int
+                required: true
+              files:
+                type: seq
+                required: true
+                sequence:
+                  - type: map
+                    required: true
+                    mapping:
+                      md5sum:
+                        type: str
+                        required: true
+                      url:
+                        type: str
+                        required: true
