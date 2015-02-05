@@ -1,0 +1,42 @@
+### data/image.yml
+
+This file contains the list of all the Docker images used for benchmarking in
+nucleotid.es. This file is a list of dictionaries, where each entry corresponds
+to the metadata for a single image. New images images are added to nucleotid.es
+by creating a pull request with changes to this file. Any changes should be
+validated by following the instructions in the [README.mkd][readme]. Each of
+the fields in this file are as follows:
+
+[readme]: https://github.com/nucleotides/nucleotides-data/blob/master/README.mkd
+
+  * **image**: *Required* a dictionary containing the metadata for the
+     Docker image. This includes the following sub fields:
+
+    * **dockerhub** *Required* the Dockerhub repository in the form of
+      username/repository. E.g. nucleotides/velvet.
+
+    * **repo** *Required* The public source code repository for the docker
+      image.
+
+    * **source** *Optional* The main source code repository for the software in
+      the container.
+
+  * **pmid** *Optional* The PubMed identifier for a paper published on this
+    software.
+
+  * **homepage** *Optional* A web page describing this software.
+
+  * **mailing_list** *Optional* A mailing list for users to post questions
+    relating to this software. A BioStar tag is also a useful way for users to
+    get information.
+
+  * **description** *Required* A short text description of this software.
+
+  * **procs** *Required* A list of arguments defining different ways in which
+    the software can be run.
+
+  * **benchmarks** *Required* A list of benchmarks IDs for which this image
+    should be tested in. The current list of benchmark IDs can be found in
+    [data/benchmark.mkd][bench]
+
+[bench]: https://github.com/nucleotides/nucleotides-data/blob/master/data/benchmark.mkd
