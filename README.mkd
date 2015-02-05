@@ -1,4 +1,4 @@
-## Nucleotides Data
+## Nucleotid.es Data
 
 This repository contains all the input data used by
 [nucleotid.es](http://nucleotid.es). These data are stored as [YAML][] in the
