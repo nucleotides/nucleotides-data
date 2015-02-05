@@ -1,9 +1,15 @@
-validate = ! bundle exec kwalify -lf schema/$1.yml data/$1.yml | grep INVALID
+validate = ! bundle exec kwalify -lf $1 | grep INVALID
+
+data = assembler data_type
 
 bootstrap: Gemfile.lock
+	mkdir .test_token
 
-test:
-	$(call validate,assembler)
+test: $(foreach i,$(data),.test_token/$i)
+
+.test_token/%: schema/%.yml data/%.yml
+	$(call validate,$^)
+	touch $@
 
 Gemfile.lock: Gemfile
 	bundle install
