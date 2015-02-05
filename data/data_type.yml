@@ -1,5 +1,4 @@
 ---
 # This document contains the list of different data types being used.
 - id: 0
-  description: >
-    The reads were generated on an Illumina HiSeq-2000 at the Joint Genome Institute. The reads were generated from pooled DNA from organisms with high-quality reference sequences. The sequencing produced 2x150 reads at a target insert size of 510bp. After sequencing these were separated into individual species by mapping onto the references.
+  description: "Illumina 2x150 paired reads"
