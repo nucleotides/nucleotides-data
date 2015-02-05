@@ -10,7 +10,7 @@ sequence:
       description:
         required: true
         type: str
-      replicates:
+      entries:
         required: true
         type: seq
         sequence:
@@ -20,7 +20,7 @@ sequence:
               read_number:
                 type: int
                 required: true
-              files:
+              replicates:
                 type: seq
                 required: true
                 sequence:
@@ -33,3 +33,4 @@ sequence:
                       url:
                         type: str
                         required: true
+                        pattern: /^s3:\/\/.*/
