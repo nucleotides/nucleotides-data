@@ -1,0 +1,18 @@
+---
+type: seq
+sequence:
+  - type: map
+    mapping:
+      description:
+        type: str
+        required: true
+      id:
+        type: str
+        unique: true
+        required: true
+      associated_data_ids:
+        type: seq
+        required: true
+        sequence:
+          - type: int
+            required: true
