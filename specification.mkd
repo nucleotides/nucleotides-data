@@ -1,12 +1,17 @@
+## Data Specifications
+
+The specifications for each data file are described here. These data files
+provided in this repository are all the inputs used to run the benchmarks on
+bioinformatics data by nucleotid.es. New inputs can be added by creating a pull
+request with changes to this file. Any changes should be validated by following
+the instructions in the [README.mkd][readme].
+
 ## data/data.yml
 
 This file contains the list of all data currently used for benchmarking in
 nucleotid.es. This file is a list of dictionaries, where each entry corresponds
 to a collection of similar data. Examples of similar data might be from the
-same sequencing run or same collection site. New data may be added to
-nucleotid.es by creating a pull request with changes to this file. Any changes
-should be validated by following the instructions in the [README.mkd][readme].
-Each of the fields in this file are as follows:
+same sequencing run or same collection site.
 
   * **description**: *Required* a text summary of this data, try to include as
     much information as possible about how the library was constructed and
@@ -33,15 +38,21 @@ Each of the fields in this file are as follows:
 
         * **md5sum**: *Required* the md5 digest of the data file.
 
+## data/data_type.yml
+
+This file contains a limited vocabularly list data types used for benchmarking
+in nucleotid.es. This file is a list of dictionaries, where each entry
+corresponds to the metadata for the given data type.
+
+    * **id**: *Required* The unique integer identifier of this data type.
+
+    * **description**: *Required* A text description of this type of data.
+
 ## data/image.yml
 
 This file contains the list of all the Docker images used for benchmarking in
 nucleotid.es. This file is a list of dictionaries, where each entry corresponds
-to the metadata for a single image. New images images are added to nucleotid.es
-by creating a pull request with changes to this file. Any changes should be
-validated by following the instructions in the [README.mkd][readme]. Each of
-the fields in this file are as follows:
-
+to the metadata for a single image.
 
   * **image**: *Required* a dictionary containing the metadata for the
      Docker image. This includes the following sub fields:
