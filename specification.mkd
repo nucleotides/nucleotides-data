@@ -1,4 +1,4 @@
-### data/data.yml
+## data/data.yml
 
 This file contains the list of all data currently used for benchmarking in
 nucleotid.es. This file is a list of dictionaries, where each entry corresponds
@@ -33,7 +33,7 @@ Each of the fields in this file are as follows:
 
         * **md5sum**: *Required* the md5 digest of the data file.
 
-### data/image.yml
+## data/image.yml
 
 This file contains the list of all the Docker images used for benchmarking in
 nucleotid.es. This file is a list of dictionaries, where each entry corresponds
