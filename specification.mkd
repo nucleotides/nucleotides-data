@@ -48,7 +48,7 @@ corresponds to the metadata for the given data type.
 
     * **description**: *Required* A text description of this type of data.
 
-## data/data_type.yml
+## data/benchmark.yml
 
 This file contains a the list of benchmarks run in nucleotid.es. This file is a
 list of dictionaries, where each entry corresponds to the metadata a benchmark
