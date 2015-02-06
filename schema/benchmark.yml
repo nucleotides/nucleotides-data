@@ -10,6 +10,9 @@ sequence:
         type: str
         unique: true
         required: true
+      image:
+        type: str
+        required: true
       associated_data_ids:
         type: seq
         required: true

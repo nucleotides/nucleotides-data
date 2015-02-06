@@ -48,6 +48,25 @@ corresponds to the metadata for the given data type.
 
     * **description**: *Required* A text description of this type of data.
 
+## data/data_type.yml
+
+This file contains a the list of benchmarks run in nucleotid.es. This file is a
+list of dictionaries, where each entry corresponds to the metadata a benchmark
+type.
+
+    * **id**: *Required* A four digit string identifier for this benchmark
+      type.
+
+    * **description**: *Required* A text description of this type of this
+      benchmark.
+
+    * **associated_data_ids**: *Required* A list of data IDs that can be used
+      for this benchmarking.
+
+    * **image**: *Required* A dockerhub image that can be used to evaluate the
+      results of this benchmarking
+
+
 ## data/image.yml
 
 This file contains the list of all the Docker images used for benchmarking in
