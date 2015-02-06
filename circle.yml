@@ -1,3 +1,7 @@
+dependencies:
+  override:
+    - ./script/bootstrap
+
 test:
   override:
     - ./script/test

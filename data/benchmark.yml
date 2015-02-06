@@ -1,3 +1,6 @@
 ---
-  - code: "0000"
+  - id: "0000"
     description: A genome assembler benchmark using a set of paired Illumina 2x150 reads.
+    image: "nucleotides/quast"
+    associated_data_ids:
+      - 0

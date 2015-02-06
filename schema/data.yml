@@ -1,0 +1,36 @@
+---
+type: seq
+sequence:
+  - type: map
+    mapping:
+      data_type_id:
+        type: int
+        required: true
+        unique: true
+      description:
+        required: true
+        type: str
+      entries:
+        required: true
+        type: seq
+        sequence:
+          - type: map
+            required: true
+            mapping:
+              read_number:
+                type: int
+                required: true
+              replicates:
+                type: seq
+                required: true
+                sequence:
+                  - type: map
+                    required: true
+                    mapping:
+                      md5sum:
+                        type: str
+                        required: true
+                      url:
+                        type: str
+                        required: true
+                        pattern: /^s3:\/\/.*/

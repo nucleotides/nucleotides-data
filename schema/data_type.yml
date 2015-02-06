@@ -1,0 +1,11 @@
+---
+type: seq
+sequence:
+  - type: map
+    mapping:
+      description:
+        type: str
+        required: true
+      id:
+        type: int
+        required: true
