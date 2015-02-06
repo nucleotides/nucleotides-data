@@ -40,7 +40,7 @@ same sequencing run or same collection site.
 
 ## data/data_type.yml
 
-This file contains a limited vocabularly list data types used for benchmarking
+This file contains a limited vocabulary list data types used for benchmarking
 in nucleotid.es. This file is a list of dictionaries, where each entry
 corresponds to the metadata for the given data type.
 
