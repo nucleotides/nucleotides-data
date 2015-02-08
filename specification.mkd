@@ -44,27 +44,25 @@ This file contains a limited vocabulary list data types used for benchmarking
 in nucleotid.es. This file is a list of dictionaries, where each entry
 corresponds to the metadata for the given data type.
 
-    * **id**: *Required* The unique integer identifier of this data type.
+  * **id**: *Required* The unique integer identifier of this data type.
 
-    * **description**: *Required* A text description of this type of data.
+  * **description**: *Required* A text description of this type of data.
 
-## data/benchmark.yml
+## data/benchmark_type.yml
 
-This file contains a the list of benchmarks run in nucleotid.es. This file is a
-list of dictionaries, where each entry corresponds to the metadata a benchmark
-type.
+This file contains a list of the benchmarks types in nucleotid.es. This file is
+a list of dictionaries, where each entry corresponds to the metadata about a
+benchmark type.
 
-    * **id**: *Required* A four digit string identifier for this benchmark
-      type.
+  * **id**: *Required* A four digit string identifier for this benchmark type.
 
-    * **description**: *Required* A text description of this type of this
-      benchmark.
+  * **description**: *Required* A text description of this benchmark type.
 
-    * **associated_data_ids**: *Required* A list of data IDs that can be used
-      for this benchmarking.
+  * **associated_data_ids**: *Required* A list of data IDs that can be used for
+    this benchmark type.
 
-    * **image**: *Required* A dockerhub image that can be used to evaluate the
-      results of this benchmarking
+  * **image**: *Required* A dockerhub image that can be used to evaluate the
+    results of this benchmark.
 
 
 ## data/image.yml
@@ -99,9 +97,9 @@ to the metadata for a single image.
   * **procs** *Required* A list of arguments defining different ways in which
     the software can be run.
 
-  * **benchmarks** *Required* A list of benchmarks IDs for which this image
-    should be tested in. The current list of benchmark IDs can be found in
-    [data/benchmark.mkd][bench]
+  * **benchmark_types** *Required* A list of benchmarks IDs for which this
+    image should be tested in. The current list of benchmark IDs can be found
+    in [data/benchmark.mkd][bench]
 
 [bench]: https://github.com/nucleotides/nucleotides-data/blob/master/data/benchmark.mkd
 [data]: https://github.com/nucleotides/nucleotides-data/blob/master/data/data_types.mkd
