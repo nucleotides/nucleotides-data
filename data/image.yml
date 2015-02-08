@@ -196,3 +196,18 @@
   procs:
     - default
     - careful
+
+image:
+    dockerhub: rchikhi/gatb-pipeline
+    repo: https://github.com/rchikhi/docker-gatb-pipeline
+    source:
+  pmid: 24040893
+  homepage: http://gatb.inria.fr/
+  mailing_list: https://www.biostars.org/t/gatb/
+  description: >
+    GATB-Pipeline is a multi-k, parameter-free assembly pipeline that runs Kmergenie, Minia assembler and BESST scaffolder.
+  benchmarks:
+    - "0000"
+  procs:
+    - default
+    - unpaired
