@@ -15,7 +15,7 @@ sequence:
       mailing_list:
         type: str
         required: false
-      benchmarks:
+      benchmark_types:
         type: seq
         required: true
         sequence:
