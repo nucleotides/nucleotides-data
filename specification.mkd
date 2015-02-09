@@ -31,6 +31,9 @@ same sequencing run or same collection site.
 
     * **read_number**: *Required* the number of reads in each file.
 
+    * **entry_id**: *Required* an integer ID for this entry. This should be
+      unique within each dataset.
+
     * **replicates**: *Required* a list of files containing this data. There
       may be replicates of each benchmarking entry generated, for instance by
       subsampling reads. Each entry in this list contains the following fields:

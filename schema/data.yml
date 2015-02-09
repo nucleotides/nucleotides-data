@@ -24,6 +24,10 @@ sequence:
               read_number:
                 type: int
                 required: true
+              entry_id:
+                type: int
+                required: true
+                unique: true
               replicates:
                 type: seq
                 required: true
