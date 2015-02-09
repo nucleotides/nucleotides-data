@@ -4,6 +4,7 @@
   data_id: 0
   entries:
     - read_number: 2000000
+      entry_id: 1
       replicates:
         - md5sum: eaa5305f8d0debbce934975c3ec6c14b
           url: s3://nucleotid-es/test-data/0001/0001/2000000/1/reads.fq.gz
@@ -16,6 +17,7 @@
         - md5sum: c1f0fb4cad045641c1bd001c2f4dbe37
           url: s3://nucleotid-es/test-data/0001/0001/2000000/5/reads.fq.gz
     - read_number: 2000000
+      entry_id: 2
       replicates:
         - md5sum: c5bb8e799c150c68214697ffefc41577
           url: s3://nucleotid-es/test-data/0001/0002/2000000/1/reads.fq.gz
@@ -28,6 +30,7 @@
         - md5sum: cdf50e1be324f9acfecba01a994cb584
           url: s3://nucleotid-es/test-data/0001/0002/2000000/5/reads.fq.gz
     - read_number: 2000000
+      entry_id: 3
       replicates:
         - md5sum: 3a6ca3642d4a2b3e25792d01ae477768
           url: s3://nucleotid-es/test-data/0001/0003/2000000/1/reads.fq.gz
@@ -40,6 +43,7 @@
         - md5sum: 1c07c6cd0c1395250ffd5f055143308f
           url: s3://nucleotid-es/test-data/0001/0003/2000000/5/reads.fq.gz
     - read_number: 2000000
+      entry_id: 4
       replicates:
         - md5sum: 3616e411e89637c5a5c454f29111b7d0
           url: s3://nucleotid-es/test-data/0001/0004/2000000/1/reads.fq.gz
@@ -52,6 +56,7 @@
         - md5sum: 03b95471ef4a5f928334ce83435897e9
           url: s3://nucleotid-es/test-data/0001/0004/2000000/5/reads.fq.gz
     - read_number: 2000000
+      entry_id: 5
       replicates:
         - md5sum: c64f229ef7f747e00d9227952dc47584
           url: s3://nucleotid-es/test-data/0001/0005/2000000/1/reads.fq.gz
@@ -64,6 +69,7 @@
         - md5sum: 6456a315333d213ec6125eafb6d3e8af
           url: s3://nucleotid-es/test-data/0001/0005/2000000/5/reads.fq.gz
     - read_number: 2000000
+      entry_id: 6
       replicates:
         - md5sum: 08fe605553c440c138b24806fdde90a9
           url: s3://nucleotid-es/test-data/0001/0006/2000000/1/reads.fq.gz
@@ -76,6 +82,7 @@
         - md5sum: 11e5bc7bae1c3138605611cfe7c042e3
           url: s3://nucleotid-es/test-data/0001/0006/2000000/5/reads.fq.gz
     - read_number: 2000000
+      entry_id: 7
       replicates:
         - md5sum: e908396ba01a387ef1dbb9b0b16e384c
           url: s3://nucleotid-es/test-data/0001/0007/2000000/1/reads.fq.gz
@@ -88,6 +95,7 @@
         - md5sum: 20d400057ccb93d2a3c765558da572ac
           url: s3://nucleotid-es/test-data/0001/0007/2000000/5/reads.fq.gz
     - read_number: 2000000
+      entry_id: 8
       replicates:
         - md5sum: 89eb80321f48c9915b6e26fa9505224d
           url: s3://nucleotid-es/test-data/0001/0008/2000000/1/reads.fq.gz
@@ -100,6 +108,7 @@
         - md5sum: 1d085c8f582aec801e6aba10fe7163b3
           url: s3://nucleotid-es/test-data/0001/0008/2000000/5/reads.fq.gz
     - read_number: 2000000
+      entry_id: 9
       replicates:
         - md5sum: ebcb513d1bc61b7f82e439a45f846bdb
           url: s3://nucleotid-es/test-data/0001/0009/2000000/1/reads.fq.gz
@@ -112,6 +121,7 @@
         - md5sum: 73db87764fd2c2c3bf86f6c1a6528f2b
           url: s3://nucleotid-es/test-data/0001/0009/2000000/5/reads.fq.gz
     - read_number: 2000000
+      entry_id: 10
       replicates:
         - md5sum: e8bd25843b4ae16ed6d04ac8c98badba
           url: s3://nucleotid-es/test-data/0001/0010/2000000/1/reads.fq.gz
@@ -124,6 +134,7 @@
         - md5sum: 139233a4d4f4284e7e99124ad6ba0fd8
           url: s3://nucleotid-es/test-data/0001/0010/2000000/5/reads.fq.gz
     - read_number: 2000000
+      entry_id: 11
       replicates:
         - md5sum: 6c20cde01b052e035ab9fab9c1991c43
           url: s3://nucleotid-es/test-data/0001/0011/2000000/1/reads.fq.gz
@@ -136,6 +147,7 @@
         - md5sum: c5ac0f870a5473a70e6f073593bc89d8
           url: s3://nucleotid-es/test-data/0001/0011/2000000/5/reads.fq.gz
     - read_number: 2000000
+      entry_id: 12
       replicates:
         - md5sum: e908396ba01a387ef1dbb9b0b16e384c
           url: s3://nucleotid-es/test-data/0001/0012/2000000/1/reads.fq.gz
@@ -148,6 +160,7 @@
         - md5sum: 20d400057ccb93d2a3c765558da572ac
           url: s3://nucleotid-es/test-data/0001/0012/2000000/5/reads.fq.gz
     - read_number: 2000000
+      entry_id: 13
       replicates:
         - md5sum: 120c8b18f9763242f3b292da931c7b8c
           url: s3://nucleotid-es/test-data/0001/0013/2000000/1/reads.fq.gz
@@ -160,6 +173,7 @@
         - md5sum: 6245874e5a9bafc6c4360fd7007048f9
           url: s3://nucleotid-es/test-data/0001/0013/2000000/5/reads.fq.gz
     - read_number: 2000000
+      entry_id: 14
       replicates:
         - md5sum: 955ed904d640c6679f43830b5f557d63
           url: s3://nucleotid-es/test-data/0001/0014/2000000/1/reads.fq.gz
@@ -172,6 +186,7 @@
         - md5sum: caf940ff219a909da5c290b11fd1430e
           url: s3://nucleotid-es/test-data/0001/0014/2000000/5/reads.fq.gz
     - read_number: 2000000
+      entry_id: 15
       replicates:
         - md5sum: b6f3bd3e9637b1c19eb3f7d61c26eeee
           url: s3://nucleotid-es/test-data/0001/0015/2000000/1/reads.fq.gz
@@ -184,6 +199,7 @@
         - md5sum: f50076602cafb0ab8f3d5d2fc80235f3
           url: s3://nucleotid-es/test-data/0001/0015/2000000/5/reads.fq.gz
     - read_number: 2000000
+      entry_id: 16
       replicates:
         - md5sum: 04b08c64b647554d999aee559dd1f3fb
           url: s3://nucleotid-es/test-data/0001/0016/2000000/1/reads.fq.gz
@@ -196,6 +212,7 @@
         - md5sum: 854890039004dd003188ca1ffa578916
           url: s3://nucleotid-es/test-data/0001/0016/2000000/5/reads.fq.gz
     - read_number: 2000000
+      entry_id: 17
       replicates:
         - md5sum: dbc87672d1f3040b821b00e5fb0edb31
           url: s3://nucleotid-es/test-data/0001/0017/2000000/1/reads.fq.gz
