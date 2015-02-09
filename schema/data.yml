@@ -6,6 +6,10 @@ sequence:
       data_type_id:
         type: int
         required: true
+        unique: false
+      data_id:
+        type: int
+        required: true
         unique: true
       description:
         required: true
