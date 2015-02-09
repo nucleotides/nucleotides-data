@@ -206,7 +206,7 @@
   mailing_list: https://www.biostars.org/t/gatb/
   description: >
     GATB-Pipeline is a multi-k, parameter-free assembly pipeline that runs Kmergenie, Minia assembler and BESST scaffolder.
-  benchmarks:
+  benchmark_types:
     - "0000"
   procs:
     - default
