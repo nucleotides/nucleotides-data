@@ -22,6 +22,8 @@ same sequencing run or same collection site.
     corresponds to the ID from the vocabulary described in the
     [data/data_types.mkd][data] file.
 
+  * **data_id**: *Required* A unique integer ID for this datum.
+
   * **entries**: *Required* a list of benchmarks provided by this data.
     Replicates may be different organisms, metagenomes, and so forth. Each
     should correspond to one individual benchmarking example. Each entry in
