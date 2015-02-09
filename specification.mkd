@@ -97,7 +97,7 @@ to the metadata for a single image.
   * **procs** *Required* A list of arguments defining different ways in which
     the software can be run.
 
-  * **benchmark_types** *Required* A list of benchmarks IDs for which this
+  * **benchmark_types** *Required* A list of benchmark type IDs for which this
     image should be tested in. The current list of benchmark IDs can be found
     in [data/benchmark.mkd][bench]
 
