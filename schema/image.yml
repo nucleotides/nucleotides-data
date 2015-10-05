@@ -3,18 +3,6 @@ type: seq
 sequence:
   - type: map
     mapping:
-      description:
-        type: str
-        required: true
-      pmid:
-        type: int
-        required: false
-      homepage:
-        type: str
-        required: false
-      mailing_list:
-        type: str
-        required: false
       benchmark_types:
         type: seq
         required: true
@@ -28,16 +16,6 @@ sequence:
           - type: str
             required: true
       image:
-        type: map
-        required: true
-        mapping:
-          dockerhub:
-            type: str
-            required: true
-            unique: yes
-          repo:
-            type: str
-            required: true
-          source:
-            type: str
-            required: false
+          type: str
+          required: true
+          unique: yes
