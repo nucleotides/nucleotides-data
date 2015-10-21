@@ -3,19 +3,26 @@ type: seq
 sequence:
   - type: map
     mapping:
-      benchmark_types:
-        type: seq
+      description:
+        type: str
         required: true
-        sequence:
-          - type: str
-            required: true
-      procs:
-        type: seq
+        unique: yes
+      image_type:
+        type: str
         required: true
+        unique: yes
+      image_instances:
+        type: seq
         sequence:
-          - type: str
-            required: true
-      image:
-          type: str
-          required: true
-          unique: yes
+          - type: map
+            mapping:
+              tasks:
+                type: seq
+                required: true
+                sequence:
+                  - type: str
+                    required: true
+              image:
+                  type: str
+                  required: true
+                  unique: yes

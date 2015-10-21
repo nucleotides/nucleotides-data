@@ -1,6 +1,8 @@
-- image: bioboxes/velvet
-  benchmark_types:
-    - "0000"
-  procs:
-    - default
-    - careful
+- image_type: short_read_assembler
+  description: |
+    Assembles paired Illumina short reads into contigs.
+  image_instances:
+    - image: bioboxes/velvet
+      tasks:
+        - default
+        - careful
