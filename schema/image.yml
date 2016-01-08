@@ -22,7 +22,11 @@ sequence:
                 sequence:
                   - type: str
                     required: true
-              image:
-                  type: str
-                  required: true
-                  unique: yes
+              name:
+                type: str
+                required: true
+                unique: yes
+              sha256:
+                type: str
+                required: true
+                unique: yes
