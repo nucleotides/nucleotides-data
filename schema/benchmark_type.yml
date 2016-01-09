@@ -3,19 +3,20 @@ type: seq
 sequence:
   - type: map
     mapping:
-      description:
+      name:
         type: str
         required: true
-      id:
-        type: str
         unique: true
-        required: true
-      image:
+      product_image_type:
         type: str
         required: true
-      associated_data_ids:
+      evaluation_image_type:
+        type: str
+        required: true
+      data_sets:
         type: seq
         required: true
         sequence:
-          - type: int
+          - type: str
             required: true
+            unique: true

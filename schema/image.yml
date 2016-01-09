@@ -6,38 +6,27 @@ sequence:
       description:
         type: str
         required: true
-      pmid:
-        type: int
-        required: false
-      homepage:
+        unique: yes
+      image_type:
         type: str
-        required: false
-      mailing_list:
-        type: str
-        required: false
-      benchmark_types:
+        required: true
+        unique: yes
+      image_instances:
         type: seq
-        required: true
         sequence:
-          - type: str
-            required: true
-      procs:
-        type: seq
-        required: true
-        sequence:
-          - type: str
-            required: true
-      image:
-        type: map
-        required: true
-        mapping:
-          dockerhub:
-            type: str
-            required: true
-            unique: yes
-          repo:
-            type: str
-            required: true
-          source:
-            type: str
-            required: false
+          - type: map
+            mapping:
+              tasks:
+                type: seq
+                required: true
+                sequence:
+                  - type: str
+                    required: true
+              name:
+                type: str
+                required: true
+                unique: yes
+              sha256:
+                type: str
+                required: true
+                unique: yes

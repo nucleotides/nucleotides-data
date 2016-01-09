@@ -3,13 +3,9 @@ type: seq
 sequence:
   - type: map
     mapping:
-      data_type_id:
-        type: int
+      name:
         required: true
-        unique: false
-      data_id:
-        type: int
-        required: true
+        type: str
         unique: true
       description:
         required: true
@@ -21,7 +17,7 @@ sequence:
           - type: map
             required: true
             mapping:
-              read_number:
+              reads:
                 type: int
                 required: true
               entry_id:
@@ -42,3 +38,15 @@ sequence:
                         type: str
                         required: true
                         pattern: /^s3:\/\/.*/
+
+              reference:
+                type: map
+                required: true
+                mapping:
+                  md5sum:
+                    type: str
+                    required: true
+                  url:
+                    type: str
+                    required: true
+                    pattern: /^s3:\/\/.*/
