@@ -5,3 +5,9 @@ dependencies:
 test:
   override:
     - ./script/test
+
+deployment:
+  hub:
+    branch: master
+    commands:
+      - make deploy
