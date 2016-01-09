@@ -1,6 +1,6 @@
 ---
-  - id: "0000"
-    description: A genome assembler benchmark using a set of paired Illumina 2x150 reads.
-    image: "nucleotides/quast"
-    associated_data_ids:
-      - 0
+- name: illumina_isolate_reference_assembly
+  product_image_type: short_read_assembler
+  evaluation_image_type: reference_assembly_evaluation
+  data_sets:
+    - jgi_isolate_2x150
