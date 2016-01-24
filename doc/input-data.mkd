@@ -72,3 +72,13 @@ calculate metrics of how effective the tool is. The file
   # This metagenome has no reference data
   references: []
 ```
+
+The fields in this file are as follows:
+
+  * name: The unique identifier within the file for this data source, uses only
+    the characters a-z, 0-9 and '_'.
+  * description: A full text description of this what the data source is.
+  * source_type: The identifier for the metadata value from the
+    `type/source.yml` file. This categorises the source of the input data.
+  * references: Zero or more reference files for this data.
+
