@@ -1,0 +1,48 @@
+# Nucleotid.es input data files
+
+The data used by [nucleotid.es][] is imported from structured yaml files. The
+aim of using structured input files is solve the problem of managing the large
+numbers of sequence files and Docker images using in benchmarking. These input
+files should primarily be human-editable as they need to be updated with new
+entries as more benchmarking inputs are added. This document describes the
+schema of these files.
+
+## Input metadata
+
+Nucleotid.es uses data files, such as FASTQ, to test the performance of
+bioinformatics Docker images. Metadata is required to determine the origin of
+these data files. Examples of the kinds of metadata used in nucleotid.es is the
+sequencing platform or how the source DNA was prepared for sequencing. Each
+metadata file follows the same format:
+
+``` yaml
+---
+- name: Unique identifier within this file, uses only the characters a-z, 0-9 and '_'.
+  description: A full text description of this metadata value.
+
+# An example entry
+- name: hiseq_2500
+  description: The Illumina high-throughput short-read sequencer.
+```
+
+The following files each describe a specific type of metadata. These files are
+stored in the directory 'type'.
+
+  * platform.yml: The sequencing platform on which the data was produced.
+  * product.yml: The type of sequencing product, e.g. shotgun sequencing, MDA
+    or amplicon.
+  * protocol.yml: How the DNA was prepared, e.g. nextera or blue pippin.
+  * run_mode.yml: How the sequence library was prepared, e.g. 2x150 or 2x250.
+
+## Nucleotid.es metadata
+
+The nucleotides database also uses metadata to track the types of files and
+metrics generated during benchmarking. These use the same format as above and
+are recorded in the files:
+
+  * metric.yml: Describes the different metrics produced from benchmarking,
+    e.g. ng50 or max_mem_gb (maximum memory usage in gigabytes).
+  * file.yml: Describes the different types of files stored and used in
+    benchmarking.
+
+[nucleotid.es]: http://nucleotid.es
