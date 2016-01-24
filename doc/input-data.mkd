@@ -7,6 +7,8 @@ files should primarily be human-editable as they need to be updated with new
 entries as more benchmarking inputs are added. This document describes the
 schema of these files.
 
+[nucleotid.es]: http://nucleotid.es
+
 ## Input metadata
 
 Nucleotid.es uses data files, such as FASTQ, to test the performance of
@@ -33,6 +35,8 @@ stored in the directory 'type'.
     or amplicon.
   * protocol.yml: How the DNA was prepared, e.g. nextera or blue pippin.
   * run_mode.yml: How the sequence library was prepared, e.g. 2x150 or 2x250.
+  * source.yml: The source of the DNA, e.g. microbial_genome, metagenome or
+    fungal_genome.
 
 ## Nucleotid.es metadata
 
@@ -45,4 +49,26 @@ are recorded in the files:
   * file.yml: Describes the different types of files stored and used in
     benchmarking.
 
-[nucleotid.es]: http://nucleotid.es
+## Input Data Source
+
+The nucleotid.es benchmarks are based on passing input data to a bioinformatics
+Docker image and then comparing the produced result with a reference file to
+calculate metrics of how effective the tool is. The file
+`input_data_source.yml` describes the sources of these data.
+
+``` yaml
+---
+- name: ecoli_k12
+  description: A laboratory strain with a well-described genome
+  source_type: microbial_genome
+  references:
+  - file_type: genomic_reference_fasta
+    md5sum: eaa5305f8d0debbce934975c3ec6c14b
+    url: s3://nucleotid-es/reference/0001/genome.fa
+---
+- name: kansas_farm_soil
+  description: A soil sample from a kansas farm
+  source_type: metagenome
+  # This metagenome has no reference data
+  references: []
+```
