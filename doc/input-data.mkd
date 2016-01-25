@@ -82,3 +82,19 @@ The fields in this file are as follows:
     `type/source.yml` file. This categorises the source of the input data.
   * references: Zero or more reference files for this data.
 
+## Input Data Set
+
+``` yaml
+---
+- id: 1
+  platform: 'illumina'
+  product: 'shotgun sequencing'
+  protocol: 'nextera'
+  run_mode: '2x150'
+  input_data_source: 'ecoli_k12'
+  files:
+    - md5sum: 87673a0358e2f248a4c44eccda8c46b4
+      url: s3://nucleotid-es/0001/0001/2000000/1/reads.fq.gz
+    - md5sum: c1f0fb4cad045641c1bd001c2f4dbe37
+      url: s3://nucleotid-es/0001/0001/2000000/2/reads.fq.gz
+```
