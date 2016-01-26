@@ -1,21 +1,22 @@
-# Nucleotid.es input data files
+# Nucleotid.es input files
 
-The data used by [nucleotid.es][] is imported from structured yaml files. The
-aim of using structured input files is solve the problem of managing the large
-numbers of sequence files and Docker images using in benchmarking. These input
-files should primarily be human-editable as they need to be updated with new
-entries as more benchmarking inputs are added. This document describes the
-schema of these files.
+The data used by [nucleotid.es][] is organised and imported from structured
+YAML files. The aim these files is to tackle the problem of managing the large
+numbers of files and Docker images using in nucleotid.es. These input files are
+designed be human-editable so that they may be updated with new entries as more
+benchmarking files or Docker images are added. This document describes the
+schema of the input files.
 
 [nucleotid.es]: http://nucleotid.es
 
 ## Input metadata
 
-Nucleotid.es uses data files, such as FASTQ, to test the performance of
-bioinformatics Docker images. Metadata is required to determine the origin of
-these data files. Examples of the kinds of metadata used in nucleotid.es is the
-sequencing platform or how the source DNA was prepared for sequencing. Each
-metadata file follows the same format:
+Nucleotid.es uses biological data stored in files, such as FASTQ, to test the
+performance of bioinformatics Docker images. Metadata is required to record and
+organise by the origin the data. Examples of the kinds of metadata used in
+nucleotid.es are the sequencing platform or how the source DNA was prepared for
+sequencing. Each metadata file is stored in the `type` subfolder and follows
+the same format:
 
 ``` yaml
 ---
@@ -27,10 +28,10 @@ metadata file follows the same format:
   description: The Illumina high-throughput short-read sequencer.
 ```
 
-The following files each describe a specific type of metadata. These files are
-stored in the directory 'type'.
+The following files each describe a type of metadata, stored in the directory
+'type'.
 
-  * platform.yml: The sequencing platform on which the data was produced.
+  * platform.yml: The hardware platform on which the data was produced.
   * product.yml: The type of sequencing product, e.g. shotgun sequencing, MDA
     or amplicon.
   * protocol.yml: How the DNA was prepared, e.g. nextera or blue pippin.
@@ -40,9 +41,9 @@ stored in the directory 'type'.
 
 ## Nucleotid.es metadata
 
-The nucleotides database also uses metadata to track the types of files and
-metrics generated during benchmarking. These use the same format as above and
-are recorded in the files:
+The nucleotid.es database also uses metadata to track the types of files and
+metrics generated during benchmarking. These use the same format as the input
+metadata above and are recorded in the files:
 
   * metric.yml: Describes the different metrics produced from benchmarking,
     e.g. ng50 or max_mem_gb (maximum memory usage in gigabytes).
@@ -52,11 +53,10 @@ are recorded in the files:
 ## Input Data Source
 
 The nucleotid.es benchmarks are based on passing input data to a bioinformatics
-Docker image and then comparing the produced result with a reference file to
-calculate metrics of how effective the tool is. Each input file originates from
-a source such as a microbe, environment or synthetic data. The file
-`input_data/source.yml` describes the sources of the data along with any
-reference files that can be used for evaluation.
+Docker image and then comparing the produced result with a reference file. Each
+input file originates from a source such as a microbe, environment or synthetic
+data. The file `input_data/source.yml` describes the sources of the data along
+with associated reference files for each.
 
 ``` yaml
 ---
@@ -84,11 +84,11 @@ The fields in this file are as follows:
 
 ## Input Data File
 
-The file 'input_data/file.yml' contains the files used for benchmarking. Each
-entry is a set of files of the same batch, e.g. by read subsampling a single
+The file `input_data/file.yml` contains the files used for benchmarking. Each
+entry is a set of files from the same batch, e.g. by read subsampling a single
 fastq file or by pooling in the same sequencing run. The entries include
-metadata to describe the kind of data and also cross reference the
-`input_data/source.yml` entry from which they were generated.
+metadata to describe the origin and cross reference the `input_data/source.yml`
+entry from which they were generated.
 
 ``` yaml
 ---
