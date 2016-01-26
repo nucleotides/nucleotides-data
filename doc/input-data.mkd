@@ -62,7 +62,7 @@ with associated reference files for each.
 ---
 - name: ecoli_k12
   description: A laboratory strain with a well-described genome
-  source_type: microbial_genome
+  source_type: microbe
   references:
   - file_type: reference_fasta
     md5sum: eaa5305f8d0debbce934975c3ec6c14b
