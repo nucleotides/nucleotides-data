@@ -53,8 +53,10 @@ are recorded in the files:
 
 The nucleotid.es benchmarks are based on passing input data to a bioinformatics
 Docker image and then comparing the produced result with a reference file to
-calculate metrics of how effective the tool is. The file
-`input_data_source.yml` describes the sources of these data.
+calculate metrics of how effective the tool is. Each input file originates from
+a source such as a microbe, environment or synthetic data. The file
+`input_data/source.yml` describes the sources of the data along with any
+reference files that can be used for evaluation.
 
 ``` yaml
 ---
@@ -62,10 +64,9 @@ calculate metrics of how effective the tool is. The file
   description: A laboratory strain with a well-described genome
   source_type: microbial_genome
   references:
-  - file_type: genomic_reference_fasta
+  - file_type: reference_fasta
     md5sum: eaa5305f8d0debbce934975c3ec6c14b
     url: s3://nucleotid-es/reference/0001/genome.fa
----
 - name: kansas_farm_soil
   description: A soil sample from a kansas farm
   source_type: metagenome
@@ -74,7 +75,6 @@ calculate metrics of how effective the tool is. The file
 ```
 
 The fields in this file are as follows:
-
   * name: The unique identifier within the file for this data source, uses only
     the characters a-z, 0-9 and '_'.
   * description: A full text description of this what the data source is.
@@ -82,19 +82,67 @@ The fields in this file are as follows:
     `type/source.yml` file. This categorises the source of the input data.
   * references: Zero or more reference files for this data.
 
-## Input Data Set
+## Input Data File
+
+The file 'input_data/file.yml' contains the files used for benchmarking. Each
+entry is a set of files of the same batch, e.g. by read subsampling a single
+fastq file or by pooling in the same sequencing run. The entries include
+metadata to describe the kind of data and also cross reference the
+`input_data/source.yml` entry from which they were generated.
 
 ``` yaml
 ---
-- id: 1
+- id: jgi_isolate_microbe_2x150_1
   platform: 'illumina'
   product: 'shotgun sequencing'
   protocol: 'nextera'
   run_mode: '2x150'
   input_data_source: 'ecoli_k12'
-  files:
+  description: >
+    A plain text description of where these reads came from and how they were
+    produced.
+  replicates:
     - md5sum: 87673a0358e2f248a4c44eccda8c46b4
+      file_type: gdna_short_reads
       url: s3://nucleotid-es/0001/0001/2000000/1/reads.fq.gz
     - md5sum: c1f0fb4cad045641c1bd001c2f4dbe37
       url: s3://nucleotid-es/0001/0001/2000000/2/reads.fq.gz
+      file_type: gdna_short_reads
 ```
+
+The fields in this file are as follows:
+  * name: Unique identifier within this file, uses only the characters a-z, 0-9 and '_'.
+  * description: A plain text description of the data.
+  * platform / product / protocol / run_mode: The corresponding metadata for
+    this data set. Corresponds to entries for the files found in the `types`
+    folder.
+  * input_data_source: The name of the originating source entry from the
+    `input_data/source.yml` file.
+  * replicates: The list of input data files for this data set. The name
+    `replicates` is chosen to indicate this is how nucleotid.es views these
+    input data files.
+
+## Benchmarks
+
+The `benchmark.yml` file describes the benchmarks performed within
+nucleotid.es. Each entry corresponds to a type of benchmark and lists the types
+of docker images used in producing results and then evaluating them.
+
+```yaml
+---
+- name: short_read_isolate_assembly_with_reference
+  description: >
+    Text description of this benchmark
+  product_image_type: short_read_assembler
+  evaluation_image_type: reference_assembly_evaluator
+  data_sets:
+    - jgi_isolate_2x150
+```
+
+The fields in this file are:
+  * name: Unique identifier within this file, uses only the characters a-z, 0-9 and '_'.
+  * description: A plain text description of the benchmark.
+  * product_image_type: The type of docker image to be benchmarked.
+  * evaluation_image_type: The type of docker image to be used to evaluate the
+    produced results.
+  * data_sets: The list of IDs for the data sets to be used in the benchmarking.
