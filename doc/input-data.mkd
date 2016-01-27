@@ -65,7 +65,7 @@ with associated reference files for each.
   source_type: microbe
   references:
   - file_type: reference_fasta
-    md5sum: eaa5305f8d0debbce934975c3ec6c14b
+    sha256: eaa5305f8d0debbce934975c3ec6c14b
     url: s3://nucleotid-es/reference/0001/genome.fa
 - name: kansas_farm_soil
   description: A soil sample from a kansas farm
@@ -102,10 +102,10 @@ entry from which they were generated.
     A plain text description of where these reads came from and how they were
     produced.
   replicates:
-    - md5sum: 87673a0358e2f248a4c44eccda8c46b4
+    - sha256: 87673a0358e2f248a4c44eccda8c46b4
       file_type: gdna_short_reads
       url: s3://nucleotid-es/0001/0001/2000000/1/reads.fq.gz
-    - md5sum: c1f0fb4cad045641c1bd001c2f4dbe37
+    - sha256: c1f0fb4cad045641c1bd001c2f4dbe37
       url: s3://nucleotid-es/0001/0001/2000000/2/reads.fq.gz
       file_type: gdna_short_reads
 ```
