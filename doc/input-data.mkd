@@ -33,7 +33,7 @@ The following files each describe a type of metadata, stored in the directory
 
   * platform.yml: The hardware platform on which the data was produced.
   * product.yml: The type of sequencing product, e.g. shotgun sequencing, MDA
-    or amplicon.
+    amplicon.
   * protocol.yml: How the DNA was prepared, e.g. nextera or blue pippin.
   * run_mode.yml: How the sequence library was prepared, e.g. 2x150 or 2x250.
   * source.yml: The source of the DNA, e.g. microbial_genome, metagenome or
@@ -92,22 +92,22 @@ entry from which they were generated.
 
 ``` yaml
 ---
-- id: jgi_isolate_microbe_2x150_1
-  platform: 'illumina'
-  product: 'shotgun sequencing'
-  protocol: 'nextera'
-  run_mode: '2x150'
-  input_data_source: 'ecoli_k12'
+- name: jgi_isolate_microbe_2x150_1
+  platform: illumina
+  product: random
+  protocol: nextera
+  run_mode: 2x150
+  input_data_source: ecoli_k12
   description: >
     A plain text description of where these reads came from and how they were
     produced.
   replicates:
     - sha256: 87673a0358e2f248a4c44eccda8c46b4
-      file_type: gdna_short_reads
+      file_type: short_read_fastq
       url: s3://nucleotid-es/0001/0001/2000000/1/reads.fq.gz
     - sha256: c1f0fb4cad045641c1bd001c2f4dbe37
       url: s3://nucleotid-es/0001/0001/2000000/2/reads.fq.gz
-      file_type: gdna_short_reads
+      file_type: short_read_fastq
 ```
 
 The fields in this file are as follows:
