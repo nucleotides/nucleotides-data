@@ -1,0 +1,11 @@
+---
+- name: log
+  desc: Free form text output from running the benchmarks
+- name: container_runtime_metrics
+  desc: Runtime metrics collected while running the Docker container
+- name: short_read_fastq
+  desc: Short read sequences in FASTQ format
+- name: reference_fasta
+  desc: Reference sequence in FASTA format
+- name: contig_fasta
+  desc: Reads assembled into larger contiguous sequences in FASTA format

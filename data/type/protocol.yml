@@ -1,0 +1,3 @@
+---
+- name: nextera
+  desc: Illumina nextera protocol

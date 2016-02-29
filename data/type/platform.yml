@@ -1,0 +1,3 @@
+---
+- name: illumina
+  desc: Illumina sequencing platform

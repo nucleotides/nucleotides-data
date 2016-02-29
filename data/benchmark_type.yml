@@ -1,6 +1,13 @@
 ---
 - name: illumina_isolate_reference_assembly
+  description: Evaluate genome assemblers using reads and reference genome
   product_image_type: short_read_assembler
   evaluation_image_type: reference_assembly_evaluation
-  data_sets:
-    - jgi_isolate_2x150
+  input_data_file_sets:
+    - jgi_isolate_microbe_2x150_1
+- name: short_read_preprocessing_reference_evaluation
+  description: Evaluate short read preprocessors using reads and reference genome
+  product_image_type: short_read_preprocessor
+  evaluation_image_type: short_read_preprocessing_reference_evaluation
+  input_data_file_sets:
+    - jgi_isolate_microbe_2x150_1

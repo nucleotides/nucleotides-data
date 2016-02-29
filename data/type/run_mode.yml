@@ -1,0 +1,3 @@
+---
+- name: 2x150_270
+  desc: An insert size of 270bp sequenced with 2x150bp reads

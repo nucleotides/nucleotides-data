@@ -1,0 +1,12 @@
+---
+- name: short_read_assembler
+  description: Assembles paired Illumina short reads into contigs.
+- name: short_read_preprocessor
+  description: |
+    Performs filtering or editting of FASTQ reads and returns a subset or changed set of reads.
+- name: reference_assembly_evaluation
+  description: |
+    Evaluates the quality of an assembly using a reference genome.
+- name: short_read_preprocessing_reference_evaluation
+  description: |
+    Evaluates the quality of short read preprocessing using a reference genome.
