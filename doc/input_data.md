@@ -136,7 +136,7 @@ sequencing data used for benchmarking.
   description: Paired reads sequenced to 250bp with a target 400bp insert size.
 ```
 
-### Biological source source
+### Biological source type
 
 All sequencing data input file originates from a single source such as a
 microbe, fungus or environment. The file `type/source.yml` describes types of
@@ -144,20 +144,18 @@ input sources. Examples of this are:
 
 
 ``` yaml
-- name: microbial_isolate_gdna
+- name: microbe
   description: Genomic DNA from a single isolated microbial colony
-- name: metagenome_rna
+- name: metagenome
   description: Transcriptome data from a mixed community
 ```
 
 ## Input Data Source
 
-The nucleotid.es benchmarks are based on passing input data to a Docker image
-and then comparing the output with a reference file.
-
-Each input file originates from a single source such as a microbe, fungus or
-environment. The file `input_data/source.yml` describes the sources of the data
-along with associated reference files for each.
+All input data originates from a single biologial source such as a microbe,
+fungus or environment. The file `input_data/source.yml` lists each biological
+source of data along with any associated reference files. Two example entries
+are:
 
 ``` yaml
 ---
@@ -178,10 +176,19 @@ along with associated reference files for each.
 The fields in this file are as follows:
   * name: The unique identifier within the file for this data source, uses only
     the characters a-z, 0-9 and '_'.
-  * description: A full text description of this what the data source is.
+  * description: A full text description of what this data source is.
   * source_type: The identifier for the metadata value from the
-    `type/source.yml` file. This categorises the source of the input data.
-  * references: Zero or more reference files for this data.
+    `type/source.yml` file. This is used categorise the source of the input
+    data.
+  * references: Zero or more reference files for this data. Each reference file
+    is dictionary containing the files `file_type`, `sha256` and `url`. The
+    sha256 is the digest of the file as produced by the shell command
+    `sha256sum`. The `url` is the S3 location of the file. The `file_type`
+    field corresponds to an entry in the `type/file.yml` metadata.
+
+In the example above the ecoli_k12 entry has one reference file. The metagenome
+entry has no reference files, as usually none exist for non-synthetic
+metagenomes.
 
 ## Input Data File
 
