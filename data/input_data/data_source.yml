@@ -1,13 +1,13 @@
 ---
 - name: ecoli_k12
-  description: A laboratory strain with a well-described genome
+  desc: A laboratory strain with a well-described genome
   source_type: microbe
   references:
-  - file_type: reference_fasta
-    sha256: 6bac51cc35ee2d11782e7e31ea1bfd7247de2bfcdec205798a27c820b2810414
-    url: s3://nucleotides-testing/short-read-assembler/reference.fa
+    - file_type: reference_fasta
+      sha256: 6bac51cc35ee2d11782e7e31ea1bfd7247de2bfcdec205798a27c820b2810414
+      url: s3://nucleotides-testing/short-read-assembler/reference.fa
 - name: kansas_farm_soil
-  description: A soil sample from a kansas farm
+  desc: A soil sample from a kansas farm
   source_type: metagenome
   # This metagenome has no reference data
   references: []
