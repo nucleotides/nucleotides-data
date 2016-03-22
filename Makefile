@@ -1,4 +1,4 @@
-validate = ! bundle exec kwalify -lf $1 | grep INVALID
+validate = ! bundle exec kwalify -lf $1 | grep --after-context=1 INVALID
 data     = $(subst .yml,,$(shell ls data))
 name     = nucleotides/data
 
@@ -23,11 +23,13 @@ deploy: .image
 #
 ################################################
 
-test: $(foreach i,$(data),.test_token/$i)
+types = $(shell ls data/type)
 
-.test_token/%: schema/%.yml data/%.yml
-	$(call validate,$^)
-	touch $@
+test: $(addprefix .test_token/,$(types))
+
+.test_token/%: schema/metadata_type.yml data/type/%
+	@$(call validate,$^)
+	@touch $@
 
 ################################################
 #
@@ -36,7 +38,7 @@ test: $(foreach i,$(data),.test_token/$i)
 ################################################
 
 bootstrap: Gemfile.lock
-	mkdir .test_token
+	mkdir -p .test_token/type
 
 Gemfile.lock: Gemfile
 	bundle install
