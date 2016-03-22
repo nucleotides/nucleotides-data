@@ -25,7 +25,6 @@ The data files are organised in the following directory structure:
     ├── image.yml
     ├── metric.yml
     ├── platform.yml
-    ├── product.yml
     ├── protocol.yml
     ├── run_mode.yml
     └── source.yml
@@ -193,18 +192,17 @@ metagenomes.
 ## Input Data File
 
 The file `input_data/file.yml` contains the files used for benchmarking. Each
-entry is a set of files from the same batch, e.g. by read subsampling a single
-fastq file or by pooling in the same sequencing run. The entries include
-metadata to describe the origin and cross reference the `input_data/source.yml`
-entry from which they were generated.
+entry is a set of files from the same "batch". A batch is loosely defined and
+might be read subsampling a single fastq file, or samples pooled in the same
+sequencing run. Each entry includes metadata to cross reference the origin from
+the `input_data/source.yml` file.
 
 ``` yaml
 ---
 - name: jgi_isolate_microbe_2x150_1
-  platform: illumina
-  product: random
-  protocol: nextera
-  run_mode: 2x150
+  platform_type: hiseq_2500
+  protocol_type: nextera
+  run_mode_type: 2x150
   input_data_source: ecoli_k12
   description: >
     A plain text description of where these reads came from and how they were
@@ -221,14 +219,21 @@ entry from which they were generated.
 The fields in this file are as follows:
   * name: Unique identifier within this file, uses only the characters a-z, 0-9 and '_'.
   * description: A plain text description of the data.
-  * platform / product / protocol / run_mode: The corresponding metadata for
-    this data set. Corresponds to entries for the files found in the `types`
+  * platform_type / protocol_type / run_mode_type: The corresponding metadata
+    for this data set. Corresponds to entries for the files found in the `type`
     folder.
   * input_data_source: The name of the originating source entry from the
     `input_data/source.yml` file.
   * replicates: The list of input data files for this data set. The name
     `replicates` is chosen to indicate this is how nucleotid.es views these
-    input data files.
+    input data files. These may be biological or technical replicates but not
+    both as the replicates should be generated using the same method. This
+    again is however loosely defined.
+
+    Each replicate file is dictionary containing the files `file_type`,
+    `sha256` and `url`. The sha256 is the digest of the file as produced by the
+    shell command `sha256sum`. The `url` is the S3 location of the file. The
+    `file_type` field corresponds to an entry in the `type/file.yml` metadata.
 
 ## Benchmarks
 
