@@ -57,11 +57,7 @@ sets.
 
 [biobox]: http://bioboxes.org
 
-## Input file descriptions
-
-The following sections describe each of the files in more detail.
-
-### File types
+## File types
 
 The file types are listed in `type/file.yml`. This contains all the possible
 input files, and output files generated during benchmarking. Example entries
@@ -74,13 +70,13 @@ are:
   desc: Reads assembled into larger contiguous sequences in FASTA format
 ```
 
-### Image types
+## Image types
 
 The types of Docker images used in benchmarking are listed in `type/image.yml`.
 Each image type in the file corresponds to a type of [biobox][]. This file
 should therefore not be changed unless new biobox types are created.
 
-### Metric types
+## Metric types
 
 All metrics recorded from benchmarking are listed in `type/metric.yml`. These
 metrics are the keys used to store the values from benchmarking. Example metric
@@ -94,7 +90,7 @@ types are:
   desc: Maximum memory used when executing the Docker container
 ```
 
-### Sequencing platform types
+## Sequencing platform types
 
 The different sequencing platforms used to generate the input sequence data in
 nucleotid.es are described in `types/platform.yml`. This should be explicit
@@ -108,7 +104,7 @@ are:
   description: Second generation Pacific Bioscience long-read sequencer.
 ```
 
-### Library preparation protocol
+## Library preparation protocol
 
 Different sequencing DNA preparation protocols used on the same input DNA can
 produce noticeable differences in the generated sequencing data. The file
@@ -122,7 +118,7 @@ describe the how input data in nucleotides was prepared. Examples entries are:
   description: Single step fragmentation and tagging protocol for Illumina sequencing
 ```
 
-### Sequencing run mode
+## Sequencing run mode
 
 Different sequencing run modes change the size and quality of data produced.
 The file `type/run_mode.yml` describes the run mode used to produce the input
@@ -135,7 +131,7 @@ sequencing data used for benchmarking.
   description: Paired reads sequenced to 250bp with a target 400bp insert size.
 ```
 
-### Biological source type
+## Biological source type
 
 All sequencing data input file originates from a single source such as a
 microbe, fungus or environment. The file `type/source.yml` describes types of
@@ -151,7 +147,7 @@ input sources. Examples of this are:
 
 ## Input Data Source
 
-All input data originates from a single biologial source such as a microbe,
+All input data originates from a single biological source such as a microbe,
 fungus or environment. The file `input_data/source.yml` lists each biological
 source of data along with any associated reference files. Two example entries
 are:
@@ -237,9 +233,13 @@ The fields in this file are as follows:
 
 ## Benchmarks
 
-The `benchmark.yml` file describes the benchmarks performed within
-nucleotid.es. Each entry corresponds to a type of benchmark and lists the types
-of docker images used in producing results and then evaluating them.
+The `benchmark_type.yml` file describes the types benchmarks within
+nucleotid.es. Each entry corresponds describes a single benchmark type which is
+composed of product and evaluation biobox image types, combined with a list of
+data sets used as benchmark inputs. The product biobox image is the Docker image
+to which input data is given for benchmarking. The evaluation biobox image is
+the type of image to used to evaluate the results and generate metrics. An
+example entry is:
 
 ```yaml
 ---
@@ -255,7 +255,11 @@ of docker images used in producing results and then evaluating them.
 The fields in this file are:
   * name: Unique identifier within this file, uses only the characters a-z, 0-9 and '_'.
   * description: A plain text description of the benchmark.
-  * product_image_type: The type of docker image to be benchmarked.
+  * product_image_type: The biobox image type to be benchmarked. This should
+    correspond to an entry in the `type/image.yml` file.
   * evaluation_image_type: The type of docker image to be used to evaluate the
-    produced results.
-  * data_sets: The list of IDs for the data sets to be used in the benchmarking.
+    produced results. This should correspond to an entry in the
+    `type/image.yml` file.
+  * data_sets: The list of IDs for the data sets to be used in the
+    benchmarking. Each entry in the list should correspond to an entry in the
+    `input_data/file.yml` file.
