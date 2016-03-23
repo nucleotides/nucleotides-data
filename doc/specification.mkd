@@ -210,7 +210,7 @@ the `input_data/source.yml` file.
   description: >
     A plain text description of where these reads came from and how they were
     produced.
-  replicates:
+  files:
     - sha256: 87673a0358e2f248a4c44eccda8c46b4
       file_type: short_read_fastq
       url: s3://nucleotid-es/0001/0001/2000000/1/reads.fq.gz
@@ -227,11 +227,10 @@ The fields in this file are as follows:
     `controlled_vocabulary` folder.
   * input_data_source: The name of the originating source entry from the
     `input_data/source.yml` file.
-  * replicates: The list of input data files for this data set. The name
-    `replicates` is chosen to indicate this is how nucleotid.es views these
-    input data files. These may be biological or technical replicates but not
-    both as the replicates should be generated using the same method. This
-    again is however loosely defined.
+  * files: The list of input data files for this data set. These files may be
+    biological or technical replicates but not both as the replicates should be
+    generated using the same type of method. This again is however loosely
+    defined.
 
     Each replicate file is dictionary containing the files `file_type`,
     `sha256` and `url`. The sha256 is the digest of the file as produced by the
