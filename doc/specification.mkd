@@ -17,11 +17,12 @@ should be validated by following the instructions in the [README.mkd][readme].
 The data files are organised in the following directory structure:
 
 <pre>
-<b>inputs/</b>
-├── benchmark.yml
-├── image.yml
-├── file.yml
-├── biological_source.yml
+<b>./</b>
+├── <b>inputs/</b>
+│   ├── benchmark.yml
+│   ├── image.yml
+│   ├── file.yml
+│   ├── biological_source.yml
 └── <b>controlled_vocabulary/</b>
     ├── file.yml
     ├── image.yml
