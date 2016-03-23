@@ -24,11 +24,11 @@ deploy: .image
 ################################################
 
 types  = $(shell ls data/type)
-inputs = $(types) data_source.yml
+inputs = $(types) data_source.yml data_file.yml
 
 test: $(addprefix .test_token/,$(inputs))
 
-.test_token/data_source.yml: schema/data_source.yml data/input_data/data_source.yml
+.test_token/%: schema/% data/input_data/%
 	$(call validate,$^)
 	@touch $@
 
