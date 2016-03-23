@@ -252,7 +252,7 @@ example entry is:
   product_image_type: short_read_assembler
   evaluation_image_type: reference_assembly_evaluator
   data_sets:
-    - jgi_isolate_2x150
+    - jgi_isolate_microbe_2x150_1
 ```
 
 The fields in this file are:
