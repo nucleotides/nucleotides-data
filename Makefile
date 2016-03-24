@@ -13,7 +13,7 @@ deploy: .image
 	docker tag $(name) $(name):staging
 	docker push $(name):staging
 
-.image: $(shell find data -name '*.yml') Dockerfile
+.image: $(shell find controlled_vocabulary inputs -name '*.yml') Dockerfile
 	docker build --tag=$(name) .
 	touch $@
 
@@ -23,16 +23,16 @@ deploy: .image
 #
 ################################################
 
-types  = $(shell ls data/type)
-inputs = $(types) data_source.yml data_file.yml
+types  = $(addprefix cv/,$(shell ls controlled_vocabulary))
+inputs = $(addprefix inputs/,$(shell ls inputs))
 
-test: $(addprefix .test_token/,$(inputs))
+test: $(addprefix .test_token/,$(inputs),$(types))
 
-.test_token/%: schema/% data/input_data/%
+.test_token/inputs/%: schema/% inputs/%
 	$(call validate,$^)
 	@touch $@
 
-.test_token/%: schema/metadata_type.yml data/type/%
+.test_token/cv/%: schema/controlled_vocabulary.yml controlled_vocabulary/%
 	$(call validate,$^)
 	@touch $@
 
@@ -43,7 +43,7 @@ test: $(addprefix .test_token/,$(inputs))
 ################################################
 
 bootstrap: Gemfile.lock
-	mkdir -p .test_token/type
+	mkdir -p .test_token/cv .test_token/inputs
 
 Gemfile.lock: Gemfile
 	bundle install
