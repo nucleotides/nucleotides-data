@@ -7,7 +7,7 @@
   desc: >
     A plain text description of where these reads came from and how they were
     produced.
-  replicates:
+  files:
     - sha256: 24b5b01b08482053d7d13acd514e359fb0b726f1e8ae36aa194b6ddc07335298
       file_type: short_read_fastq
       url: s3://nucleotides-testing/short-read-assembler/dummy.reads.fq.gz
