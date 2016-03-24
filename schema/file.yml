@@ -27,7 +27,7 @@ sequence:
         required: true
         type: str
         pattern: /^[a-z0-9_]*$/
-      replicates:
+      files:
         required: true
         type: seq
         sequence:
