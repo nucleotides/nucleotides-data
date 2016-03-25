@@ -1,13 +1,9 @@
 ---
-- name: ecoli_k12
-  desc: A laboratory strain with a well-described genome
+- name: amycolatopsis_sulphurea_dsm_46092
+  desc: >
+    A microbe with a improved-draft reference genome generated using PacBio at the JGI.
   source_type: microbe
   references:
     - file_type: reference_fasta
-      sha256: 6bac51cc35ee2d11782e7e31ea1bfd7247de2bfcdec205798a27c820b2810414
-      url: s3://nucleotides-testing/short-read-assembler/reference.fa
-- name: kansas_farm_soil
-  desc: A soil sample from a kansas farm
-  source_type: metagenome
-  # This metagenome has no reference data
-  references: []
+      sha256: d2a60c17386f344a6edc08b5b3b389536c36aae1b8d6fc9394e1c132148288e7
+      url: s3://nucleotides-prod/inputs/d2/d2a60c17386f344a6edc08b5b3b389536c36aae1b8d6fc9394e1c132148288e7

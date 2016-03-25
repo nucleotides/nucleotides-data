@@ -4,10 +4,4 @@
   product_image_type: short_read_assembler
   evaluation_image_type: reference_assembly_evaluation
   data_sets:
-    - jgi_isolate_microbe_2x150_1
-- name: short_read_preprocessing_reference_evaluation
-  desc: Evaluate short read preprocessors using reads and reference genome
-  product_image_type: short_read_preprocessor
-  evaluation_image_type: short_read_preprocessing_reference_evaluation
-  data_sets:
-    - jgi_isolate_microbe_2x150_1
+    - jgi_microbe_00001

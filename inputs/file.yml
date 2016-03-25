@@ -1,16 +1,10 @@
 ---
-- name: jgi_isolate_microbe_2x150_1
-  platform_type: hiseq_2500
-  protocol_type: nextera
-  run_mode_type: 2x150_270
-  input_data_source: ecoli_k12
+- name: jgi_microbe_00001
+  platform_type: miseq
+  protocol_type: regular_fragment
+  run_mode_type: 2x150_300
+  input_data_source: amycolatopsis_sulphurea_dsm_46092
   desc: >
-    A plain text description of where these reads came from and how they were
-    produced.
-  files:
-    - sha256: 24b5b01b08482053d7d13acd514e359fb0b726f1e8ae36aa194b6ddc07335298
-      file_type: short_read_fastq
-      url: s3://nucleotides-testing/short-read-assembler/dummy.reads.fq.gz
-    - sha256: 11948b41d44931c6a25cabe58b138a4fc7ecc1ac628c40dcf1ad006e558fb533
-      url: s3://nucleotides-testing/short-read-assembler/reads.fq.gz
-      file_type: short_read_fastq
+    A JGI sequenced microbe then in-silico subsampled without replacement down to
+    2,500,000 read pairs.
+  files: []
