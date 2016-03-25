@@ -26,7 +26,7 @@ deploy: .image
 types  = $(addprefix cv/,$(shell ls controlled_vocabulary))
 inputs = $(addprefix inputs/,$(shell ls inputs))
 
-test: $(addprefix .test_token/,$(inputs),$(types))
+test: $(addprefix .test_token/,$(inputs) $(types))
 
 .test_token/inputs/%: schema/% inputs/%
 	$(call validate,$^)
