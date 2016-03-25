@@ -7,6 +7,9 @@ sequence:
         type: str
         required: true
         unique: true
+      desc:
+        type: str
+        required: true
       product_image_type:
         type: str
         required: true

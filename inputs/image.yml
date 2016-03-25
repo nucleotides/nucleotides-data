@@ -1,27 +1,12 @@
 ---
 - image_type: short_read_assembler
   name: bioboxes/velvet
-  sha256: digest_1
+  sha256: 6611675a6d3755515592aa71932bd4ea4c26bccad34fae7a3ec1198ddcccddad
   tasks:
     - default
     - careful
 - image_type: short_read_assembler
   name: bioboxes/ray
-  sha256: digest_2
-  tasks:
-    - default
-- image_type: short_read_preprocessor
-  name: bioboxes/my-filterer
-  sha256: digest_3
-  tasks:
-    - default
-- image_type: reference_assembly_evaluation
-  name: bioboxes/quast
-  sha256: digest_4
-  tasks:
-    - default
-- image_type: short_read_preprocessing_reference_evaluation
-  name: bioboxes/velvet-then-quast
-  sha256: digest_4
+  sha256: faa7f64683ae2e9d364127a173dadb6a42f9fe90799625944cfcadb27fdd5a29
   tasks:
     - default
