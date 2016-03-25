@@ -6,11 +6,10 @@ sequence:
       name:
         type: str
         required: true
-        unique: yes
+        unique: true
       image_type:
         type: str
         required: true
-        unique: yes
       sha256:
         type: str
         required: true
@@ -23,3 +22,4 @@ sequence:
         sequence:
           - type: str
             required: true
+            unique: true
