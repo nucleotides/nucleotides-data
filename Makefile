@@ -1,4 +1,4 @@
-validate = ! bundle exec kwalify -lf $1 | grep INVALID
+validate = ! bundle exec kwalify -lf $1 | grep --after-context=1 INVALID
 data     = $(subst .yml,,$(shell ls data))
 name     = nucleotides/data
 
@@ -13,7 +13,7 @@ deploy: .image
 	docker tag $(name) $(name):staging
 	docker push $(name):staging
 
-.image: $(shell find data -name '*.yml') Dockerfile
+.image: $(shell find controlled_vocabulary inputs -name '*.yml') Dockerfile
 	docker build --tag=$(name) .
 	touch $@
 
@@ -23,11 +23,18 @@ deploy: .image
 #
 ################################################
 
-test: $(foreach i,$(data),.test_token/$i)
+types  = $(addprefix cv/,$(shell ls controlled_vocabulary))
+inputs = $(addprefix inputs/,$(shell ls inputs))
 
-.test_token/%: schema/%.yml data/%.yml
+test: $(addprefix .test_token/,$(inputs) $(types))
+
+.test_token/inputs/%: schema/% inputs/%
 	$(call validate,$^)
-	touch $@
+	@touch $@
+
+.test_token/cv/%: schema/controlled_vocabulary.yml controlled_vocabulary/%
+	$(call validate,$^)
+	@touch $@
 
 ################################################
 #
@@ -36,7 +43,7 @@ test: $(foreach i,$(data),.test_token/$i)
 ################################################
 
 bootstrap: Gemfile.lock
-	mkdir .test_token
+	mkdir -p .test_token/cv .test_token/inputs
 
 Gemfile.lock: Gemfile
 	bundle install

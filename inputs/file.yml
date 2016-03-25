@@ -1,11 +1,10 @@
 ---
 - name: jgi_isolate_microbe_2x150_1
-  platform: illumina
-  product: random
-  protocol: nextera
-  run_mode: 2x150_270
+  platform_type: hiseq_2500
+  protocol_type: nextera
+  run_mode_type: 2x150_270
   input_data_source: ecoli_k12
-  description: >
+  desc: >
     A plain text description of where these reads came from and how they were
     produced.
   files:
