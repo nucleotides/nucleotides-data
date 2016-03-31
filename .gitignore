@@ -1,3 +1,5 @@
+vendor
 Gemfile.lock
 .test_token
 .image
+.bundle

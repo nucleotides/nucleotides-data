@@ -8,6 +8,8 @@ machine:
 dependencies:
   override:
     - ./script/bootstrap
+  cache_directories:
+    - "vendor/bundle"
 
 test:
   override:

@@ -19,14 +19,12 @@ deploy: .image
 
 ################################################
 #
-# Test data with the schema
+# Ensure inputs match schema, and S3 files exist
 #
 ################################################
 
 types  = $(addprefix cv/,$(shell ls controlled_vocabulary))
 inputs = $(addprefix inputs/,$(shell ls inputs))
-
-test: $(addprefix .test_token/,$(inputs) $(types))
 
 .test_token/inputs/%: schema/% inputs/%
 	$(call validate,$^)
@@ -35,6 +33,12 @@ test: $(addprefix .test_token/,$(inputs) $(types))
 .test_token/cv/%: schema/controlled_vocabulary.yml controlled_vocabulary/%
 	$(call validate,$^)
 	@touch $@
+
+.test_token/input_s3_files_exist: ./bin/validate-s3-files inputs/file.yml inputs/biological_source.yml
+	@bundle exec $^
+	@touch $@
+
+test: $(addprefix .test_token/,$(inputs) $(types)) .test_token/input_s3_files_exist
 
 ################################################
 #
@@ -45,5 +49,7 @@ test: $(addprefix .test_token/,$(inputs) $(types))
 bootstrap: Gemfile.lock
 	mkdir -p .test_token/cv .test_token/inputs
 
+
+
 Gemfile.lock: Gemfile
-	bundle install
+	bundle install --path vendor/bundle
