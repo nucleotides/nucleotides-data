@@ -49,5 +49,7 @@ test: $(addprefix .test_token/,$(inputs) $(types)) .test_token/input_s3_files_ex
 bootstrap: Gemfile.lock
 	mkdir -p .test_token/cv .test_token/inputs
 
+
+
 Gemfile.lock: Gemfile
-	bundle install
+	bundle install --path vendor/bundle
