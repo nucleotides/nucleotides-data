@@ -34,7 +34,7 @@ inputs = $(addprefix inputs/,$(shell ls inputs))
 	$(call validate,$^)
 	@touch $@
 
-.test_token/input_s3_files_exist: ./bin/validate-s3-files inputs/file.yml
+.test_token/input_s3_files_exist: ./bin/validate-s3-files inputs/file.yml inputs/biological_source.yml
 	@bundle exec $^
 	@touch $@
 

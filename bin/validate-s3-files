@@ -38,10 +38,16 @@ def get_connection(bucket)
   con.directories.get(bucket)
 end
 
-data = YAML.load(File.read(ARGV.first)).
-  map{|i| i['files']}.
+input_files_file, biological_source_file = ARGV
+
+input_files = YAML.load(File.read(input_files_file)).map{|i| i['files']}
+biological_sources = YAML.load(File.read(biological_source_file)).map{|i| i['references']}
+
+data = input_files.
+  concat(biological_sources).
   flatten.
   map{|i| i['url']}.
+  sort.
   map{|i| i.split('/', 4)[2, 2]}.
   group_by(&:first)
 
