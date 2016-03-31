@@ -1,0 +1,71 @@
+#!/usr/bin/env ruby
+
+require 'fog/aws'
+require 'colorize'
+require 'inifile'
+
+CREDS = {
+  'secret_key' => {env: 'AWS_SECRET_KEY', file: 'aws_secret_access_key'},
+  'access_key' => {env: 'AWS_ACCESS_KEY', file: 'aws_access_key_id'}
+}
+
+def fetch_credential(name)
+  if cred = ENV[CREDS[name][:env]]
+    return cred
+  end
+
+  cred_file = File.join(ENV['HOME'], '.aws', 'credentials')
+  if not File.exists?(cred_file)
+    STDERR.puts "No environment variable set or credential file found for: #{name}"
+    exit 1
+  end
+
+  if cred = IniFile.load(cred_file)['default'][CREDS[name][:file]]
+    return cred
+  else
+    STDERR.puts "No credential file entry found for: #{CREDS[name][:file]}"
+    exit 1
+  end
+end
+
+def get_connection(bucket)
+  con = Fog::Storage.new({
+    :provider                 => 'AWS',
+    :region                   => 'us-west-1',
+    :aws_access_key_id        => fetch_credential('access_key'),
+    :aws_secret_access_key    => fetch_credential('secret_key'),
+  })
+  con.directories.get(bucket)
+end
+
+data = YAML.load(File.read(ARGV.first)).
+  map{|i| i['files']}.
+  flatten.
+  map{|i| i['url']}.
+  map{|i| i.split('/', 4)[2, 2]}.
+  group_by(&:first)
+
+ok = true
+
+puts "\nChecking S3 input files\n"
+data.each do |bucket, files|
+  con = get_connection(bucket)
+  files.map(&:last).each do |file|
+    exists = con.files.head(file)
+    STDOUT.print "  --> #{file} ... "
+    if exists
+      STDOUT.puts "OK".colorize(:green)
+    else
+      ok = false
+      STDOUT.puts "NOT FOUND".colorize(:red)
+    end
+  end
+end
+
+if ok
+  STDOUT.puts "\nSuccess. All files found.\n".colorize(:green)
+  exit 0
+else
+  STDOUT.puts "\nFailure. Some files missing.\n".colorize(:red)
+  exit 1
+end
