@@ -1,0 +1,9 @@
+---
+- name: amycolatopsis_sulphurea_dsm_46092
+  desc: >
+    A microbe with a improved-draft reference genome generated using PacBio at the JGI.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: d2a60c17386f344a6edc08b5b3b389536c36aae1b8d6fc9394e1c132148288e7
+      url: s3://nucleotides-prod/inputs/d2/d2a60c17386f344a6edc08b5b3b389536c36aae1b8d6fc9394e1c132148288e7

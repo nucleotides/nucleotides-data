@@ -1,0 +1,9 @@
+---
+- name: ng50
+  desc: N50 normalised by reference genome length
+- name: lg50
+  desc: L50 normalised by reference genome length
+- name: max_memory_usage
+  desc: Memory usage when running the producing Docker container
+- name: max_cpu_usage
+  desc: CPU usage when running the producing Docker container

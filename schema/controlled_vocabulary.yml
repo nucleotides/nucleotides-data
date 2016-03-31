@@ -3,9 +3,11 @@ type: seq
 sequence:
   - type: map
     mapping:
-      description:
+      name:
         type: str
         required: true
-      id:
-        type: int
+        unique: true
+        pattern: /^[a-z0-9_]*$/
+      desc:
+        type: str
         required: true
