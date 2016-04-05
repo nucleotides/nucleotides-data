@@ -1,7 +1,54 @@
----
-- name: illumina_isolate_reference_assembly
-  desc: Evaluate genome assemblers using reads and reference genome
-  product_image_type: short_read_assembler
+# bio_source
+- 
+  data_source_name: amycolatopsis_sulphurea_dsm_46092
+  desc: "A microbe improved-draft reference genome generated using PacBio at the JGI."
+  source_type: microbe
+  references: 
+    - 
+      file_type: reference_fasta
+      sha256: d2a60c17386f344a6edc08b5b3b389536c36aae1b8d6fc9394e1c132148288e7
+      url: "s3://nucleotides-prod/inputs/d2/d2a60c17386f344a6edc08b5b3b389536c36aae1b8d6fc9394e1c132148288e7"
+          
+#file
+-
+#  data_source_name: amycolatopsis_sulphurea_dsm_46092
+  desc: "A JGI sequenced microbe then in-silico subsampled without replacement down to 2.5M read pairs."
+  data_sets: jgi_microbe_00001
+  platform_type: miseq
+  protocol_type: regular_fragment
+  run_mode_type: 2x150_300
+  files: 
+    - 
+      file_type: short_read_fastq
+      sha256: 4376581c14355fcf38cc9fdb962b41b8fe68e2d6637efbfdbe10089ce8019c07
+      url: "s3://nucleotides-prod/inputs/43/4376581c14355fcf38cc9fdb962b41b8fe68e2d6637efbfdbe10089ce8019c07"
+    - 
+      file_type: short_read_fastq
+      sha256: 573722ec83179cfb156f8a613691ee7c7d250770b42b111ae58720a8d22dae97
+      url: "s3://nucleotides-prod/inputs/57/573722ec83179cfb156f8a613691ee7c7d250770b42b111ae58720a8d22dae97"
+    - 
+      file_type: short_read_fastq
+      sha256: 7c0f39a7530fed4082f41e46b5b4641e0f4cf9885c3f7d2e734c23ba9a97c291
+      url: "s3://nucleotides-prod/inputs/7c/7c0f39a7530fed4082f41e46b5b4641e0f4cf9885c3f7d2e734c23ba9a97c291"
+    - 
+      file_type: short_read_fastq
+      sha255: 922780a19b56d28f8aa792937fd8dec27563576c62d8323d104385a0136f64a9
+      url: "s3://nucleotides-prod/inputs/92/922780a19b56d28f8aa792937fd8dec27563576c62d8323d104385a0136f64a9"
+ 
+# benchmark
+- 
+  benchmark_name: illumina_isolate_reference_assembly
+  desc: "Evaluate genome assemblers using reads and reference genome"
   evaluation_image_type: reference_assembly_evaluation
-  data_sets:
-    - jgi_microbe_00001
+  image_type: short_read_assembler
+#  data_sets: 
+#    - jgi_microbe_00001
+
+# image
+- 
+#image_type: short_read_assembler
+  name: bioboxes/ray
+  sha256: faa7f64683ae2e9d364127a173dadb6a42f9fe90799625944cfcadb27fdd5a29
+  tasks: 
+    - default
+...
