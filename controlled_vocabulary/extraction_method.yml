@@ -1,0 +1,7 @@
+---
+  - name: cultured_colony_isolate
+    desc: DNA extracted from a single colony
+  - name: multiple_displacement_amplification
+    desc: DNA extracted from random priming and amplification
+  - name: environmental_sample
+    desc: DNA extracted from a mixed environmental sample
