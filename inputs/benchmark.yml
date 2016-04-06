@@ -4,4 +4,5 @@
   product_image_type: short_read_assembler
   evaluation_image_type: reference_assembly_evaluation
   data_sets:
-    - jgi_microbe_00001
+    - source: amycolatopsis_sulphurea_dsm_46092
+      data: regular_fragment_1
