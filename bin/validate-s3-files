@@ -55,7 +55,7 @@ data.each do |bucket, files|
   con = get_connection(bucket)
   files.map(&:last).each do |file|
     exists = con.files.head(file)
-    STDOUT.print "  --> #{file} ... "
+    STDOUT.print "  --> #{file} ".ljust(90, '.')
     if exists
       STDOUT.puts "OK".colorize(:green)
     else

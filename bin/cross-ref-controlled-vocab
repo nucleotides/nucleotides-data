@@ -1,0 +1,58 @@
+#!/usr/bin/env ruby
+
+require 'yaml'
+require 'colorize'
+
+def walk(acc, item)
+  return case item
+  when Hash
+    acc + (item.map do |(key, value)|
+      if key.to_s =~ /_type$/
+        [[key, value]] + walk([], value)
+      else
+        walk([], value)
+      end
+    end)
+  when Array
+    acc += item.map{|i| walk([], i)}
+  else
+    acc
+  end.flatten
+end
+
+cv = Hash[Dir['controlled_vocabulary/*'].map do |cv_file|
+  category =  File.basename(cv_file).split('.').first + "_type"
+  terms    = YAML.load(File.read(cv_file)).map{|i| i['name']}
+  [category, terms]
+end]
+cv['product_image_type'] = cv['image_type']
+cv['evaluation_image_type'] = cv['image_type']
+
+ok = true
+
+puts "\nChecking controlled vocabulary references\n"
+ARGV.each do |path|
+
+  errors = walk([], YAML.load(File.read(path))).
+    each_slice(2).
+    reject{|(k, v)| cv[k].include? v}
+
+  STDOUT.print "  --> #{path} ".ljust(90, '.')
+  if errors.empty?
+    STDOUT.puts " OK".colorize(:green)
+  else
+    ok = false
+    STDOUT.puts " ERROR".colorize(:red)
+    errors.each do |(k, v)|
+      STDOUT.puts "       * illegal #{k.gsub('_', ' ')}: #{v}".colorize(:red)
+    end
+  end
+end
+
+if ok
+  STDOUT.puts "\nSuccess. All types are valid CV terms.\n".colorize(:green)
+  exit 0
+else
+  STDOUT.puts "\nFailure. Some types are not valid CV terms.\n".colorize(:red)
+  exit 1
+end
