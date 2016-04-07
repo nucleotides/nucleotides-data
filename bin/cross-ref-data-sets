@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+require 'yaml'
+require 'colorize'
+
+benchmark_file, *input_files = ARGV
+
+inputs = Hash[input_files.map do |path|
+  source = File.basename(path).split('.').first
+  data_sets = YAML.load(File.read(path))['data'].map{|i| i['name']}
+  [source, data_sets]
+end]
+
+
+ok = true
+
+puts "\nChecking benchmark data set references\n"
+
+YAML.load(File.read(benchmark_file)).each do |benchmark|
+
+  errors = benchmark['data_sets'].
+    reject{|(k, v)| inputs[k].include? v}
+
+  STDOUT.print "  --> #{benchmark['name']} ".ljust(90, '.')
+  if errors.empty?
+    STDOUT.puts " OK".colorize(:green)
+  else
+    ok = false
+    STDOUT.puts " ERROR".colorize(:red)
+    errors.each do |(k, v)|
+      STDOUT.puts "       * unknown data set #{k} / #{v}".colorize(:red)
+    end
+  end
+end
+
+if ok
+  STDOUT.puts "\nSuccess. All benchmark data sets are valid.\n".colorize(:green)
+  exit 0
+else
+  STDOUT.puts "\nFailure. Some benchmark data sets are not valid.\n".colorize(:red)
+  exit 1
+end

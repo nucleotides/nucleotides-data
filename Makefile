@@ -28,11 +28,11 @@ inputs = $(shell find inputs -maxdepth 1 -type f)
 files  = $(shell find inputs/data -type f)
 
 .test_token/inputs/%: schema/% inputs/%
-	$(call validate,$^)
+	@$(call validate,$^)
 	@touch $@
 
 .test_token/inputs/data/%: schema/datum.yml inputs/data/%
-	$(call validate,$^)
+	@$(call validate,$^)
 	@touch $@
 
 .test_token/controlled_vocabulary/%: schema/controlled_vocabulary.yml controlled_vocabulary/%
@@ -40,16 +40,21 @@ files  = $(shell find inputs/data -type f)
 	@touch $@
 
 .test_token/input_s3_files_exist: ./bin/validate-s3-files $(files)
-	bundle exec $^
-	touch $@
+	@bundle exec $^
+	@touch $@
 
 .test_token/cv_cross_refs: ./bin/cross-ref-controlled-vocab $(inputs) $(files)
-	bundle exec $^
-	touch $@
+	@bundle exec $^
+	@touch $@
+
+.test_token/data_cross_refs: ./bin/cross-ref-data-sets inputs/benchmark.yml $(files)
+	@bundle exec $^
+	@touch $@
 
 test: $(addprefix .test_token/,$(inputs) $(types) $(files)) \
 	.test_token/input_s3_files_exist \
-	.test_token/cv_cross_refs
+	.test_token/cv_cross_refs \
+	.test_token/data_cross_refs
 
 ################################################
 #
