@@ -25,11 +25,13 @@ cv = Hash[Dir['controlled_vocabulary/*'].map do |cv_file|
   terms    = YAML.load(File.read(cv_file)).map{|i| i['name']}
   [category, terms]
 end]
+cv['product_image_type'] = cv['image_type']
+cv['evaluation_image_type'] = cv['image_type']
 
 ok = true
 
 puts "\nChecking controlled vocabularly references\n"
-ARGV.sort.each do |path|
+ARGV.each do |path|
 
   errors = walk([], YAML.load(File.read(path))).
     each_slice(2).

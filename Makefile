@@ -43,7 +43,7 @@ files  = $(shell find inputs/data -type f)
 	bundle exec $^
 	touch $@
 
-.test_token/cv_cross_refs: ./bin/cross-ref-controlled-vocab inputs/image.yml $(files)
+.test_token/cv_cross_refs: ./bin/cross-ref-controlled-vocab $(inputs) $(files)
 	bundle exec $^
 	touch $@
 
