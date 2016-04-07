@@ -10,3 +10,8 @@
   sha256: faa7f64683ae2e9d364127a173dadb6a42f9fe90799625944cfcadb27fdd5a29
   tasks:
     - default
+- image_type: reference_assembly_evaluation
+  name: bioboxes/quast
+  sha256: 1c70cbff3de254f26102cbd25e6c4cd0c30b2af99cd14297493690db7bfb4dbc
+  tasks:
+    - default
