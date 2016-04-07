@@ -43,11 +43,13 @@ files  = $(shell find inputs/data -type f)
 	bundle exec $^
 	touch $@
 
-.test_token/cv_cross_refs: ./bin/cross-ref-controlled-vocab $(files)
+.test_token/cv_cross_refs: ./bin/cross-ref-controlled-vocab inputs/image.yml $(files)
 	bundle exec $^
 	touch $@
 
-test: $(addprefix .test_token/,$(inputs) $(types) $(files)) .test_token/input_s3_files_exist
+test: $(addprefix .test_token/,$(inputs) $(types) $(files)) \
+	.test_token/input_s3_files_exist \
+	.test_token/cv_cross_refs
 
 ################################################
 #
