@@ -23,9 +23,9 @@ deploy: .image
 #
 ################################################
 
-types  = $(addprefix cv/,$(shell ls controlled_vocabulary))
+types  = $(shell find controlled_vocabulary -type f)
 inputs = $(shell find inputs -maxdepth 1 -type f)
-files = $(shell find inputs/data -maxdepth 1 -type f)
+files  = $(shell find inputs/data -type f)
 
 .test_token/inputs/%: schema/% inputs/%
 	$(call validate,$^)
@@ -35,11 +35,15 @@ files = $(shell find inputs/data -maxdepth 1 -type f)
 	$(call validate,$^)
 	@touch $@
 
-.test_token/cv/%: schema/controlled_vocabulary.yml controlled_vocabulary/%
+.test_token/controlled_vocabulary/%: schema/controlled_vocabulary.yml controlled_vocabulary/%
 	$(call validate,$^)
 	@touch $@
 
 .test_token/input_s3_files_exist: ./bin/validate-s3-files $(files)
+	bundle exec $^
+	touch $@
+
+.test_token/cv_cross_refs: ./bin/cross-ref-controlled-vocab $(files)
 	bundle exec $^
 	touch $@
 
@@ -52,7 +56,7 @@ test: $(addprefix .test_token/,$(inputs) $(types) $(files)) .test_token/input_s3
 ################################################
 
 bootstrap: Gemfile.lock
-	mkdir -p .test_token/cv .test_token/inputs/data
+	mkdir -p .test_token/controlled_vocabulary .test_token/inputs/data
 
 
 
