@@ -24,9 +24,14 @@ deploy: .image
 ################################################
 
 types  = $(addprefix cv/,$(shell ls controlled_vocabulary))
-inputs = $(addprefix inputs/,$(shell ls inputs))
+inputs = $(shell find inputs -maxdepth 1 -type f)
+files = $(shell find inputs/data -maxdepth 1 -type f)
 
 .test_token/inputs/%: schema/% inputs/%
+	$(call validate,$^)
+	@touch $@
+
+.test_token/inputs/data/%: schema/datum.yml inputs/data/%
 	$(call validate,$^)
 	@touch $@
 
@@ -38,7 +43,7 @@ inputs = $(addprefix inputs/,$(shell ls inputs))
 	@bundle exec $^
 	@touch $@
 
-test: $(addprefix .test_token/,$(inputs) $(types)) .test_token/input_s3_files_exist
+test: $(addprefix .test_token/,$(inputs) $(types) $(files)) .test_token/input_s3_files_exist
 
 ################################################
 #
@@ -47,7 +52,7 @@ test: $(addprefix .test_token/,$(inputs) $(types)) .test_token/input_s3_files_ex
 ################################################
 
 bootstrap: Gemfile.lock
-	mkdir -p .test_token/cv .test_token/inputs
+	mkdir -p .test_token/cv .test_token/inputs/data
 
 
 
