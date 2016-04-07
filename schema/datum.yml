@@ -1,0 +1,93 @@
+---
+type: map
+mapping:
+  source:
+    required: true
+    type: map
+    mapping:
+      desc:
+        required: true
+        type: str
+      source_type:
+        required: true
+        type: str
+        pattern: /^[a-z0-9_]*$/
+      references:
+        required: true
+        type: seq
+        sequence:
+          - type: map
+            required: true
+            mapping:
+              file_type:
+                required: true
+                type: str
+                pattern: /^[a-z0-9_]*$/
+              sha256:
+                type: str
+                required: true
+                unique: true
+                length: {max: 64, min: 64}
+                pattern: /^[a-f0-9]*$/
+              url:
+                type: str
+                required: true
+                unique: true
+                pattern: /^s3:\/\/.*/
+  data:
+    type: seq
+    required: true
+    sequence:
+      - type: map
+        required: true
+        mapping:
+          name:
+            required: true
+            type: str
+            unique: true
+            pattern: /^[a-z0-9_]*$/
+          desc:
+            required: true
+            type: str
+          platform_type:
+            required: true
+            type: str
+            pattern: /^[a-z0-9_]*$/
+          protocol_type:
+            required: true
+            type: str
+            pattern: /^[a-z0-9_]*$/
+          run_mode_type:
+            required: true
+            type: str
+            pattern: /^[a-z0-9_]*$/
+          extraction_method_type:
+            required: true
+            type: str
+            pattern: /^[a-z0-9_]*$/
+          material_type:
+            required: true
+            type: str
+            pattern: /^[a-z0-9_]*$/
+          files:
+            required: true
+            type: seq
+            sequence:
+              - type: map
+                required: true
+                mapping:
+                  file_type:
+                    required: true
+                    type: str
+                    pattern: /^[a-z0-9_]*$/
+                  sha256:
+                    type: str
+                    required: true
+                    unique: true
+                    length: {max: 64, min: 64}
+                    pattern: /^[a-f0-9]*$/
+                  url:
+                    type: str
+                    required: true
+                    unique: true
+                    pattern: /^s3:\/\/.*/

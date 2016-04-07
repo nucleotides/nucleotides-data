@@ -9,7 +9,7 @@ source:
       url: s3://nucleotides-prod/inputs/d2/d2a60c17386f344a6edc08b5b3b389536c36aae1b8d6fc9394e1c132148288e7
 data:
   - name: regular_fragment_1
-    source_type: colony_isolate
+    extraction_method_type: colony_isolate
     platform_type: miseq
     protocol_type: regular_fragment
     run_mode_type: 2x150_300
