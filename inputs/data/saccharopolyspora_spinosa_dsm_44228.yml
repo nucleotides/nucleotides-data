@@ -6,7 +6,7 @@ source:
   references:
     - file_type: reference_fasta
       sha256: 1c007ff281f4b19d1a1ea2170ce274a3f08aa848351f5c22ac6fb656a8d124ad
-      url: s3://nucleotides-prod/inputs/d2/1c007ff281f4b19d1a1ea2170ce274a3f08aa848351f5c22ac6fb656a8d124ad
+      url: s3://nucleotides-prod/inputs/1c/1c007ff281f4b19d1a1ea2170ce274a3f08aa848351f5c22ac6fb656a8d124ad
 data:
   - name: regular_fragment_1
     extraction_method_type: colony_isolate

@@ -39,9 +39,9 @@ files = $(shell find inputs/data -maxdepth 1 -type f)
 	$(call validate,$^)
 	@touch $@
 
-.test_token/input_s3_files_exist: ./bin/validate-s3-files inputs/file.yml inputs/biological_source.yml
-	@bundle exec $^
-	@touch $@
+.test_token/input_s3_files_exist: ./bin/validate-s3-files $(files)
+	bundle exec $^
+	touch $@
 
 test: $(addprefix .test_token/,$(inputs) $(types) $(files)) .test_token/input_s3_files_exist
 
