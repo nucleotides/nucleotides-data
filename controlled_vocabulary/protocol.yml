@@ -1,3 +1,5 @@
 ---
-- name: nextera
-  desc: Illumina nextera protocol
+- name: unamplified_regular_fragment
+  desc: Standard preparation when source material is available in sufficient quantities
+- name: nextera_amplified_fragment
+  desc: Amplification of source material when available in small quantities

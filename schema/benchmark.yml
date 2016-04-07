@@ -20,6 +20,9 @@ sequence:
         type: seq
         required: true
         sequence:
-          - type: str
+          - type: seq
             required: true
-            unique: true
+            sequence:
+              - type: str
+                required: true
+                pattern: /^[a-z0-9_]*$/
