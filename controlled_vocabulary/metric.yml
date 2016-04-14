@@ -1,9 +1,91 @@
 ---
-- name: ng50
-  desc: N50 normalised by reference genome length
-- name: lg50
-  desc: L50 normalised by reference genome length
 - name: max_memory_usage
   desc: Memory usage when running the producing Docker container
 - name: max_cpu_usage
   desc: CPU usage when running the producing Docker container
+- name: duplication_ratio
+  desc: A Quast assembly metric
+- name: indels_per_100_kbp
+  desc: Number of insertions and deletions per 100kbp
+- name: l50
+  desc: A number of sequences at which sum of lengths exceeds 50%
+- name: l75
+  desc: A number of sequences at which sum of lengths exceeds 75%
+- name: la50
+  desc: A Quast assembly metric
+- name: la75
+  desc: A Quast assembly metric
+- name: largest_alignment
+  desc: A Quast assembly metric
+- name: largest_contig
+  desc: A Quast assembly metric
+- name: lg50
+  desc: L50 normalised by reference genome length
+- name: lg75
+  desc: LG50 normalised by reference genome length
+- name: lga50
+  desc: A Quast assembly metric
+- name: lga75
+  desc: A Quast assembly metric
+- name: misassembled_contigs_length
+  desc: A Quast assembly metric
+- name: mismatches_per_100_kbp
+  desc: A Quast assembly metric
+- name: n50
+  desc: Length of sequences at which sum of lengths exceeds 50%
+- name: n75
+  desc: Length of sequences at which sum of lengths exceeds 75%
+- name: n_contigs_gt_0
+  desc: Number of contigs
+- name: n_contigs_gt_1000
+  desc: Number of contigs greater than 1,000bp
+- name: n_contigs_gt_5000
+  desc: Number of contigs greater than 5,000bp
+- name: n_contigs_gt_10000
+  desc: Number of contigs greater than 10,000bp
+- name: n_contigs_gt_25000
+  desc: Number of contigs greater than 25,000bp
+- name: n_contigs_gt_50000
+  desc: Number of contigs greater than 50,000bp
+- name: n_local_misassemblies
+  desc: A Quast assembly metric
+- name: n_misassemblies
+  desc: A Quast assembly metric
+- name: n_per_100_kbp
+  desc: Number of Ns per 100kbp
+- name: na50
+  desc: A Quast assembly metric
+- name: na75
+  desc: A Quast assembly metric
+- name: ng50
+  desc: N50 normalised by reference genome length
+- name: ng75
+  desc: A Quast assembly metric
+- name: nga50
+  desc: A Quast assembly metric
+- name: nga75
+  desc: A Quast assembly metric
+- name: perc_gc
+  desc: A Quast assembly metric
+- name: perc_genome_fraction
+  desc: A Quast assembly metric
+- name: perc_ref_gc
+  desc: Percent GC for reference sequence
+- name: reference_length
+  desc: Length of reference sequence
+- name: total_length_gt_0
+  desc: Number of contigs
+- name: total_length_gt_1000
+  desc: Sum of contig lengths greather than 1kbp
+- name: total_length_gt_10000
+  desc: Sum of contig lengths greather than 10kbp
+- name: total_length_gt_25000
+  desc: Sum of contig lengths greather than 25kbp
+- name: total_length_gt_5000
+  desc: Sum of contig lengths greather than 5kbp
+- name: total_length_gt_50000
+  desc: Sum of contig lengths greather than 50kbp
+- name: unaligned_length
+  desc: A Quast assembly metric
+- name: n_misassembled_contigs
+  desc: Number of missambled contigs

@@ -9,3 +9,5 @@
   desc: Reference sequence in FASTA format
 - name: contig_fasta
   desc: Reads assembled into larger contiguous sequences in FASTA format
+- name: assembly_metrics
+  desc: Quast genome assembly metrics file
