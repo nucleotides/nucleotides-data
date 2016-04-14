@@ -70,7 +70,7 @@
 - name: perc_genome_fraction
   desc: A Quast assembly metric
 - name: perc_ref_gc
-  desc: %GC for reference sequence
+  desc: Percent GC for reference sequence
 - name: reference_length
   desc: Length of reference sequence
 - name: total_length_gt_0
