@@ -19,7 +19,7 @@ puts "\nChecking benchmark data set references\n"
 YAML.load(File.read(benchmark_file)).each do |benchmark|
 
   errors = benchmark['data_sets'].
-    reject{|(k, v)| inputs[k].include? v}
+    reject{|(k, v)| (inputs.include? k) and (inputs[k].include? v)}
 
   STDOUT.print "  --> #{benchmark['name']} ".ljust(90, '.')
   if errors.empty?
