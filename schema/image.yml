@@ -10,16 +10,21 @@ sequence:
       image_type:
         type: str
         required: true
-      sha256:
-        type: str
-        required: true
-        unique: true
-        length: {max: 64, min: 64}
-        pattern: /^[a-f0-9]*$/
-      tasks:
+      versions:
         type: seq
-        required: true
         sequence:
-          - type: str
-            required: true
-            unique: true
+          - type: map
+            mapping:
+              sha256:
+                type: str
+                required: true
+                unique: true
+                length: {max: 64, min: 64}
+                pattern: /^[a-f0-9]*$/
+              tasks:
+                type: seq
+                required: true
+                sequence:
+                  - type: str
+                    required: true
+                    unique: true
