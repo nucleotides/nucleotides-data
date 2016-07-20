@@ -12,5 +12,5 @@
 - image_type: reference_assembly_evaluation
   name: bioboxes/quast
   versions:
-    - sha256: 9eb286f092252795a019feae2884887d3d78ba10fa516ee830ab919188d77bb6
+    - sha256: 1dfe1fb0eb84cd7344b6821cd4f4cdb3f5c1ccb330438eea640b4ce6fda1c4bb
       tasks: ["default"]
