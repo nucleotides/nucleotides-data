@@ -1,3 +1,5 @@
 ---
 - name: miseq
   desc: A desktop sequencer produced by Illumina
+- name: nextseq
+  desc: A desktop sequencer produced by Illumina

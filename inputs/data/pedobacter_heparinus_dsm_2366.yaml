@@ -1,0 +1,35 @@
+---
+source:
+  desc: >
+    A microbe with a improved-draft reference genome generated using PacBio at the JGI.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: 3e0b53cf9178bbe7ad01ea9ec19ee7225a7d025e8a8134ec8656cd4f389f1f59
+      url: s3://nucleotides-prod/inputs/3e/3e0b53cf9178bbe7ad01ea9ec19ee7225a7d025e8a8134ec8656cd4f389f1f59
+data:
+  - name: regular_fragment_1
+    material_type: dna
+    extraction_method_type: cultured_colony_isolate
+    platform_type: nextseq
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_300
+    desc: >
+      A JGI sequenced microbe then in-silico subsampled without replacement down to
+      2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: b77b8dcb3a3f0023b8a7c7501dc53f658f389a5ab7b931ce03b75825684e80c1
+        url: s3://nucleotides-prod/inputs/b7/b77b8dcb3a3f0023b8a7c7501dc53f658f389a5ab7b931ce03b75825684e80c1
+      - file_type: short_read_fastq
+        sha256: 0c6841c6101cb3ed00839c6cd1da10348707e9495ef6b20fafaf611804216461
+        url: s3://nucleotides-prod/inputs/0c/0c6841c6101cb3ed00839c6cd1da10348707e9495ef6b20fafaf611804216461
+      - file_type: short_read_fastq
+        sha256: 7d728063e6440f0dca597207680977b40350cd12d27b994d0df0dc719218a151
+        url: s3://nucleotides-prod/inputs/7d/7d728063e6440f0dca597207680977b40350cd12d27b994d0df0dc719218a151
+      - file_type: short_read_fastq
+        sha256: 7203ddc94d49ea5b175105cab8c5adcdc12d9b2b8fc9529a7e542ddfbe8b55ec
+        url: s3://nucleotides-prod/inputs/72/7203ddc94d49ea5b175105cab8c5adcdc12d9b2b8fc9529a7e542ddfbe8b55ec
+      - file_type: short_read_fastq
+        sha256: 4a84595166cbb054a7e7e9af488e9f598b2cd92a13955c588d757b3d0ad0529e
+        url: s3://nucleotides-prod/inputs/4a/4a84595166cbb054a7e7e9af488e9f598b2cd92a13955c588d757b3d0ad0529e
