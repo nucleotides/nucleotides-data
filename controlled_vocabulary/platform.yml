@@ -3,3 +3,5 @@
   desc: A desktop sequencer produced by Illumina
 - name: nextseq
   desc: A desktop sequencer produced by Illumina
+- name: hiseq_2500_rapid
+  desc: A high-throughput sequencer produced by Illumina
