@@ -19,6 +19,11 @@
   versions:
     - sha256: c710a81733d95b4fdc3e3fd9d7263c8251899c293ac446227b193d26545c1914
       tasks: ["default"]
+- image_type: short_read_assembler
+  name: bioboxes/spades
+  versions:
+    - sha256: dbc7a9ecb3b2869e53fb66c95b0936e570195a7c96a15c8d94a2775179aa2e80
+      tasks: ["default", "single-cell", "careful"]
 
 
 - image_type: reference_assembly_evaluation
