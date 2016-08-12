@@ -1,0 +1,36 @@
+---
+source:
+  desc: >
+    Meiothermus ruber DSM 1279 - A microbe with a improved-draft reference genome
+    generated using PacBio at the JGI.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: 87ba5b7fb94b3cdd28bdf9558c214126824d9b98583dd3264ba537208463891f
+      url: s3://nucleotides-prod/inputs/87/87ba5b7fb94b3cdd28bdf9558c214126824d9b98583dd3264ba537208463891f
+data:
+  - name: regular_fragment_1
+    material_type: dna
+    extraction_method_type: cultured_colony_isolate
+    platform_type: nextseq
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_300
+    desc: >
+      A JGI sequenced microbe then in-silico subsampled without replacement down to
+      2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: e99683bdbe810ab269c01785897a52e8f560edd6430e80a375edab830d91856a
+        url: s3://nucleotides-prod/inputs/e9/e99683bdbe810ab269c01785897a52e8f560edd6430e80a375edab830d91856a
+      - file_type: short_read_fastq
+        sha256: f692749303a97d04c3b1dd2993645203c033011eec8d02f809c0c3d3c4fdfe14
+        url: s3://nucleotides-prod/inputs/f6/f692749303a97d04c3b1dd2993645203c033011eec8d02f809c0c3d3c4fdfe14
+      - file_type: short_read_fastq
+        sha256: 315b4b240a4aefab6580b2df93c9285b56670cfb4bc090887536b1e802e304e5
+        url: s3://nucleotides-prod/inputs/31/315b4b240a4aefab6580b2df93c9285b56670cfb4bc090887536b1e802e304e5
+      - file_type: short_read_fastq
+        sha256: af3c7fe112a1ad729f0d30d31cfdc093dd0c159a206a3476a98ece51c285e3e8
+        url: s3://nucleotides-prod/inputs/af/af3c7fe112a1ad729f0d30d31cfdc093dd0c159a206a3476a98ece51c285e3e8
+      - file_type: short_read_fastq
+        sha256: 14a317340267002bd7763ebd18481e31d8426c65b92dba61b8adec3926f67176
+        url: s3://nucleotides-prod/inputs/14/14a317340267002bd7763ebd18481e31d8426c65b92dba61b8adec3926f67176

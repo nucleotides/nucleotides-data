@@ -1,3 +1,4 @@
+---
 source:
   desc: >
     Porticoccus hydrocarbonoclasticus MCTG13D - A microbe with a improved-draft
@@ -14,20 +15,22 @@ data:
     platform_type: hiseq_2500_rapid
     protocol_type: unamplified_regular_fragment
     run_mode_type: 2x150_270
-    description: Illumina sequencing with pacbio reference
+    desc: >
+      A JGI sequenced microbe then in-silico subsampled without replacement down to
+      2,500,000 read pairs.
     files:
-    - file_type: short_read_fastq
-      sha256: ff30f6c07bfb494d4bef91a43d0af0b3db6d771cc2032420d2ad80149383b882
-      url: s3://nucleotides-prod/inputs/ff/ff30f6c07bfb494d4bef91a43d0af0b3db6d771cc2032420d2ad80149383b882
-    - file_type: short_read_fastq
-      sha256: a7e0798dc648f3db0549d835a4c3d94ff13e9c1d10607a97decd28ad6dd12da9
-      url: s3://nucleotides-prod/inputs/a7/a7e0798dc648f3db0549d835a4c3d94ff13e9c1d10607a97decd28ad6dd12da9
-    - file_type: short_read_fastq
-      sha256: 864eadf9b59abd04db91e414deab290759aac248f74eecfa04e8ba82eaa20d1a
-      url: s3://nucleotides-prod/inputs/86/864eadf9b59abd04db91e414deab290759aac248f74eecfa04e8ba82eaa20d1a
-    - file_type: short_read_fastq
-      sha256: a299d3e32d137362627a6eaa936481cf2563020e882674471f57811f21108e55
-      url: s3://nucleotides-prod/inputs/a2/a299d3e32d137362627a6eaa936481cf2563020e882674471f57811f21108e55
-    - file_type: short_read_fastq
-      sha256: 9c8eb0734cc008b5d572355c9936b2782d2cbff311ce489a2880f078282009ce
-      url: s3://nucleotides-prod/inputs/9c/9c8eb0734cc008b5d572355c9936b2782d2cbff311ce489a2880f078282009ce
+      - file_type: short_read_fastq
+        sha256: ff30f6c07bfb494d4bef91a43d0af0b3db6d771cc2032420d2ad80149383b882
+        url: s3://nucleotides-prod/inputs/ff/ff30f6c07bfb494d4bef91a43d0af0b3db6d771cc2032420d2ad80149383b882
+      - file_type: short_read_fastq
+        sha256: a7e0798dc648f3db0549d835a4c3d94ff13e9c1d10607a97decd28ad6dd12da9
+        url: s3://nucleotides-prod/inputs/a7/a7e0798dc648f3db0549d835a4c3d94ff13e9c1d10607a97decd28ad6dd12da9
+      - file_type: short_read_fastq
+        sha256: 864eadf9b59abd04db91e414deab290759aac248f74eecfa04e8ba82eaa20d1a
+        url: s3://nucleotides-prod/inputs/86/864eadf9b59abd04db91e414deab290759aac248f74eecfa04e8ba82eaa20d1a
+      - file_type: short_read_fastq
+        sha256: a299d3e32d137362627a6eaa936481cf2563020e882674471f57811f21108e55
+        url: s3://nucleotides-prod/inputs/a2/a299d3e32d137362627a6eaa936481cf2563020e882674471f57811f21108e55
+      - file_type: short_read_fastq
+        sha256: 9c8eb0734cc008b5d572355c9936b2782d2cbff311ce489a2880f078282009ce
+        url: s3://nucleotides-prod/inputs/9c/9c8eb0734cc008b5d572355c9936b2782d2cbff311ce489a2880f078282009ce
