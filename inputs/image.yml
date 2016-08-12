@@ -9,8 +9,19 @@
   versions:
     - sha256: faa7f64683ae2e9d364127a173dadb6a42f9fe90799625944cfcadb27fdd5a29
       tasks:  ["default"]
+- image_type: short_read_assembler
+  name: bioboxes/tadpole
+  versions:
+    - sha256: d20cdfc02f9e305c931a93c34a8678791d2ebc084f257afd57a79f772e0b470d
+      tasks:  ["default", "careful"]
+
+
 - image_type: reference_assembly_evaluation
   name: bioboxes/quast
   versions:
     - sha256: 5af634ee3f1bc3f80a749ce768883a20f793e1791f8f404a316d7d7012423cb9
       tasks: ["default"]
+
+
+
+
