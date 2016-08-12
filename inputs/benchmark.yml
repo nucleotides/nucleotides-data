@@ -4,7 +4,12 @@
   product_image_type: short_read_assembler
   evaluation_image_type: reference_assembly_evaluation
   data_sets:
+    - ['algiphilus_aromaticivorans_dg1253', 'regular_fragment_1']
     - ['amycolatopsis_sulphurea_dsm_46092', 'regular_fragment_1']
-    - ['saccharopolyspora_spinosa_dsm_44228', 'regular_fragment_1']
+    - ['arenibacter_algicola_tg409', 'regular_fragment_1']
+    - ['escherichia_coli_str_k12_substr_mg1655', 'regular_fragment_1']
+    - ['meiothermus_ruber_dsm_1279', 'regular_fragment_1']
     - ['pedobacter_heparinus_dsm_2366', 'regular_fragment_1']
+    - ['polycyclovorans_algicola_tg408', 'regular_fragment_1']
     - ['porticoccus_hydrocarbonoclasticus_mctg13d', 'regular_fragment_1']
+    - ['saccharopolyspora_spinosa_dsm_44228', 'regular_fragment_1']
