@@ -1,7 +1,8 @@
 ---
 source:
   desc: >
-    A microbe with a improved-draft reference genome generated using PacBio at the JGI.
+    Amycolatopsis sulphurea DSM 46092 - A microbe with a improved-draft reference
+    genome generated using PacBio at the JGI.
   source_type: microbe
   references:
     - file_type: reference_fasta

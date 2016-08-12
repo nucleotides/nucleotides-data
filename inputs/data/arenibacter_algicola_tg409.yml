@@ -1,0 +1,36 @@
+---
+source:
+  desc: >
+    Arenibacter algicola TG409 - A microbe with a improved-draft reference genome
+    generated using PacBio at the JGI.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: 12c0aa92d3b0ba8b4504abfece6f16b1c22975838a2a5921cfb7c1be28b80ff7
+      url: s3://nucleotides-prod/inputs/12/12c0aa92d3b0ba8b4504abfece6f16b1c22975838a2a5921cfb7c1be28b80ff7
+data:
+  - name: regular_fragment_1
+    material_type: dna
+    extraction_method_type: cultured_colony_isolate
+    platform_type: hiseq_2500_rapid
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_270
+    desc: >
+      A JGI sequenced microbe then in-silico subsampled without replacement down to
+      2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: 2280144d12dd6b9b504dab3dea8ac99a78c3df3f437ccd4b7ff7c99e1dd99adc
+        url: s3://nucleotides-prod/inputs/22/2280144d12dd6b9b504dab3dea8ac99a78c3df3f437ccd4b7ff7c99e1dd99adc
+      - file_type: short_read_fastq
+        sha256: 3b736a3d404096c3b2ae8ed75eda07008ee9fe67f725f88ce2503956851548c0
+        url: s3://nucleotides-prod/inputs/3b/3b736a3d404096c3b2ae8ed75eda07008ee9fe67f725f88ce2503956851548c0
+      - file_type: short_read_fastq
+        sha256: 6a5b106ef7b9aef8fd4d9f0da933785bb317df26ae271418e3c1db86bbb38478
+        url: s3://nucleotides-prod/inputs/6a/6a5b106ef7b9aef8fd4d9f0da933785bb317df26ae271418e3c1db86bbb38478
+      - file_type: short_read_fastq
+        sha256: 6fd7b3c02f5492d138d5673dbfd2526f9a9a93db6a647816fe715369c9dfa045
+        url: s3://nucleotides-prod/inputs/6f/6fd7b3c02f5492d138d5673dbfd2526f9a9a93db6a647816fe715369c9dfa045
+      - file_type: short_read_fastq
+        sha256: 2c72d5037b9724ebb9bc4ca07d09123c4af3104de8ed4e4571c9f074e9b99da7
+        url: s3://nucleotides-prod/inputs/2c/2c72d5037b9724ebb9bc4ca07d09123c4af3104de8ed4e4571c9f074e9b99da7

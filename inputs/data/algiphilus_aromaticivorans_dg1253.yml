@@ -1,0 +1,35 @@
+source:
+  desc: >
+    Algiphilus aromaticivorans DG1253 - A microbe with a improved-draft reference
+    genome generated using PacBio at the JGI.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: d331a3477a63e5cd6e0d805ce2e5eb2bdb10af256c5f3c94a6aa5ef931b93ed7
+      url: s3://nucleotides-prod/inputs/d3/d331a3477a63e5cd6e0d805ce2e5eb2bdb10af256c5f3c94a6aa5ef931b93ed7
+data:
+  - material_type: dna
+    name: regular_fragment_1
+    extraction_method_type: cultured_colony_isolate
+    platform_type: hiseq_2500_rapid
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_270
+    desc: >
+      A JGI sequenced microbe then in-silico subsampled without replacement down to
+      2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: 6281b75d4cb3d36797280f42e9b26d7ccc91bd79341d61d04f49f055331726e1
+        url: s3://nucleotides-prod/inputs/62/6281b75d4cb3d36797280f42e9b26d7ccc91bd79341d61d04f49f055331726e1
+      - file_type: short_read_fastq
+        sha256: 32a829871a5bf792d14200ab8546cec8453431bf81c1b06c65af87da9612bf85
+        url: s3://nucleotides-prod/inputs/32/32a829871a5bf792d14200ab8546cec8453431bf81c1b06c65af87da9612bf85
+      - file_type: short_read_fastq
+        sha256: 6b4a3e2dcd734b0deda3d80f4a4101ff935158b811bc39d33b14c9102d886def
+        url: s3://nucleotides-prod/inputs/6b/6b4a3e2dcd734b0deda3d80f4a4101ff935158b811bc39d33b14c9102d886def
+      - file_type: short_read_fastq
+        sha256: 185eeeea8a0e5d71c4edaf4b115288f5faff4325381f72d1c56828d8f522e6fa
+        url: s3://nucleotides-prod/inputs/18/185eeeea8a0e5d71c4edaf4b115288f5faff4325381f72d1c56828d8f522e6fa
+      - file_type: short_read_fastq
+        sha256: 53901c293b0b43e06a92fbe175f1ebf49e228a76dadaaab0dae9e3b8af733502
+        url: s3://nucleotides-prod/inputs/53/53901c293b0b43e06a92fbe175f1ebf49e228a76dadaaab0dae9e3b8af733502

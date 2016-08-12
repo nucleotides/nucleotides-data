@@ -1,0 +1,36 @@
+---
+source:
+  desc: >
+    Escherichia coli str. K-12 substr. MG1655 - A microbe with a improved-draft
+    reference genome generated using PacBio at the JGI.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: bdfc50ee18756757ac8e93182bde5657dda5ec47dd6238ff44368b14c74fbb23
+      url: s3://nucleotides-prod/inputs/bd/bdfc50ee18756757ac8e93182bde5657dda5ec47dd6238ff44368b14c74fbb23
+data:
+  - name: regular_fragment_1
+    material_type: dna
+    extraction_method_type: cultured_colony_isolate
+    platform_type: nextseq
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_300
+    desc: >
+      A JGI sequenced microbe then in-silico subsampled without replacement down to
+      2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: 71adb41354513a0347aa5bd5690c5160d851ff089edcefebb8ed88031ea992bc
+        url: s3://nucleotides-prod/inputs/71/71adb41354513a0347aa5bd5690c5160d851ff089edcefebb8ed88031ea992bc
+      - file_type: short_read_fastq
+        sha256: 6191a9d6b1a22c8767dcaf7e31972a7caf4e4b50f8bdaedba317053ee7ff6b0b
+        url: s3://nucleotides-prod/inputs/61/6191a9d6b1a22c8767dcaf7e31972a7caf4e4b50f8bdaedba317053ee7ff6b0b
+      - file_type: short_read_fastq
+        sha256: f081dfd2100a8ccf0c92e40a6226b9e88e4242554e9454b4cdfabc94e41f1f93
+        url: s3://nucleotides-prod/inputs/f0/f081dfd2100a8ccf0c92e40a6226b9e88e4242554e9454b4cdfabc94e41f1f93
+      - file_type: short_read_fastq
+        sha256: 39ee5918fd28aa13c0331aa82b0ff9e99a57ebfd8e1d2c52bfe0c452f84e0c6e
+        url: s3://nucleotides-prod/inputs/39/39ee5918fd28aa13c0331aa82b0ff9e99a57ebfd8e1d2c52bfe0c452f84e0c6e
+      - file_type: short_read_fastq
+        sha256: 78092be64bf3c84a41cfa7f0b5aa59994300b339393fea779ecdd2ef45b00df9
+        url: s3://nucleotides-prod/inputs/78/78092be64bf3c84a41cfa7f0b5aa59994300b339393fea779ecdd2ef45b00df9

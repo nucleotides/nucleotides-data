@@ -1,0 +1,36 @@
+---
+source:
+  desc: >
+    Pedobacter heparinus DSM 2366 - A microbe with a improved-draft reference genome
+    generated using PacBio at the JGI.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: 08185ece64b31a6bf6c09dbf59069a78dbfba55f34ba28c97ffb5212de9aa162
+      url: s3://nucleotides-prod/inputs/08/08185ece64b31a6bf6c09dbf59069a78dbfba55f34ba28c97ffb5212de9aa162
+data:
+  - name: regular_fragment_1
+    material_type: dna
+    extraction_method_type: cultured_colony_isolate
+    platform_type: hiseq_2500_rapid
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_270
+    desc: >
+      A JGI sequenced microbe then in-silico subsampled without replacement down to
+      2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: 2230aa9c078a503ace38ea166a01667c57fe917ded2966ca28ec0201c91e6c09
+        url: s3://nucleotides-prod/inputs/22/2230aa9c078a503ace38ea166a01667c57fe917ded2966ca28ec0201c91e6c09
+      - file_type: short_read_fastq
+        sha256: 6a397472aebf7625ab2ee2abada3f8bcdfd1aeea81f672c3f44153eef6b2b827
+        url: s3://nucleotides-prod/inputs/6a/6a397472aebf7625ab2ee2abada3f8bcdfd1aeea81f672c3f44153eef6b2b827
+      - file_type: short_read_fastq
+        sha256: e6e4638781340fdbcc121732fe573e71a1741f51eda2ebbd9c79604de0de6476
+        url: s3://nucleotides-prod/inputs/e6/e6e4638781340fdbcc121732fe573e71a1741f51eda2ebbd9c79604de0de6476
+      - file_type: short_read_fastq
+        sha256: f97a5ef540b34d3a687443fef1b3a1a6a96047eced054832ddabd0ecefe73814
+        url: s3://nucleotides-prod/inputs/f9/f97a5ef540b34d3a687443fef1b3a1a6a96047eced054832ddabd0ecefe73814
+      - file_type: short_read_fastq
+        sha256: bb237230eeac226d5318d1598f838fd8a3cc77ef5f2e9fa7bf462ff44239fcac
+        url: s3://nucleotides-prod/inputs/bb/bb237230eeac226d5318d1598f838fd8a3cc77ef5f2e9fa7bf462ff44239fcac
