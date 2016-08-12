@@ -14,6 +14,11 @@
   versions:
     - sha256: d20cdfc02f9e305c931a93c34a8678791d2ebc084f257afd57a79f772e0b470d
       tasks:  ["default", "careful"]
+- image_type: short_read_assembler
+  name: bioboxes/stride
+  versions:
+    - sha256: c710a81733d95b4fdc3e3fd9d7263c8251899c293ac446227b193d26545c1914
+      tasks: ["default"]
 
 
 - image_type: reference_assembly_evaluation
@@ -21,7 +26,3 @@
   versions:
     - sha256: 5af634ee3f1bc3f80a749ce768883a20f793e1791f8f404a316d7d7012423cb9
       tasks: ["default"]
-
-
-
-
