@@ -1,4 +1,6 @@
 ---
+- name: total_wall_clock_time_in_seconds
+  desc: Actual time taken from starting the Docker container until it completes
 - name: max_memory_usage
   desc: Memory usage when running the producing Docker container
 - name: max_cpu_usage
