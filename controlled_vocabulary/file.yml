@@ -1,6 +1,6 @@
 ---
-- name: log
-  desc: Free form text output from running the benchmarks
+- name: container_log
+  desc: Free form text output produced by the container being benchmarked
 - name: container_runtime_metrics
   desc: Runtime metrics collected while running the Docker container
 - name: short_read_fastq
