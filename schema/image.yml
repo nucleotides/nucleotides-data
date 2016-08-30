@@ -21,6 +21,11 @@ sequence:
                 unique: true
                 length: {max: 64, min: 64}
                 pattern: /^[a-f0-9]*$/
+              name:
+                type: str
+                required: true
+                unique: true
+                pattern: /^[\w -.]*$/
               tasks:
                 type: seq
                 required: true
