@@ -1,10 +1,20 @@
 ---
+- name: total_cpu_usage_in_seconds
+  desc: Total CPU time in seconds
+- name: total_cpu_usage_in_seconds_in_kernelmode
+  desc: Total kernal mode CPU time in seconds
+- name: total_cpu_usage_in_seconds_in_usermode
+  desc: Total kernal mode CPU time in seconds
+- name: total_memory_usage_in_megabytes
+  desc: Total memory usage
+- name: total_rss_in_megabytes
+  desc: Total resident set size
+- name: total_read_io_in_megabytes
+  desc: Total read operations
+- name: total_write_io_in_megabytes
+  desc: Total write operations
 - name: total_wall_clock_time_in_seconds
   desc: Actual time taken from starting the Docker container until it completes
-- name: max_memory_usage
-  desc: Memory usage when running the producing Docker container
-- name: max_cpu_usage
-  desc: CPU usage when running the producing Docker container
 - name: duplication_ratio
   desc: A Quast assembly metric
 - name: indels_per_100_kbp
