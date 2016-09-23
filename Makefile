@@ -1,21 +1,5 @@
 validate = ! bundle exec kwalify -lf $1 | grep --after-context=1 INVALID
 data     = $(subst .yml,,$(shell ls data))
-name     = nucleotides/data
-
-################################################
-#
-# Deploy data container
-#
-################################################
-
-deploy: .image
-	docker login --username=$$DOCKER_USER --password=$$DOCKER_PASS --email=$$DOCKER_EMAIL
-	docker tag $(name) $(name):staging
-	docker push $(name):staging
-
-.image: $(shell find controlled_vocabulary inputs -name '*.yml') Dockerfile
-	docker build --tag=$(name) .
-	touch $@
 
 ################################################
 #

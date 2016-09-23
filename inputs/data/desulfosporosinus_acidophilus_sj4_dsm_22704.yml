@@ -1,0 +1,36 @@
+source:
+  desc: >
+    Desulfosporosinus acidophilus SJ4 DSM 22704 - A microbe with a high quality
+    reference genome.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: bd73d450d01bd25f51cac38f814f7662c5abc1243c5d116d5b8dcd0247dff406
+      url: s3://nucleotides-prod/inputs/bd/bd73d450d01bd25f51cac38f814f7662c5abc1243c5d116d5b8dcd0247dff406
+data:
+  - material_type: dna
+    name: regular_fragment_1
+    extraction_method_type: cultured_colony_isolate
+    platform_type: hiseq_2500
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_270
+    desc: >
+      A microbe sequenced as part of a mixed sample of microbes creating a metagenome
+      mock-community. The mock-community reads were in-silico mapped back to the reference
+      genome and then subsampled without replacement down to 2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: 19a0bf49a1fbe971ddf010f43965bcf820652069b699f857ffd3a696392c48f6
+        url: s3://nucleotides-prod/inputs/19/19a0bf49a1fbe971ddf010f43965bcf820652069b699f857ffd3a696392c48f6
+      - file_type: short_read_fastq
+        sha256: 565682a79b57ce160f96334cecaca65c73810886d83104f0dfb1aa3ed915c2cf
+        url: s3://nucleotides-prod/inputs/56/565682a79b57ce160f96334cecaca65c73810886d83104f0dfb1aa3ed915c2cf
+      - file_type: short_read_fastq
+        sha256: 482ef14596d5fdf525be1b52aef5ff11aa8ea2a9e2d9c038e159f1599c02d542
+        url: s3://nucleotides-prod/inputs/48/482ef14596d5fdf525be1b52aef5ff11aa8ea2a9e2d9c038e159f1599c02d542
+      - file_type: short_read_fastq
+        sha256: 778a2a8dc7356f16fb3c1c2e8e887c30a7b47d2b12e0074b48116092fa6eaad0
+        url: s3://nucleotides-prod/inputs/77/778a2a8dc7356f16fb3c1c2e8e887c30a7b47d2b12e0074b48116092fa6eaad0
+      - file_type: short_read_fastq
+        sha256: fd94fe5856225f5398a7ef65690b53c2c3a7314315a2c5d65a8d2dd206025f44
+        url: s3://nucleotides-prod/inputs/fd/fd94fe5856225f5398a7ef65690b53c2c3a7314315a2c5d65a8d2dd206025f44

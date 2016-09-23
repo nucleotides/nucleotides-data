@@ -1,0 +1,35 @@
+source:
+  desc: >
+    Hirschia baltica ATCC 49814 - A microbe with a high quality reference genome.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: ab08f2d036dd551df9cb4bd0181c6f4b9a5b448cca18fd30efb8645dad283dd9
+      url: s3://nucleotides-prod/inputs/ab/ab08f2d036dd551df9cb4bd0181c6f4b9a5b448cca18fd30efb8645dad283dd9
+data:
+  - material_type: dna
+    name: regular_fragment_1
+    extraction_method_type: cultured_colony_isolate
+    platform_type: hiseq_2500
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_270
+    desc: >
+      A microbe sequenced as part of a mixed sample of microbes creating a metagenome
+      mock-community. The mock-community reads were in-silico mapped back to the reference
+      genome and then subsampled without replacement down to 2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: 2f327e79d346eb88ed795ea0b096a0f5e117259b25abdcc97c60d5174a56e512
+        url: s3://nucleotides-prod/inputs/2f/2f327e79d346eb88ed795ea0b096a0f5e117259b25abdcc97c60d5174a56e512
+      - file_type: short_read_fastq
+        sha256: 3ca6e6a6232e603aa8a61e7831c773607bce397a68e9dbce28f61bf79bbc17e4
+        url: s3://nucleotides-prod/inputs/3c/3ca6e6a6232e603aa8a61e7831c773607bce397a68e9dbce28f61bf79bbc17e4
+      - file_type: short_read_fastq
+        sha256: b713855b3838080e436bdee018885c4dd18262699f148283eded7d1ee720d152
+        url: s3://nucleotides-prod/inputs/b7/b713855b3838080e436bdee018885c4dd18262699f148283eded7d1ee720d152
+      - file_type: short_read_fastq
+        sha256: c1261502c77c6a6faf83a0066a445b493860364c23681ee404da19d956cf5334
+        url: s3://nucleotides-prod/inputs/c1/c1261502c77c6a6faf83a0066a445b493860364c23681ee404da19d956cf5334
+      - file_type: short_read_fastq
+        sha256: 0a716e693192a8f89bcd412768fd1a4fea21d7fb47c2168251dbd7cfa9bf7623
+        url: s3://nucleotides-prod/inputs/0a/0a716e693192a8f89bcd412768fd1a4fea21d7fb47c2168251dbd7cfa9bf7623

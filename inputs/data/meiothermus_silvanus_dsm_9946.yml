@@ -1,0 +1,35 @@
+source:
+  desc: >
+    Meiothermus silvanus DSM 9946 - A microbe with a high quality reference genome.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: c07afa90c1ae4a88e36226f177fee344b3b4acf8d0f352e88896f6bdb4e79a97
+      url: s3://nucleotides-prod/inputs/c0/c07afa90c1ae4a88e36226f177fee344b3b4acf8d0f352e88896f6bdb4e79a97
+data:
+  - material_type: dna
+    name: regular_fragment_1
+    extraction_method_type: cultured_colony_isolate
+    platform_type: hiseq_2500
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_270
+    desc: >
+      A microbe sequenced as part of a mixed sample of microbes creating a metagenome
+      mock-community. The mock-community reads were in-silico mapped back to the reference
+      genome and then subsampled without replacement down to 2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: 12c21dbb964c2f5d33c231ab72805cd6b2b62bf8443a59ce1f9e96455ff9ba4b
+        url: s3://nucleotides-prod/inputs/12/12c21dbb964c2f5d33c231ab72805cd6b2b62bf8443a59ce1f9e96455ff9ba4b
+      - file_type: short_read_fastq
+        sha256: 61bcf897ce7c0ad3ef874d65c48535160f75b21c73b809c9caad7fd15875f9d6
+        url: s3://nucleotides-prod/inputs/61/61bcf897ce7c0ad3ef874d65c48535160f75b21c73b809c9caad7fd15875f9d6
+      - file_type: short_read_fastq
+        sha256: d5425fb8604bd965c4e6d9f3327c9bac78563e8b2ff09f7991cda7762f7941e9
+        url: s3://nucleotides-prod/inputs/d5/d5425fb8604bd965c4e6d9f3327c9bac78563e8b2ff09f7991cda7762f7941e9
+      - file_type: short_read_fastq
+        sha256: 7450e51af42e7f12da1c3f7e41333e5fed3d12a260b850b22ca23b3f86a57c64
+        url: s3://nucleotides-prod/inputs/74/7450e51af42e7f12da1c3f7e41333e5fed3d12a260b850b22ca23b3f86a57c64
+      - file_type: short_read_fastq
+        sha256: 0a750b8abf5386a0501384f7582277b9e290c42a5c8d70f5f73fc24b2349dce3
+        url: s3://nucleotides-prod/inputs/0a/0a750b8abf5386a0501384f7582277b9e290c42a5c8d70f5f73fc24b2349dce3

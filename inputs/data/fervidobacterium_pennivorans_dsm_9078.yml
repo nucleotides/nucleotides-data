@@ -1,0 +1,36 @@
+source:
+  desc: >
+    Fervidobacterium pennivorans DSM 9078 - A microbe with a high quality reference
+    genome.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: e194eaa0e574594137967a056da8aec658f87e1441f95a85e3b719cace389193
+      url: s3://nucleotides-prod/inputs/e1/e194eaa0e574594137967a056da8aec658f87e1441f95a85e3b719cace389193
+data:
+  - material_type: dna
+    name: regular_fragment_1
+    extraction_method_type: cultured_colony_isolate
+    platform_type: hiseq_2500
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_270
+    desc: >
+      A microbe sequenced as part of a mixed sample of microbes creating a metagenome
+      mock-community. The mock-community reads were in-silico mapped back to the reference
+      genome and then subsampled without replacement down to 2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: 4889f34a0ce6646ae071a2cdccafccef43654ab18ae80c4aaaf3849f15d5248d
+        url: s3://nucleotides-prod/inputs/48/4889f34a0ce6646ae071a2cdccafccef43654ab18ae80c4aaaf3849f15d5248d
+      - file_type: short_read_fastq
+        sha256: 38b5ed105cdcb97a240a0d70ffaddbeb1ecc9e7e16f9af7c9ccce3d8a75253c1
+        url: s3://nucleotides-prod/inputs/38/38b5ed105cdcb97a240a0d70ffaddbeb1ecc9e7e16f9af7c9ccce3d8a75253c1
+      - file_type: short_read_fastq
+        sha256: 277fa5f233fc0c9f4ce5acc8b5a913f0ade227785e876eefc31fb8f1daf5d313
+        url: s3://nucleotides-prod/inputs/27/277fa5f233fc0c9f4ce5acc8b5a913f0ade227785e876eefc31fb8f1daf5d313
+      - file_type: short_read_fastq
+        sha256: 6a882093eb048c092c9d30ef92c3a712b2f6f5f0b313c29643e98eab06ea4df2
+        url: s3://nucleotides-prod/inputs/6a/6a882093eb048c092c9d30ef92c3a712b2f6f5f0b313c29643e98eab06ea4df2
+      - file_type: short_read_fastq
+        sha256: 8edde8bc30673a794b494974105d9b7d089348ba80fc4bfba369b89ce6fa99b7
+        url: s3://nucleotides-prod/inputs/8e/8edde8bc30673a794b494974105d9b7d089348ba80fc4bfba369b89ce6fa99b7
