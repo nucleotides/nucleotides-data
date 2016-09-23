@@ -1,0 +1,36 @@
+source:
+  desc: >
+    Desulfosporosinus meridiei DSM 13257 - A microbe with a high quality reference
+    genome.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: 5fafef83f189d6320608f97affbc688cf189ed911f9e9b7da53b8c529a42e65e
+      url: s3://nucleotides-prod/inputs/5f/5fafef83f189d6320608f97affbc688cf189ed911f9e9b7da53b8c529a42e65e
+data:
+  - material_type: dna
+    name: regular_fragment_1
+    extraction_method_type: cultured_colony_isolate
+    platform_type: hiseq_2500
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_270
+    desc: >
+      A microbe sequenced as part of a mixed sample of microbes creating a metagenome
+      mock-community. The mock-community reads were in-silico mapped back to the reference
+      genome and then subsampled without replacement down to 2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: 4c97993d068fbe819fd730e14419996087dd9ac05c436a9a6f4f7e51ccbe4b2b
+        url: s3://nucleotides-prod/inputs/4c/4c97993d068fbe819fd730e14419996087dd9ac05c436a9a6f4f7e51ccbe4b2b
+      - file_type: short_read_fastq
+        sha256: e3cbed6f0556c2a4c42b029ff65d0d41230bc2c87e9b9a22b52a56945db6f6c4
+        url: s3://nucleotides-prod/inputs/e3/e3cbed6f0556c2a4c42b029ff65d0d41230bc2c87e9b9a22b52a56945db6f6c4
+      - file_type: short_read_fastq
+        sha256: dd405467cf7902f0bbe29c936d4663848aaf515618ab66c56296df7437f81d3e
+        url: s3://nucleotides-prod/inputs/dd/dd405467cf7902f0bbe29c936d4663848aaf515618ab66c56296df7437f81d3e
+      - file_type: short_read_fastq
+        sha256: b69ddc4afdc2561db6dcd132d96e4d36c3d6dceab6b72678db8d2f629f3ffbba
+        url: s3://nucleotides-prod/inputs/b6/b69ddc4afdc2561db6dcd132d96e4d36c3d6dceab6b72678db8d2f629f3ffbba
+      - file_type: short_read_fastq
+        sha256: dfcb5ef94c67b9dd6e3e30bf36473bd6c8eab3e37244b132cca26726321e9d2d
+        url: s3://nucleotides-prod/inputs/df/dfcb5ef94c67b9dd6e3e30bf36473bd6c8eab3e37244b132cca26726321e9d2d

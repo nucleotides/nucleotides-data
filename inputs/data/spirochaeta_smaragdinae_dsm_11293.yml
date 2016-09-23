@@ -1,0 +1,36 @@
+source:
+  desc: >
+    Spirochaeta smaragdinae DSM 11293 - A microbe with a high quality reference
+    genome.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: 9f71ee95c67256a4404ac98bd9e3a4bcd3cd2c7ae194e5785fc6714050438ee3
+      url: s3://nucleotides-prod/inputs/9f/9f71ee95c67256a4404ac98bd9e3a4bcd3cd2c7ae194e5785fc6714050438ee3
+data:
+  - material_type: dna
+    name: regular_fragment_1
+    extraction_method_type: cultured_colony_isolate
+    platform_type: hiseq_2500
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_270
+    desc: >
+      A microbe sequenced as part of a mixed sample of microbes creating a metagenome
+      mock-community. The mock-community reads were in-silico mapped back to the reference
+      genome and then subsampled without replacement down to 2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: a7950944a129e3458e79f5234887ec4dbf9bed5cbe9d5b489da8a6f66ded8bd0
+        url: s3://nucleotides-prod/inputs/a7/a7950944a129e3458e79f5234887ec4dbf9bed5cbe9d5b489da8a6f66ded8bd0
+      - file_type: short_read_fastq
+        sha256: c2e2b634b06c89c0527010626ef2ffdea83cb3202599aeb67cde2d8f819877cc
+        url: s3://nucleotides-prod/inputs/c2/c2e2b634b06c89c0527010626ef2ffdea83cb3202599aeb67cde2d8f819877cc
+      - file_type: short_read_fastq
+        sha256: 13efc5fa46f114548fab1ee4cc8f0ae66d64f8f5ff14be63ff6c1151e1ce6ffc
+        url: s3://nucleotides-prod/inputs/13/13efc5fa46f114548fab1ee4cc8f0ae66d64f8f5ff14be63ff6c1151e1ce6ffc
+      - file_type: short_read_fastq
+        sha256: 5c632ce1e750f5cdc2ab195492a95950a3f4f8ed03998e9135842bda76b410f5
+        url: s3://nucleotides-prod/inputs/5c/5c632ce1e750f5cdc2ab195492a95950a3f4f8ed03998e9135842bda76b410f5
+      - file_type: short_read_fastq
+        sha256: fff268e4cc42a4dc7e38d990f8f5a891f7224a6e46e6f47bf0ff2bdc53778a39
+        url: s3://nucleotides-prod/inputs/ff/fff268e4cc42a4dc7e38d990f8f5a891f7224a6e46e6f47bf0ff2bdc53778a39

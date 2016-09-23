@@ -1,0 +1,35 @@
+source:
+  desc: >
+    Thermobacillus composti KWC4 - A microbe with a high quality reference genome.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: 04fe927da95c08208768ed368c94d34eecb368c427b05efbb72a189e273a0057
+      url: s3://nucleotides-prod/inputs/04/04fe927da95c08208768ed368c94d34eecb368c427b05efbb72a189e273a0057
+data:
+  - material_type: dna
+    name: regular_fragment_1
+    extraction_method_type: cultured_colony_isolate
+    platform_type: hiseq_2500
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_270
+    desc: >
+      A microbe sequenced as part of a mixed sample of microbes creating a metagenome
+      mock-community. The mock-community reads were in-silico mapped back to the reference
+      genome and then subsampled without replacement down to 2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: 5b0600e5c014fd54a85b245c55ab64ef2372c2ba34d89f6060429d5a044376e3
+        url: s3://nucleotides-prod/inputs/5b/5b0600e5c014fd54a85b245c55ab64ef2372c2ba34d89f6060429d5a044376e3
+      - file_type: short_read_fastq
+        sha256: 076067eec2cd6c0d7742241578a5d6fbaa6ad6e4c8be80f1c649fbf80866e591
+        url: s3://nucleotides-prod/inputs/07/076067eec2cd6c0d7742241578a5d6fbaa6ad6e4c8be80f1c649fbf80866e591
+      - file_type: short_read_fastq
+        sha256: ff080af8db77902b073bdcde9502e3670a76e347dfcda5383d9e5d640ee66489
+        url: s3://nucleotides-prod/inputs/ff/ff080af8db77902b073bdcde9502e3670a76e347dfcda5383d9e5d640ee66489
+      - file_type: short_read_fastq
+        sha256: ec76657e0af4cd572601549eb5e96ca534fdd2f9124c23c67b6877be448f8312
+        url: s3://nucleotides-prod/inputs/ec/ec76657e0af4cd572601549eb5e96ca534fdd2f9124c23c67b6877be448f8312
+      - file_type: short_read_fastq
+        sha256: cc158a8a31055ce38e92c06665780e0b3c38925809f173a77a15664388f8b940
+        url: s3://nucleotides-prod/inputs/cc/cc158a8a31055ce38e92c06665780e0b3c38925809f173a77a15664388f8b940
