@@ -41,6 +41,13 @@
     - sha256: b6bc1475be3ff72b26e23903dfae24ceded227167ae7363b80954b11906deac7
       tasks: ["default", "no-mercy"]
       name: "1.0.6"
+- image_type: short_read_assembler
+  name: bioboxes/abyss
+  versions:
+    - sha256: f55fca3d012b3cbd926423db3b4f00af21a8ec51743677bae0ca628aa782be92
+      tasks: ["default", "adaptive", "careful"]
+      name: "2.0.1"
+
 
 
 
