@@ -1,10 +1,6 @@
 validate = ! bundle exec kwalify -lf $1 | grep --after-context=1 INVALID
 data     = $(subst .yml,,$(shell ls data))
 
-ifndef DOCKER_HOST
-$(error Docker does not appear to be running)
-endif
-
 test: .rdm_container $(addprefix .test_token/,$(inputs) $(types) $(files)) \
 	.test_token/input_s3_files_exist \
 	.test_token/cv_cross_refs \
@@ -83,7 +79,7 @@ db_user := POSTGRES_USER=postgres
 db_pass := POSTGRES_PASSWORD=pass
 db_name := POSTGRES_NAME=postgres
 
-ifdef docker_host
+ifdef DOCKER_HOST
        db_host  := POSTGRES_HOST=//$(docker_host):5433
 else
        db_host  := POSTGRES_HOST=//localhost:5433
