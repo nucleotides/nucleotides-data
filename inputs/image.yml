@@ -14,9 +14,9 @@
 - image_type: short_read_assembler
   name: bioboxes/tadpole
   versions:
-    - sha256: d20cdfc02f9e305c931a93c34a8678791d2ebc084f257afd57a79f772e0b470d
-      tasks:  ["default", "careful"]
-      name: "36.20"
+    - sha256: a8f03646039e9264265ec5e04dff5a6e88326b67c7a4178ee50057ecaaa14943
+      tasks:  ["default", "careful", "optimal"]
+      name: "36.38"
 - image_type: short_read_assembler
   name: bioboxes/stride
   versions:
