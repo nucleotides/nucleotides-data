@@ -1,6 +1,9 @@
 validate = ! bundle exec kwalify -lf $1 | grep --after-context=1 INVALID
 data     = $(subst .yml,,$(shell ls data))
 
+ifndef DOCKER_HOST
+$(error Docker does not appear to be running)
+endif
 
 test: .rdm_container $(addprefix .test_token/,$(inputs) $(types) $(files)) \
 	.test_token/input_s3_files_exist \
