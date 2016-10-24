@@ -9,14 +9,20 @@
     - ['arenibacter_algicola_tg409', 'regular_fragment_1']
     - ['desulfosporosinus_acidophilus_sj4_dsm_22704', 'regular_fragment_1']
     - ['desulfosporosinus_meridiei_dsm_13257', 'regular_fragment_1']
-    - ['escherichia_coli_str_k12_substr_mg1655', 'regular_fragment_1']
     - ['fervidobacterium_pennivorans_dsm_9078', 'regular_fragment_1']
     - ['hirschia_baltica_atcc_49814', 'regular_fragment_1']
-    - ['meiothermus_ruber_dsm_1279', 'regular_fragment_1']
     - ['meiothermus_silvanus_dsm_9946', 'regular_fragment_1']
-    - ['pedobacter_heparinus_dsm_2366', 'regular_fragment_1']
     - ['polycyclovorans_algicola_tg408', 'regular_fragment_1']
     - ['porticoccus_hydrocarbonoclasticus_mctg13d', 'regular_fragment_1']
     - ['saccharopolyspora_spinosa_dsm_44228', 'regular_fragment_1']
     - ['spirochaeta_smaragdinae_dsm_11293', 'regular_fragment_1']
     - ['thermobacillus_composti_kwc4', 'regular_fragment_1']
+    - ['escherichia_coli_str_k12_substr_mg1655', 'regular_fragment_1']
+    - ['pedobacter_heparinus_dsm_2366', 'regular_fragment_1']
+    - ['meiothermus_ruber_dsm_1279', 'regular_fragment_1']
+
+- name: illumina_single_cell_reference_assembly
+  desc: Evaluate genome assemblers using MDA-generated reads and a reference genome
+  product_image_type: short_read_assembler
+  evaluation_image_type: reference_assembly_evaluation
+  data_sets: []
