@@ -34,3 +34,13 @@ data:
       - file_type: short_read_fastq
         sha256: 4a84595166cbb054a7e7e9af488e9f598b2cd92a13955c588d757b3d0ad0529e
         url: s3://nucleotides-prod/inputs/4a/4a84595166cbb054a7e7e9af488e9f598b2cd92a13955c588d757b3d0ad0529e
+  - name: mda_fragment_1
+    material_type: dna
+    extraction_method_type: multiple_displacement_amplification
+    platform_type: nextseq
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_300
+    desc: >
+      A JGI sequenced microbe then in-silico subsampled without replacement down to
+      2,500,000 read pairs.
+    files: []

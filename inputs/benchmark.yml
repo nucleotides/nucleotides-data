@@ -25,4 +25,7 @@
   desc: Evaluate genome assemblers using MDA-generated reads and a reference genome
   product_image_type: short_read_assembler
   evaluation_image_type: reference_assembly_evaluation
-  data_sets: []
+  data_sets:
+    - ['escherichia_coli_str_k12_substr_mg1655', 'mda_fragment_1']
+    - ['pedobacter_heparinus_dsm_2366', 'mda_fragment_1']
+    - ['meiothermus_ruber_dsm_1279', 'mda_fragment_1']
