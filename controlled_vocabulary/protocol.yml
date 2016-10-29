@@ -1,5 +1,7 @@
 ---
 - name: unamplified_regular_fragment
-  desc: Standard preparation when source material is available in sufficient quantities
+  desc: Mechanical shearing without any amplication during libary construction
 - name: nextera_amplified_fragment
-  desc: Amplification of source material when available in small quantities
+  desc: Tagmentation shearing followed by PCR amplification during library construction
+- name: truseq_amplified_fragment
+  desc: Mechanical shearing followed by PCR amplication during library construction
