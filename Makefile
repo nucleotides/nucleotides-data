@@ -5,15 +5,11 @@ test: .rdm_container $(addprefix .test_token/,$(inputs) $(types) $(files)) \
 	.test_token/input_s3_files_exist \
 	.test_token/cv_cross_refs \
 	.test_token/data_cross_refs
-	@docker run \
-	  --env="$(db_user)" \
-	  --env="$(db_pass)" \
-	  --env="$(db_name)" \
-	  --env=POSTGRES_HOST=//localhost:54345 \
-	  --net=host \
-	  --volume=$(realpath .):/data:ro \
-	  nucleotides/api:staging \
-	  migrate &> .test_token/migration.log
+	$(docker_db) \
+		--detach=false \
+		--volume=$(realpath .):/data:ro \
+		$(name) \
+		migrate &> .test_token/migration.log
 
 
 ################################################
@@ -59,12 +55,14 @@ bootstrap: Gemfile.lock
 	mkdir -p .test_token/controlled_vocabulary .test_token/inputs/data
 
 .rdm_container:
-	docker run \
-	  --env="$(db_user)" \
-	  --env="$(db_pass)" \
-          --publish=54345:5432 \
-	  --detach=true \
-	  kiasaki/alpine-postgres:9.5 > $@
+	@export $(params) && \
+		docker run \
+		--env=POSTGRES_PASSWORD="$${PGPASSWORD}" \
+		--env=POSTGRES_USER="$${PGUSER}" \
+		--publish=$${PGPORT}:5432 \
+		--detach=true \
+		kiasaki/alpine-postgres:9.5 > $@
+	@sleep 5
 
 Gemfile.lock: Gemfile
 	bundle install --path vendor/bundle
@@ -75,12 +73,25 @@ Gemfile.lock: Gemfile
 #
 ################################################
 
-db_user := POSTGRES_USER=postgres
-db_pass := POSTGRES_PASSWORD=pass
-db_name := POSTGRES_NAME=postgres
+db_user = PGUSER=dummy
+db_pass = PGPASSWORD=dummy
+db_name = PGDATABASE=dummy
+db_port = PGPORT=65432
 
 ifdef DOCKER_HOST
-       db_host  := POSTGRES_HOST=//$(docker_host):5433
+       db_host  := PGHOST=$(shell echo ${DOCKER_HOST} | egrep -o "\d+.\d+.\d+.\d+")
 else
-       db_host  := POSTGRES_HOST=//localhost:5433
+       db_host  := PGHOST=localhost
 endif
+
+params  = $(db_user) $(db_pass) $(db_name) $(db_host) $(db_port)
+
+name = nucleotides/api:staging
+
+docker_db = docker run \
+	    --env="$(db_user)" \
+	    --env="$(db_name)" \
+	    --env="$(db_pass)" \
+	    --env="$(db_host)" \
+	    --env="$(db_port)" \
+	    --net=host
