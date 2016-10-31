@@ -18,6 +18,17 @@ data:
     desc: >
       A JGI sequenced microbe then in-silico subsampled without replacement down to
       2,500,000 read pairs.
+    files: []
+
+  - name: mda_fragment_1
+    material_type: dna
+    extraction_method_type: multiple_displacement_amplification
+    platform_type: nextseq
+    protocol_type: truseq_amplified_fragment
+    run_mode_type: 2x150_300
+    desc: >
+      A JGI sequenced microbe then in-silico subsampled without replacement down to
+      2,500,000 read pairs.
     files:
       - file_type: short_read_fastq
         sha256: e99683bdbe810ab269c01785897a52e8f560edd6430e80a375edab830d91856a
@@ -34,13 +45,3 @@ data:
       - file_type: short_read_fastq
         sha256: 14a317340267002bd7763ebd18481e31d8426c65b92dba61b8adec3926f67176
         url: s3://nucleotides-prod/inputs/14/14a317340267002bd7763ebd18481e31d8426c65b92dba61b8adec3926f67176
-  - name: mda_fragment_1
-    material_type: dna
-    extraction_method_type: multiple_displacement_amplification
-    platform_type: nextseq
-    protocol_type: truseq_amplified_fragment
-    run_mode_type: 2x150_300
-    desc: >
-      A JGI sequenced microbe then in-silico subsampled without replacement down to
-      2,500,000 read pairs.
-    files: []
