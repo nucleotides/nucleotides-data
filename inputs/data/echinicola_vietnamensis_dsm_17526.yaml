@@ -1,0 +1,36 @@
+---
+source:
+  desc: >
+    Echinicola vietnamensis DSM 17526 - A microbe with a improved-draft
+    reference genome generated at the JGI.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: 994f5d734da70fe666e78a1e3253a8578d8a841d387347fa5451218f2eeffc8e
+      url: s3://nucleotides-prod/inputs/99/994f5d734da70fe666e78a1e3253a8578d8a841d387347fa5451218f2eeffc8e
+data:
+  - name: mda_fragment_1
+    material_type: dna
+    extraction_method_type: multiple_displacement_amplification
+    platform_type: nextseq
+    protocol_type: truseq_amplified_fragment
+    run_mode_type: 2x150_300
+    desc: >
+      An MDA amplified and sequenced microbe, in-silico subsampled without replacement down to
+      2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: 7f234fa764a21da89382abef42a0b917e7df6260738e171f88cb49882e8eca09
+        url: s3://nucleotides-prod/inputs/7f/7f234fa764a21da89382abef42a0b917e7df6260738e171f88cb49882e8eca09
+      - file_type: short_read_fastq
+        sha256: fb44d1d7f74585c2cd3ee0af73f7365f1c4568a4d6445f070ff9b1364481adc3
+        url: s3://nucleotides-prod/inputs/fb/fb44d1d7f74585c2cd3ee0af73f7365f1c4568a4d6445f070ff9b1364481adc3
+      - file_type: short_read_fastq
+        sha256: 26a2757b8d3325fd37a29d237e06a18500eb77bb37de13031597fddc2b531d04
+        url: s3://nucleotides-prod/inputs/26/26a2757b8d3325fd37a29d237e06a18500eb77bb37de13031597fddc2b531d04
+      - file_type: short_read_fastq
+        sha256: 0b615b59458f5e5a28843cea5cda3c8147d7c86bb3dd837138d1998ff9745829
+        url: s3://nucleotides-prod/inputs/0b/0b615b59458f5e5a28843cea5cda3c8147d7c86bb3dd837138d1998ff9745829
+      - file_type: short_read_fastq
+        sha256: cae3e800d0bc14d370d8b7a87054b41193a41029989c82ab8d0969e2a238cbd7
+        url: s3://nucleotides-prod/inputs/ca/cae3e800d0bc14d370d8b7a87054b41193a41029989c82ab8d0969e2a238cbd7

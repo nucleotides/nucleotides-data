@@ -1,0 +1,36 @@
+---
+source:
+  desc: >
+    Pseudomonas putida F1 - A microbe with a improved-draft reference genome
+    generated at the JGI.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: 75bec80c8f4868ece4830f3cdbebf414f6b393e83f0e5d7ff7b2f019baa29301
+      url: s3://nucleotides-prod/inputs/75/75bec80c8f4868ece4830f3cdbebf414f6b393e83f0e5d7ff7b2f019baa29301
+data:
+  - name: mda_fragment_1
+    material_type: dna
+    extraction_method_type: multiple_displacement_amplification
+    platform_type: nextseq
+    protocol_type: truseq_amplified_fragment
+    run_mode_type: 2x150_300
+    desc: >
+      An MDA amplified and sequenced microbe, in-silico subsampled without replacement down to
+      2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: 64f71ffe34b02680f934a8397314c935cced0c63580f90c685b20396a5fa3628
+        url: s3://nucleotides-prod/inputs/64/64f71ffe34b02680f934a8397314c935cced0c63580f90c685b20396a5fa3628
+      - file_type: short_read_fastq
+        sha256: 104fe6308f1992ce2c0925ed5a5a27902cd9a994a15b4dfb2fddf4ba6fc5bf93
+        url: s3://nucleotides-prod/inputs/10/104fe6308f1992ce2c0925ed5a5a27902cd9a994a15b4dfb2fddf4ba6fc5bf93
+      - file_type: short_read_fastq
+        sha256: edd8861afe73b28913fed9d811e2d17d8a97f15119b8df0be00ab38a772b0785
+        url: s3://nucleotides-prod/inputs/ed/edd8861afe73b28913fed9d811e2d17d8a97f15119b8df0be00ab38a772b0785
+      - file_type: short_read_fastq
+        sha256: 661e5b3077313052c79383ea12f7e0a2aaea0e93ec405f9c96619038e981553d
+        url: s3://nucleotides-prod/inputs/66/661e5b3077313052c79383ea12f7e0a2aaea0e93ec405f9c96619038e981553d
+      - file_type: short_read_fastq
+        sha256: 5938f462d5884b3953cf77c59255d9df624e125aaac30ea466f75d7f7b196a6d
+        url: s3://nucleotides-prod/inputs/59/5938f462d5884b3953cf77c59255d9df624e125aaac30ea466f75d7f7b196a6d
