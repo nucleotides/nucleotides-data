@@ -1,0 +1,36 @@
+---
+source:
+  desc: >
+    Shewanella oneidensis MR-1 - A microbe with a improved-draft reference genome
+    generated at the JGI.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: 67b974e15173aea29d791af1398c9a1da4472cef9e488f6acad1b41e4fb8affd
+      url: s3://nucleotides-prod/inputs/67/67b974e15173aea29d791af1398c9a1da4472cef9e488f6acad1b41e4fb8affd
+data:
+  - name: mda_fragment_1
+    material_type: dna
+    extraction_method_type: multiple_displacement_amplification
+    platform_type: nextseq
+    protocol_type: truseq_amplified_fragment
+    run_mode_type: 2x150_300
+    desc: >
+      An MDA amplified and sequenced microbe, in-silico subsampled without replacement down to
+      2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: b13a84b7d2d303dfd3e9487b1e136744f2e7024969143a6b8154d65d255718e4
+        url: s3://nucleotides-prod/inputs/b1/b13a84b7d2d303dfd3e9487b1e136744f2e7024969143a6b8154d65d255718e4
+      - file_type: short_read_fastq
+        sha256: 9e09018ec46ebc8471c74268314c0ee7f3c314ee9a8a99a5b91279ae04487b1d
+        url: s3://nucleotides-prod/inputs/9e/9e09018ec46ebc8471c74268314c0ee7f3c314ee9a8a99a5b91279ae04487b1d
+      - file_type: short_read_fastq
+        sha256: dc491059f05b85d073c53d785e48c20931069e2435c30e456850fdcb765970cb
+        url: s3://nucleotides-prod/inputs/dc/dc491059f05b85d073c53d785e48c20931069e2435c30e456850fdcb765970cb
+      - file_type: short_read_fastq
+        sha256: 3b5ea02e850e1af369d41ed880204e4a89e718ba018d0fc09d2bb7f5f48d63a1
+        url: s3://nucleotides-prod/inputs/3b/3b5ea02e850e1af369d41ed880204e4a89e718ba018d0fc09d2bb7f5f48d63a1
+      - file_type: short_read_fastq
+        sha256: b5d2c2d778511a17689a0e04037829b62512575f92f71ff10e9f89e4ac34cfe3
+        url: s3://nucleotides-prod/inputs/b5/b5d2c2d778511a17689a0e04037829b62512575f92f71ff10e9f89e4ac34cfe3
