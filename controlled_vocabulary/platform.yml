@@ -7,3 +7,5 @@
   desc: A high-throughput sequencer produced by Illumina
 - name: hiseq_2500
   desc: A high-throughput sequencer produced by Illumina
+- name: hiseq_2000
+  desc: A high-throughput sequencer produced by Illumina

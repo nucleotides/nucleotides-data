@@ -45,3 +45,29 @@ data:
       - file_type: short_read_fastq
         sha256: 4a84595166cbb054a7e7e9af488e9f598b2cd92a13955c588d757b3d0ad0529e
         url: s3://nucleotides-prod/inputs/4a/4a84595166cbb054a7e7e9af488e9f598b2cd92a13955c588d757b3d0ad0529e
+
+  - name: regular_fragment_2
+    material_type: dna
+    extraction_method_type: cultured_colony_isolate
+    platform_type: hiseq_2000
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_270
+    desc: >
+      A JGI sequenced microbe then in-silico subsampled without replacement down to
+      2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: 6c46222ac20285486c3e7a4402afe5817def70a35e1c2e014a7f3320a347b134
+        url: s3://nucleotides-prod/inputs/6c/6c46222ac20285486c3e7a4402afe5817def70a35e1c2e014a7f3320a347b134
+      - file_type: short_read_fastq
+        sha256: f6f373809a5afabed5af4b4e16a1996892a181f1898a1402b86a39a2e2aff57d
+        url: s3://nucleotides-prod/inputs/f6/f6f373809a5afabed5af4b4e16a1996892a181f1898a1402b86a39a2e2aff57d
+      - file_type: short_read_fastq
+        sha256: 38f83fe82e33cc691c81cc5d16eed07a384c66001beb260742871f220c58b901
+        url: s3://nucleotides-prod/inputs/38/38f83fe82e33cc691c81cc5d16eed07a384c66001beb260742871f220c58b901
+      - file_type: short_read_fastq
+        sha256: 49b09b848960159a7af18c68f7481ad29c61f593d67280bd9a2ec1c59d40f0f0
+        url: s3://nucleotides-prod/inputs/49/49b09b848960159a7af18c68f7481ad29c61f593d67280bd9a2ec1c59d40f0f0
+      - file_type: short_read_fastq
+        sha256: 0fd5eb41ce3e2a352426fda9c994dfee918603e454f527bf8113846bb0628601
+        url: s3://nucleotides-prod/inputs/0f/0fd5eb41ce3e2a352426fda9c994dfee918603e454f527bf8113846bb0628601
