@@ -20,6 +20,9 @@
     - ['escherichia_coli_str_k12_substr_mg1655', 'regular_fragment_1']
     - ['pedobacter_heparinus_dsm_2366', 'regular_fragment_1']
     - ['meiothermus_ruber_dsm_1279', 'regular_fragment_1']
+    - ['escherichia_coli_str_k12_substr_mg1655', 'regular_fragment_2']
+    - ['pedobacter_heparinus_dsm_2366', 'regular_fragment_2']
+    - ['meiothermus_ruber_dsm_1279', 'regular_fragment_2']
 
 - name: illumina_single_cell_reference_assembly
   desc: Evaluate genome assemblers using MDA-generated reads and a reference genome
@@ -29,3 +32,6 @@
     - ['escherichia_coli_str_k12_substr_mg1655', 'mda_fragment_1']
     - ['pedobacter_heparinus_dsm_2366', 'mda_fragment_1']
     - ['meiothermus_ruber_dsm_1279', 'mda_fragment_1']
+    - ['shewanella_oneidensis_mr_1', 'mda_fragment_1']
+    - ['pseudomonas_putida_f1', 'mda_fragment_1']
+    - ['echinicola_vietnamensis_dsm_17526', 'mda_fragment_1']
