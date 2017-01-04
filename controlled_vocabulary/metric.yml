@@ -101,186 +101,187 @@
   desc: A Quast assembly metric
 - name: n_misassembled_contigs
   desc: Number of missambled contigs
-- name: assembly.gene_count.bacteria_archea_rRNA.16S_rRNA
+
+- name: assembly.gene_count.bacteria_archea_rrna.16s_rrna
   desc: Number of assembly genes annotated as bacterial/archeal 16S rRNA
-- name: assembly.gene_count.bacteria_archea_rRNA.23S_rRNA
+- name: assembly.gene_count.bacteria_archea_rrna.23s_rrna
   desc: Number of assembly genes annotated as bacterial/archeal 23S rRNA
-- name: assembly.gene_count.bacteria_archea_rRNA.5S_rRNA
+- name: assembly.gene_count.bacteria_archea_rrna.5s_rrna
   desc: Number of assembly genes annotated as bacterial/archeal 5S rRNA
-- name: assembly.gene_count.bacteria_archea_rRNA.RNaseP_rRNA
+- name: assembly.gene_count.bacteria_archea_rrna.rnasep_rrna
   desc: Number of assembly genes annotated as bacterial/archeal RNaseP
-- name: assembly.gene_count.bacteria_archea_rRNA.SRP_rRNA
+- name: assembly.gene_count.bacteria_archea_rrna.srp_rrna
   desc: Number of assembly genes annotated as bacterial/archeal signal recognition particle
-- name: assembly.gene_count.eukarya_rRNA.18S_rRNA
+- name: assembly.gene_count.eukarya_rrna.18s_rrna
   desc: Number of assembly genes annotated as eukaryotic 18S rRNA
-- name: assembly.gene_count.eukarya_rRNA.23S_rRNA
+- name: assembly.gene_count.eukarya_rrna.23s_rrna
   desc: Number of assembly genes annotated as eukaryotic 23S rRNA
-- name: assembly.gene_count.eukarya_rRNA.5_8S_rRNA
+- name: assembly.gene_count.eukarya_rrna.5_8s_rrna
   desc: Number of assembly genes annotated as eukaryotic 5.8S rRNA
-- name: assembly.gene_count.eukarya_rRNA.5S_rRNA
+- name: assembly.gene_count.eukarya_rrna.5s_rrna
   desc: Number of assembly genes annotated as eukaryotic 5S rRNA
   desc: Difference between reference and assembly in number of genes annotated as bacterial/archeal 16S rRNA
-- name: comparison.gene_count.bacteria_archea_rRNA.23S_rRNA
+- name: comparison.gene_count.bacteria_archea_rrna.23s_rrna
   desc: Difference between reference and assembly in number of genes annotated as bacterial/archeal 23S rRNA
-- name: comparison.gene_count.bacteria_archea_rRNA.5S_rRNA
+- name: comparison.gene_count.bacteria_archea_rrna.5s_rrna
   desc: Difference between reference and assembly in number of genes annotated as bacterial/archeal 5S rRNA
-- name: comparison.gene_count.bacteria_archea_rRNA.RNaseP_rRNA
+- name: comparison.gene_count.bacteria_archea_rrna.rnasep_rrna
   desc: Difference between reference and assembly in number of genes annotated as bacterial/archeal RNaseP
-- name: comparison.gene_count.bacteria_archea_rRNA.SRP_rRNA
+- name: comparison.gene_count.bacteria_archea_rrna.srp_rrna
   desc: Difference between reference and assembly in number of genes annotated as bacterial/archeal signal recognition particle
-- name: comparison.gene_count.eukarya_rRNA.18S_rRNA
+- name: comparison.gene_count.eukarya_rrna.18s_rrna
   desc: Difference between reference and assembly in number of genes annotated as eukaryotic 18S rRNA
-- name: comparison.gene_count.eukarya_rRNA.23S_rRNA
+- name: comparison.gene_count.eukarya_rrna.23s_rrna
   desc: Difference between reference and assembly in number of genes annotated as eukaryotic 23S rRNA
-- name: comparison.gene_count.eukarya_rRNA.5_8S_rRNA
+- name: comparison.gene_count.eukarya_rrna.5_8s_rrna
   desc: Difference between reference and assembly in number of genes annotated as eukaryotic 5.8S rRNA
-- name: comparison.gene_count.eukarya_rRNA.5S_rRNA
+- name: comparison.gene_count.eukarya_rrna.5s_rrna
   desc: Difference between reference and assembly in number of genes annotated as eukaryotic 5S rRNA
-- name: reference.gene_count.bacteria_archea_rRNA.16S_rRNA
+- name: reference.gene_count.bacteria_archea_rrna.16s_rrna
   desc: Number of reference genes annotated as bacterial/archeal 16S rRNA
-- name: reference.gene_count.bacteria_archea_rRNA.23S_rRNA
+- name: reference.gene_count.bacteria_archea_rrna.23s_rrna
   desc: Number of reference genes annotated as bacterial/archeal 23S rRNA
-- name: reference.gene_count.bacteria_archea_rRNA.5S_rRNA
+- name: reference.gene_count.bacteria_archea_rrna.5s_rrna
   desc: Number of reference genes annotated as bacterial/archeal 5S rRNA
-- name: reference.gene_count.bacteria_archea_rRNA.RNaseP_rRNA
+- name: reference.gene_count.bacteria_archea_rrna.rnasep_rrna
   desc: Number of reference genes annotated as bacterial/archeal RNaseP
-- name: reference.gene_count.bacteria_archea_rRNA.SRP_rRNA
+- name: reference.gene_count.bacteria_archea_rrna.srp_rrna
   desc: Number of reference genes annotated as bacterial/archeal signal recognition particle
-- name: reference.gene_count.eukarya_rRNA.18S_rRNA
+- name: reference.gene_count.eukarya_rrna.18s_rrna
   desc: Number of reference genes annotated as eukaryotic 18S rRNA
-- name: reference.gene_count.eukarya_rRNA.23S_rRNA
+- name: reference.gene_count.eukarya_rrna.23s_rrna
   desc: Number of reference genes annotated as eukaryotic 23S rRNA
-- name: reference.gene_count.eukarya_rRNA.5_8S_rRNA
+- name: reference.gene_count.eukarya_rrna.5_8s_rrna
   desc: Number of reference genes annotated as eukaryotic 5.8S rRNA
-- name: reference.gene_count.eukarya_rRNA.5S_rRNA
+- name: reference.gene_count.eukarya_rrna.5s_rrna
   desc: Number of reference genes annotated as eukaryotic 5S rRNA
-- name: assembly.gene_count.tRNA.Ala
+- name: assembly.gene_count.trna.ala
   desc: Number of Alanine tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Arg
+- name: assembly.gene_count.trna.arg
   desc: Number of Arginine tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Asn
+- name: assembly.gene_count.trna.asn
   desc: Number of Asparagine tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Asp
+- name: assembly.gene_count.trna.asp
   desc: Number of Aspartic acid tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Cys
+- name: assembly.gene_count.trna.cys
   desc: Number of Cysteine tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Gln
+- name: assembly.gene_count.trna.gln
   desc: Number of Glutamine tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Glu
+- name: assembly.gene_count.trna.glu
   desc: Number of Glutamic acid tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Gly
+- name: assembly.gene_count.trna.gly
   desc: Number of Glycine tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.His
+- name: assembly.gene_count.trna.his
   desc: Number of Histadine tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Ile
+- name: assembly.gene_count.trna.ile
   desc: Number of Isoleucine tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Leu
+- name: assembly.gene_count.trna.leu
   desc: Number of Leucine tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Lys
+- name: assembly.gene_count.trna.lys
   desc: Number of Lysine tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Met
+- name: assembly.gene_count.trna.met
   desc: Number of Methionine tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Phe
+- name: assembly.gene_count.trna.phe
   desc: Number of Phenyalanine tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Pro
+- name: assembly.gene_count.trna.pro
   desc: Number of Proline tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Ser
+- name: assembly.gene_count.trna.ser
   desc: Number of Serine tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Thr
+- name: assembly.gene_count.trna.thr
   desc: Number of Threonine tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Trp
+- name: assembly.gene_count.trna.trp
   desc: Number of Tryptophan tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Tyr
+- name: assembly.gene_count.trna.tyr
   desc: Number of Tyrosine tRNA genes annotated in the assembly
-- name: assembly.gene_count.tRNA.Val
+- name: assembly.gene_count.trna.val
   desc: Number of Valine tRNA genes annotated in the assembly
-- name: reference.gene_count.tRNA.Ala
+- name: reference.gene_count.trna.ala
   desc: Number of Alanine tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Arg
+- name: reference.gene_count.trna.arg
   desc: Number of Arginine tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Asn
+- name: reference.gene_count.trna.asn
   desc: Number of Asparagine tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Asp
+- name: reference.gene_count.trna.asp
   desc: Number of Aspartic acid tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Cys
+- name: reference.gene_count.trna.cys
   desc: Number of Cysteine tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Gln
+- name: reference.gene_count.trna.gln
   desc: Number of Glutamine tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Glu
+- name: reference.gene_count.trna.glu
   desc: Number of Glutamic acid tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Gly
+- name: reference.gene_count.trna.gly
   desc: Number of Glycine tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.His
+- name: reference.gene_count.trna.his
   desc: Number of Histadine tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Ile
+- name: reference.gene_count.trna.ile
   desc: Number of Isoleucine tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Leu
+- name: reference.gene_count.trna.leu
   desc: Number of Leucine tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Lys
+- name: reference.gene_count.trna.lys
   desc: Number of Lysine tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Met
+- name: reference.gene_count.trna.met
   desc: Number of Methionine tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Phe
+- name: reference.gene_count.trna.phe
   desc: Number of Phenyalanine tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Pro
+- name: reference.gene_count.trna.pro
   desc: Number of Proline tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Ser
+- name: reference.gene_count.trna.ser
   desc: Number of Serine tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Thr
+- name: reference.gene_count.trna.thr
   desc: Number of Threonine tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Trp
+- name: reference.gene_count.trna.trp
   desc: Number of Tryptophan tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Tyr
+- name: reference.gene_count.trna.tyr
   desc: Number of Tyrosine tRNA genes annotated in the reference
-- name: reference.gene_count.tRNA.Val
+- name: reference.gene_count.trna.val
   desc: Number of Valine tRNA genes annotated in the reference
-- name: comparison.gene_count.tRNA.Ala
+- name: comparison.gene_count.trna.ala
   desc: Difference in number of Alanine tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Arg
+- name: comparison.gene_count.trna.arg
   desc: Difference in number of Arginine tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Asn
+- name: comparison.gene_count.trna.asn
   desc: Difference in number of Asparagine tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Asp
+- name: comparison.gene_count.trna.asp
   desc: Difference in number of Aspartic acid tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Cys
+- name: comparison.gene_count.trna.cys
   desc: Difference in number of Cysteine tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Gln
+- name: comparison.gene_count.trna.gln
   desc: Difference in number of Glutamine tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Glu
+- name: comparison.gene_count.trna.glu
   desc: Difference in number of Glutamic acid tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Gly
+- name: comparison.gene_count.trna.gly
   desc: Difference in number of Glycine tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.His
+- name: comparison.gene_count.trna.his
   desc: Difference in number of Histadine tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Ile
+- name: comparison.gene_count.trna.ile
   desc: Difference in number of Isoleucine tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Leu
+- name: comparison.gene_count.trna.leu
   desc: Difference in number of Leucine tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Lys
+- name: comparison.gene_count.trna.lys
   desc: Difference in number of Lysine tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Met
+- name: comparison.gene_count.trna.met
   desc: Difference in number of Methionine tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Phe
+- name: comparison.gene_count.trna.phe
   desc: Difference in number of Phenyalanine tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Pro
+- name: comparison.gene_count.trna.pro
   desc: Difference in number of Proline tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Ser
+- name: comparison.gene_count.trna.ser
   desc: Difference in number of Serine tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Thr
+- name: comparison.gene_count.trna.thr
   desc: Difference in number of Threonine tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Trp
+- name: comparison.gene_count.trna.trp
   desc: Difference in number of Tryptophan tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Tyr
+- name: comparison.gene_count.trna.tyr
   desc: Difference in number of Tyrosine tRNA genes annotated between the assembly and reference
-- name: comparison.gene_count.tRNA.Val
+- name: comparison.gene_count.trna.val
   desc: Difference in number of Valine tRNA genes annotated between the assembly and reference
-- name: assembly.size_metrics.CDS.count
+- name: assembly.size_metrics.cds.count
   desc: Number of protein coding genes (CDS) annotated in the assembly
-- name: assembly.size_metrics.CDS.l50
+- name: assembly.size_metrics.cds.l50
   desc: L50 of protein coding gene lengths (CDS) annotated in the assembly
-- name: assembly.size_metrics.CDS.n50
+- name: assembly.size_metrics.cds.n50
   desc: N50 of protein coding gene lengths (CDS) annotated in the assembly
-- name: assembly.size_metrics.CDS.sum_length
+- name: assembly.size_metrics.cds.sum_length
   desc: Total of protein coding gene lengths (CDS) annotated in the assembly
 - name: assembly.size_metrics.all.count
   desc: Number of genes annotated in the assembly
@@ -290,37 +291,37 @@
   desc: N50 of gene lengths annotated in the assembly
 - name: assembly.size_metrics.all.sum_length
   desc: Total of gene lengths annotated in the assembly
-- name: assembly.size_metrics.rRNA.count
+- name: assembly.size_metrics.rrna.count
   desc: Number of rRNA genes annotated in the assembly
-- name: assembly.size_metrics.rRNA.sum_length
+- name: assembly.size_metrics.rrna.sum_length
   desc: Total rRNA gene lengths annotated in the assembly
-- name: assembly.size_metrics.tRNA.count
+- name: assembly.size_metrics.trna.count
   desc: Number of tRNA genes annotated in the assembly
-- name: assembly.size_metrics.tRNA.sum_length
+- name: assembly.size_metrics.trna.sum_length
   desc: Total tRNA gene lengths annotated in the assembly
 - name: assembly.size_metrics.repeat_region.count
   desc: Number of repeat region genes annotated in the assembly
 - name: assembly.size_metrics.repeat_region.sum_length
   desc: Sum of repeat region gene lengths annotated in the assembly
-- name: assembly.size_metrics.rRNA.l50
+- name: assembly.size_metrics.rrna.l50
   desc: L50 of rRNA gene lengths annotated in the assembly
-- name: assembly.size_metrics.rRNA.n50
+- name: assembly.size_metrics.rrna.n50
   desc: N50 of rRNA gene lengths annotated in the assembly
 - name: assembly.size_metrics.repeat_region.l50
   desc: L50 of repeat region gene lengths annotated in the assembly
 - name: assembly.size_metrics.repeat_region.n50
   desc: N50 of repeat region gene lengths annotated in the assembly
-- name: assembly.size_metrics.tRNA.l50
+- name: assembly.size_metrics.trna.l50
   desc: L50 of tRNA gene lengths annotated in the assembly
-- name: assembly.size_metrics.tRNA.n50
+- name: assembly.size_metrics.trna.n50
   desc: N50 of tRNA gene lengths annotated in the assembly
-- name: reference.size_metrics.CDS.count
+- name: reference.size_metrics.cds.count
   desc: Number of protein coding genes (CDS) annotated in the reference
-- name: reference.size_metrics.CDS.l50
+- name: reference.size_metrics.cds.l50
   desc: L50 of protein coding gene lengths (CDS) annotated in the reference
-- name: reference.size_metrics.CDS.n50
+- name: reference.size_metrics.cds.n50
   desc: N50 of protein coding gene lengths (CDS) annotated in the reference
-- name: reference.size_metrics.CDS.sum_length
+- name: reference.size_metrics.cds.sum_length
   desc: Total of protein coding gene lengths (CDS) annotated in the reference
 - name: reference.size_metrics.all.count
   desc: Number of genes annotated in the reference
@@ -330,21 +331,21 @@
   desc: N50 of gene lengths annotated in the reference
 - name: reference.size_metrics.all.sum_length
   desc: Total of gene lengths annotated in the reference
-- name: reference.size_metrics.rRNA.count
+- name: reference.size_metrics.rrna.count
   desc: Number of rRNA genes annotated in the reference
-- name: reference.size_metrics.rRNA.sum_length
+- name: reference.size_metrics.rrna.sum_length
   desc: Total rRNA gene lengths annotated in the reference
-- name: reference.size_metrics.rRNA.l50
+- name: reference.size_metrics.rrna.l50
   desc: L50 of rRNA gene lengths annotated in the reference
-- name: reference.size_metrics.rRNA.n50
+- name: reference.size_metrics.rrna.n50
   desc: N50 of rRNA gene lengths annotated in the reference
-- name: reference.size_metrics.tRNA.count
+- name: reference.size_metrics.trna.count
   desc: Number of tRNA genes annotated in the reference
-- name: reference.size_metrics.tRNA.sum_length
+- name: reference.size_metrics.trna.sum_length
   desc: Total tRNA gene lengths annotated in the reference
-- name: reference.size_metrics.tRNA.l50
+- name: reference.size_metrics.trna.l50
   desc: L50 of tRNA gene lengths annotated in the reference
-- name: reference.size_metrics.tRNA.n50
+- name: reference.size_metrics.trna.n50
   desc: N50 of tRNA gene lengths annotated in the reference
 - name: reference.size_metrics.repeat_region.count
   desc: Number of repeat region genes annotated in the reference
@@ -354,27 +355,27 @@
   desc: L50 of repeat region gene lengths annotated in the reference
 - name: reference.size_metrics.repeat_region.n50
   desc: N50 of repeat region gene lengths annotated in the reference
-- name: comparison.gene_set_agreement.bacteria_archea_rRNA
+- name: comparison.gene_set_agreement.bacteria_archea_rrna
   desc: Do the annotated bacterial/archeal rRNA gene sets agree between the reference and the assembly
-- name: comparison.gene_set_agreement.eukarya_rRNA
+- name: comparison.gene_set_agreement.eukarya_rrna
   desc: Do the annotated eukaryotic rRNA gene sets agree between the reference and the assembly
-- name: comparison.gene_set_agreement.tRNA
+- name: comparison.gene_set_agreement.trna
   desc: Do the annotated tRNA gene sets agree between the reference and the assembly
-- name: comparison.gene_set_overlap.CDS.n_assembly_only
+- name: comparison.gene_set_overlap.cds.n_assembly_only
   desc: Number of annotated protein coding genes (CDS) specific to the assembly only
-- name: comparison.gene_set_overlap.CDS.n_intersect
+- name: comparison.gene_set_overlap.cds.n_intersect
   desc: Number of annotated protein coding genes (CDS) specific to the intersect of the assembly and reference
-- name: comparison.gene_set_overlap.CDS.n_reference_only
+- name: comparison.gene_set_overlap.cds.n_reference_only
   desc: Number of annotated protein coding genes (CDS) specific to the reference only
-- name: comparison.gene_set_overlap.CDS.n_symmetric_difference
+- name: comparison.gene_set_overlap.cds.n_symmetric_difference
   desc: Number of annotated protein coding genes (CDS) specific to the symmetric difference of the assembly and reference
-- name: comparison.gene_set_overlap.CDS.perc_assembly_only
+- name: comparison.gene_set_overlap.cds.perc_assembly_only
   desc: Percentage of all annotated protein coding genes (CDS) specific to the assembly only
-- name: comparison.gene_set_overlap.CDS.perc_intersect
+- name: comparison.gene_set_overlap.cds.perc_intersect
   desc: Percentage of all annotated protein coding genes (CDS) specific to the intersect of the assembly and reference
-- name: comparison.gene_set_overlap.CDS.perc_reference_only
+- name: comparison.gene_set_overlap.cds.perc_reference_only
   desc: Percentage of all annotated protein coding genes (CDS) specific to the symmetric difference of the assembly and reference
-- name: comparison.gene_set_overlap.CDS.perc_symmetric_difference
+- name: comparison.gene_set_overlap.cds.perc_symmetric_difference
   desc: Percentage of all annotated protein coding genes (CDS) specific to the symmetric difference of the assembly and reference
 - name: comparison.gene_set_overlap.all.n_assembly_only
   desc: Number of all annotated genes specific to the assembly only
@@ -392,37 +393,37 @@
   desc: Percentage of all annotated genes specific to the symmetric difference of the assembly and reference
 - name: comparison.gene_set_overlap.all.perc_symmetric_difference
   desc: Percentage of all annotated genes specific to the symmetric difference of the assembly and reference
-- name: comparison.gene_set_overlap.rRNA.n_assembly_only
+- name: comparison.gene_set_overlap.rrna.n_assembly_only
   desc: Number of rRNA annotated genes specific to the assembly only
-- name: comparison.gene_set_overlap.rRNA.n_intersect
+- name: comparison.gene_set_overlap.rrna.n_intersect
   desc: Number of rRNA annotated genes specific to the intersect of the assembly and reference
-- name: comparison.gene_set_overlap.rRNA.n_reference_only
+- name: comparison.gene_set_overlap.rrna.n_reference_only
   desc: Number of rRNA annotated genes specific to the reference only
-- name: comparison.gene_set_overlap.rRNA.n_symmetric_difference
+- name: comparison.gene_set_overlap.rrna.n_symmetric_difference
   desc: Number of rRNA annotated genes specific to the symmetric difference of the assembly and reference
-- name: comparison.gene_set_overlap.rRNA.perc_assembly_only
+- name: comparison.gene_set_overlap.rrna.perc_assembly_only
   desc: Percentage of all rRNA annotated genes specific to the assembly only
-- name: comparison.gene_set_overlap.rRNA.perc_intersect
+- name: comparison.gene_set_overlap.rrna.perc_intersect
   desc: Percentage of all rRNA annotated genes specific to the intersect of the assembly and reference
-- name: comparison.gene_set_overlap.rRNA.perc_reference_only
+- name: comparison.gene_set_overlap.rrna.perc_reference_only
   desc: Percentage of all rRNA annotated genes specific to the symmetric difference of the assembly and reference
-- name: comparison.gene_set_overlap.rRNA.perc_symmetric_difference
+- name: comparison.gene_set_overlap.rrna.perc_symmetric_difference
   desc: Percentage of all rRNA annotated genes specific to the symmetric difference of the assembly and reference
-- name: comparison.gene_set_overlap.tRNA.n_assembly_only
+- name: comparison.gene_set_overlap.trna.n_assembly_only
   desc: Number of tRNA annotated genes specific to the assembly only
-- name: comparison.gene_set_overlap.tRNA.n_intersect
+- name: comparison.gene_set_overlap.trna.n_intersect
   desc: Number of tRNA annotated genes specific to the intersect of the assembly and reference
-- name: comparison.gene_set_overlap.tRNA.n_reference_only
+- name: comparison.gene_set_overlap.trna.n_reference_only
   desc: Number of tRNA annotated genes specific to the reference only
-- name: comparison.gene_set_overlap.tRNA.n_symmetric_difference
+- name: comparison.gene_set_overlap.trna.n_symmetric_difference
   desc: Number of tRNA annotated genes specific to the symmetric difference of the assembly and reference
-- name: comparison.gene_set_overlap.tRNA.perc_assembly_only
+- name: comparison.gene_set_overlap.trna.perc_assembly_only
   desc: Percentage of all tRNA annotated genes specific to the assembly only
-- name: comparison.gene_set_overlap.tRNA.perc_intersect
+- name: comparison.gene_set_overlap.trna.perc_intersect
   desc: Percentage of all tRNA annotated genes specific to the intersect of the assembly and reference
-- name: comparison.gene_set_overlap.tRNA.perc_reference_only
+- name: comparison.gene_set_overlap.trna.perc_reference_only
   desc: Percentage of all tRNA annotated genes specific to the symmetric difference of the assembly and reference
-- name: comparison.gene_set_overlap.tRNA.perc_symmetric_difference
+- name: comparison.gene_set_overlap.trna.perc_symmetric_difference
   desc: Percentage of all tRNA annotated genes specific to the symmetric difference of the assembly and reference
 - name: comparison.gene_set_overlap.repeat_region.n_assembly_only
   desc: Number of repeat region annotated genes specific to the assembly only
