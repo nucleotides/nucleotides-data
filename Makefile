@@ -1,7 +1,11 @@
 validate = ! bundle exec kwalify -lf $1 | grep --after-context=1 INVALID
 data     = $(subst .yml,,$(shell ls data))
 
-test: .rdm_container $(addprefix .test_token/,$(inputs) $(types) $(files)) \
+test: \
+	.rdm_container \
+	$(addprefix .test_token/,$(shell find controlled_vocabulary -type f)) \
+	$(addprefix .test_token/,$(shell find inputs/data -type f)) \
+	$(addprefix .test_token/,$(shell find inputs -maxdepth 1 -type f)) \
 	.test_token/input_s3_files_exist \
 	.test_token/cv_cross_refs \
 	.test_token/data_cross_refs
@@ -30,7 +34,7 @@ files  = $(shell find inputs/data -type f)
 	@touch $@
 
 .test_token/controlled_vocabulary/%: schema/controlled_vocabulary.yml controlled_vocabulary/%
-	$(call validate,$^)
+	@$(call validate,$^)
 	@touch $@
 
 .test_token/input_s3_files_exist: ./bin/validate-s3-files $(files)
