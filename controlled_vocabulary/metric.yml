@@ -439,3 +439,19 @@
   desc: Percentage of all repeat region annotated genes specific to the symmetric difference of the assembly and reference
 - name: comparison.gene_set_overlap.repeat_region.perc_symmetric_difference
   desc: Percentage of all repeat region annotated genes specific to the symmetric difference of the assembly and reference
+- name: comparison.size_metrics.cds.lg50
+  desc: LG50 of protein coding gene lengths (CDS) annotated in the assembly using total length of protein coding genes in the reference
+- name: comparison.size_metrics.cds.ng50
+  desc: NG50 of protein coding gene lengths (CDS) annotated in the assembly using total length of protein coding genes in the reference
+- name: comparison.size_metrics.all.lg50
+  desc: LG50 of all gene lengths annotated in the assembly using total length of gene lengths in the reference
+- name: comparison.size_metrics.all.ng50
+  desc: NG50 of all gene lengths annotated in the assembly using total length of gene lengths in the reference
+- name: comparison.size_metrics.trna.lg50
+  desc: LG50 of all tRNA gene lengths annotated in the assembly using total length of tRNA gene lengths in the reference
+- name: comparison.size_metrics.trna.ng50
+  desc: NG50 of all tRNA gene lengths annotated in the assembly using total length of tRNA gene lengths in the reference
+- name: comparison.size_metrics.rrna.ng50
+  desc: NG50 of all rRNA gene lengths annotated in the assembly using total length of rRNA gene lengths in the reference
+- name: comparison.size_metrics.rrna.lg50
+  desc: LG50 of all rRNA gene lengths annotated in the assembly using total length of rRNA gene lengths in the reference
