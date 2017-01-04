@@ -7,7 +7,7 @@ sequence:
         type: str
         required: true
         unique: true
-        pattern: /^[a-z0-9_]*$/
+        pattern: /^[a-z0-9_.]*$/
       desc:
         type: str
         required: true
