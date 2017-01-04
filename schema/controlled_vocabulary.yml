@@ -7,6 +7,8 @@ sequence:
         type: str
         required: true
         unique: true
+        # Uppercase characters are not allowed to ensure that character case is
+        # not used to distinguish between CV terms
         pattern: /^[a-z0-9_.]*$/
       desc:
         type: str
