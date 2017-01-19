@@ -119,6 +119,8 @@
   desc: Number of assembly genes annotated as eukaryotic 5.8S rRNA
 - name: assembly.gene_count.eukarya_rrna.5s_rrna
   desc: Number of assembly genes annotated as eukaryotic 5S rRNA
+- name: comparison.gene_count.bacteria_archea_rrna.16s_rrna
+  desc: Number of assembly genes annotated as bacterial/archeal 16S rRNA
 - name: comparison.gene_count.bacteria_archea_rrna.23s_rrna
   desc: Difference between reference and assembly in number of genes annotated as bacterial/archeal 23S rRNA
 - name: comparison.gene_count.bacteria_archea_rrna.5s_rrna
