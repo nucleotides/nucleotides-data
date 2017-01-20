@@ -457,3 +457,7 @@
   desc: NG50 of all rRNA gene lengths annotated in the assembly using total length of rRNA gene lengths in the reference
 - name: comparison.size_metrics.rrna.lg50
   desc: LG50 of all rRNA gene lengths annotated in the assembly using total length of rRNA gene lengths in the reference
+- name: comparison.size_metrics.repeat_region.lg50
+  desc: LG50 of all repeat regions annotated in the assembly using total length of repeat regions in the reference
+- name: comparison.size_metrics.repeat_region.ng50
+  desc: NG50 of all repeat regions annotated in the assembly using total length of repeat regions in the reference
