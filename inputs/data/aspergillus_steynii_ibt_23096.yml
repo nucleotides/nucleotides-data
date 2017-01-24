@@ -1,0 +1,37 @@
+---
+source:
+  desc: >
+    Aspergillus steynii IBT 23096 - a filamentous fungus with an improved-draft
+    reference genome generated using PacBio at the JGI as part of
+    the Aspergillus whole-genus sequencing project
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: 27bdecea48040e05cdb97cddb175eb232fc706db6a16d607406d85279b549764
+      url: s3://nucleotides-prod/inputs/27/27bdecea48040e05cdb97cddb175eb232fc706db6a16d607406d85279b549764
+data:
+  - material_type: dna
+    name: regular_fragment_1
+    extraction_method_type: cultured_colony_isolate
+    platform_type: hiseq_2000
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_270
+    desc: >
+      A JGI sequenced fungi then in-silico subsampled without replacement down to
+      12,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: e4ffe30a11b352b8c77225aef3f1651e7ed70b9ca8b1b40f03b9299e10be9891
+        url: s3://nucleotides-prod/inputs/e4/e4ffe30a11b352b8c77225aef3f1651e7ed70b9ca8b1b40f03b9299e10be9891
+      - file_type: short_read_fastq
+        sha256: 4f1dda6a518f1c926160bac4db90d8eb74126bce6c349649c2de2aed11bf3444
+        url: s3://nucleotides-prod/inputs/4f/4f1dda6a518f1c926160bac4db90d8eb74126bce6c349649c2de2aed11bf3444
+      - file_type: short_read_fastq
+        sha256: 41c7bf52fb18b234ed5828ff69cab369bf8c4a42f464c047c2f30e66cfabf9d3
+        url: s3://nucleotides-prod/inputs/41/41c7bf52fb18b234ed5828ff69cab369bf8c4a42f464c047c2f30e66cfabf9d3
+      - file_type: short_read_fastq
+        sha256: 2c4f4dcb9cd17d7ad7d1c3ab38c3a910b14bdf5324b4fce432a7ff872e82927c
+        url: s3://nucleotides-prod/inputs/2c/2c4f4dcb9cd17d7ad7d1c3ab38c3a910b14bdf5324b4fce432a7ff872e82927c
+      - file_type: short_read_fastq
+        sha256: e3d55dcc046184e4dd552b0e4a7ce8ff634ad7334b2326932256b66cf7cbe60e
+        url: s3://nucleotides-prod/inputs/e3/e3d55dcc046184e4dd552b0e4a7ce8ff634ad7334b2326932256b66cf7cbe60e

@@ -1,0 +1,37 @@
+---
+source:
+  desc: >
+    Aspergillus novofumigatus IBT 16806 - a filamentous fungus with an
+    improved-draft reference genome generated using PacBio at the JGI as part of
+    the Aspergillus whole-genus sequencing project
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: 24ee63a75be2c5dd992cc3a91975d9624aaee4439b7c951667894b9540f6fc1d
+      url: s3://nucleotides-prod/inputs/24/24ee63a75be2c5dd992cc3a91975d9624aaee4439b7c951667894b9540f6fc1d
+data:
+  - material_type: dna
+    name: regular_fragment_1
+    extraction_method_type: cultured_colony_isolate
+    platform_type: hiseq_2000
+    protocol_type: unamplified_regular_fragment
+    run_mode_type: 2x150_270
+    desc: >
+      A JGI sequenced fungi then in-silico subsampled without replacement down to
+      12,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: 22685c3cbf0e282329ead29b80465de76ed22c24999ec9a2bbe2201282cdd888
+        url: s3://nucleotides-prod/inputs/22/22685c3cbf0e282329ead29b80465de76ed22c24999ec9a2bbe2201282cdd888
+      - file_type: short_read_fastq
+        sha256: dee18768f47b73330418823210173740d796b8adccef3adba139563966f346fb
+        url: s3://nucleotides-prod/inputs/de/dee18768f47b73330418823210173740d796b8adccef3adba139563966f346fb
+      - file_type: short_read_fastq
+        sha256: dcb48089eb9e3228920a3cec9d3f8bb69528349fb9bfd451cc6383d0aa469e04
+        url: s3://nucleotides-prod/inputs/dc/dcb48089eb9e3228920a3cec9d3f8bb69528349fb9bfd451cc6383d0aa469e04
+      - file_type: short_read_fastq
+        sha256: bd0f64eaf150f0d174fac857945cf8ac43ebda6ed561570f43156f75004e3302
+        url: s3://nucleotides-prod/inputs/bd/bd0f64eaf150f0d174fac857945cf8ac43ebda6ed561570f43156f75004e3302
+      - file_type: short_read_fastq
+        sha256: f1477c0950a135c592cb4990bf224df3a5a21f9ddd1718dc63b160dafd574cd1
+        url: s3://nucleotides-prod/inputs/f1/f1477c0950a135c592cb4990bf224df3a5a21f9ddd1718dc63b160dafd574cd1
