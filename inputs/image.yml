@@ -49,11 +49,15 @@
       name: "2.0.1"
 
 
-
-
 - image_type: reference_assembly_evaluation
   name: bioboxes/quast
   versions:
     - sha256: 5af634ee3f1bc3f80a749ce768883a20f793e1791f8f404a316d7d7012423cb9
       tasks: ["default"]
       name: "4.2"
+- image_type: reference_assembly_evaluation
+  name: bioboxes/gaet
+  versions:
+    - sha256: 5de9119ab7451034d28102c3dac3cfc450ed4c10f22310adf010be65103128a5
+      tasks: ["default"]
+      name: "gaet-0.3.0 mash-1.1.1 dpred-0.1.0"
