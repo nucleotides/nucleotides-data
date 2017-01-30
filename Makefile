@@ -55,7 +55,7 @@ files  = $(shell find inputs/data -type f)
 #
 ################################################
 
-bootstrap: Gemfile.lock
+bootstrap: Gemfile.lock .rdm_container
 	mkdir -p .test_token/controlled_vocabulary .test_token/inputs/data
 
 .rdm_container:
