@@ -1,0 +1,36 @@
+---
+source:
+  desc: >
+    Dinoroseobacter shibae DFL-12 - A microbe with a improved-draft reference genome
+    generated using PacBio at the JGI.
+  source_type: microbe
+  references:
+    - file_type: reference_fasta
+      sha256: bfca2b587153bb79a1176537c80141dd5d25d9aad6872cd5599889ab360cc673
+      url: s3://nucleotides-prod/inputs/bf/bfca2b587153bb79a1176537c80141dd5d25d9aad6872cd5599889ab360cc673
+data:
+  - name: mda_fragment_1
+    material_type: dna
+    extraction_method_type: multiple_displacement_amplification
+    platform_type: nextseq
+    protocol_type: nextera_amplified_fragment
+    desc: >
+      An MDA-amplified then JGI sequenced microbe in-silico subsampled without
+      replacement down to 2,500,000 read pairs.
+    run_mode_type: 2x150_300
+    files:
+      - file_type: short_read_fastq
+        sha256: d80c76fddc76b255da937f60b44dbfa5eb1fb1c51f4b8fee711022fcda2fbd6a
+        url: s3://nucleotides-prod/inputs/d8/d80c76fddc76b255da937f60b44dbfa5eb1fb1c51f4b8fee711022fcda2fbd6a
+      - file_type: short_read_fastq
+        sha256: 354bab2abe2c4b72b3c81fa758f94cf9874ca02ade8b41b2394e7d30d7030e7a
+        url: s3://nucleotides-prod/inputs/35/354bab2abe2c4b72b3c81fa758f94cf9874ca02ade8b41b2394e7d30d7030e7a
+      - file_type: short_read_fastq
+        sha256: ab0ee07ae6cb39322c9c2e6136cfbdd20c975bc3c04d6839f359faac73fe9f7c
+        url: s3://nucleotides-prod/inputs/ab/ab0ee07ae6cb39322c9c2e6136cfbdd20c975bc3c04d6839f359faac73fe9f7c
+      - file_type: short_read_fastq
+        sha256: a88312c0deb22a5ae8455d1ed46674a05bb9dc01c4c0722bceff045975d089ae
+        url: s3://nucleotides-prod/inputs/a8/a88312c0deb22a5ae8455d1ed46674a05bb9dc01c4c0722bceff045975d089ae
+      - file_type: short_read_fastq
+        sha256: 62f343c12a6767f0a2aa509a07c53c05de9ceb503a3b4e1b7f5bacd9a867ef74
+        url: s3://nucleotides-prod/inputs/62/62f343c12a6767f0a2aa509a07c53c05de9ceb503a3b4e1b7f5bacd9a867ef74

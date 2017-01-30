@@ -34,3 +34,28 @@ data:
       - file_type: short_read_fastq
         sha256: 5938f462d5884b3953cf77c59255d9df624e125aaac30ea466f75d7f7b196a6d
         url: s3://nucleotides-prod/inputs/59/5938f462d5884b3953cf77c59255d9df624e125aaac30ea466f75d7f7b196a6d
+  - name: mda_fragment_2
+    material_type: dna
+    extraction_method_type: multiple_displacement_amplification
+    platform_type: nextseq
+    protocol_type: nextera_amplified_fragment
+    run_mode_type: 2x150_300
+    desc: >
+      An MDA amplified and sequenced microbe, in-silico subsampled without replacement down to
+      2,500,000 read pairs.
+    files:
+      - file_type: short_read_fastq
+        sha256: 4ac3b54b235383611509801efe81633fba0f38a4eb537bec9e994893476eba30
+        url: s3://nucleotides-prod/inputs/4a/4ac3b54b235383611509801efe81633fba0f38a4eb537bec9e994893476eba30
+      - file_type: short_read_fastq
+        sha256: ef8ad42013139e5236a8e5f174493614a5b1565f232fb9ffc586f654208a1506
+        url: s3://nucleotides-prod/inputs/ef/ef8ad42013139e5236a8e5f174493614a5b1565f232fb9ffc586f654208a1506
+      - file_type: short_read_fastq
+        sha256: a56b5fea8d00a382f858ac05f4e597b7ad831a755621ce5fdd5d8e1ff1be64eb
+        url: s3://nucleotides-prod/inputs/a5/a56b5fea8d00a382f858ac05f4e597b7ad831a755621ce5fdd5d8e1ff1be64eb
+      - file_type: short_read_fastq
+        sha256: c2546cb1a2deab85b38801a43053785cddb8aac0badda08f44b00912d56c5521
+        url: s3://nucleotides-prod/inputs/c2/c2546cb1a2deab85b38801a43053785cddb8aac0badda08f44b00912d56c5521
+      - file_type: short_read_fastq
+        sha256: 17dcfd28403fa7eb89f4ce1ca54a8063dc09c73e9a5ac8d3e88754de9f059e85
+        url: s3://nucleotides-prod/inputs/17/17dcfd28403fa7eb89f4ce1ca54a8063dc09c73e9a5ac8d3e88754de9f059e85
