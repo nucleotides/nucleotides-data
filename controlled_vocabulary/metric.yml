@@ -461,3 +461,15 @@
   desc: LG50 of all repeat regions annotated in the assembly using total length of repeat regions in the reference
 - name: comparison.size_metrics.repeat_region.ng50
   desc: NG50 of all repeat regions annotated in the assembly using total length of repeat regions in the reference
+- name: reference.minimum_gene_set.trna
+  desc: Whether the reference genome contains the minimum set of tRNA genes
+- name: reference.minimum_gene_set.eukarya_rrna
+  desc: Whether the reference genome contains the minimum set of eukaryotic rRNA genes
+- name: assembly.minimum_gene_set.trna
+  desc: Whether the assembled genome contains the minimum set of tRNA genes
+- name: assembly.minimum_gene_set.eukarya_rrna
+  desc: Whether the assembled genome contains the minimum set of eukaryotic rRNA genes
+- name: reference.minimum_gene_set.bacteria_archea_rrna
+  desc: Whether the reference genome contains the minimum set of bacterial or archeal rRNA genes
+- name: assembly.minimum_gene_set.bacteria_archea_rrna
+  desc: Whether the assembled genome contains the minimum set of bacterial or archeal rRNA genes
