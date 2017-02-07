@@ -50,7 +50,12 @@
     - sha256: f55fca3d012b3cbd926423db3b4f00af21a8ec51743677bae0ca628aa782be92
       tasks: ["default", "adaptive", "careful"]
       name: "2.0.1"
-
+- image_type: short_read_assembler
+  name: koadman/docker-a5-miseq
+  versions:
+    - sha256: c3c5666f0bb73360a570d6bd192241806b66e7b57df87b8173be9c30efd2b3b2
+      tasks: ["default"]
+      name: "20160825"
 
 - image_type: reference_assembly_evaluation
   name: bioboxes/quast
