@@ -56,6 +56,13 @@
     - sha256: c3c5666f0bb73360a570d6bd192241806b66e7b57df87b8173be9c30efd2b3b2
       tasks: ["default"]
       name: "20160825"
+- image_type: short_read_assembler
+  name: bioboxes/gatb-minia
+  versions:
+    - sha256: be74a8b9ac628f4e829a9c614eb2c83020fa65fd3dc8a7e5eaee2cb427c5927d
+      tasks: ["default"]
+      name: "20161208-a4c6e8c"
+
 
 - image_type: reference_assembly_evaluation
   name: bioboxes/quast
