@@ -62,6 +62,12 @@
     - sha256: be74a8b9ac628f4e829a9c614eb2c83020fa65fd3dc8a7e5eaee2cb427c5927d
       tasks: ["default"]
       name: "20161208-a4c6e8c"
+- image_type: short_read_assembler
+  name: bioboxes/light-assembler
+  versions:
+    - sha256: b056293ef637ac4a6ad70cf2bb1a57dbea5ff8fd52ae5dbec7d962b2643df5b8
+      tasks: ["default"]
+      name: "20161003-ed93715"
 
 
 - image_type: reference_assembly_evaluation
