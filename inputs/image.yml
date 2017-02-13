@@ -29,6 +29,9 @@
     - sha256: dbc7a9ecb3b2869e53fb66c95b0936e570195a7c96a15c8d94a2775179aa2e80
       tasks: ["default", "single-cell", "careful"]
       name: "3.9.0"
+    - sha256: d8a0b81bf9028d33fcebd2cd6abcb039eb1a8a657d2a29bb79865ad0beb87549
+      tasks: ["default", "single-cell", "careful"]
+      name: "3.10.0"
 - image_type: short_read_assembler
   name: bioboxes/shovill
   versions:
@@ -47,6 +50,24 @@
     - sha256: f55fca3d012b3cbd926423db3b4f00af21a8ec51743677bae0ca628aa782be92
       tasks: ["default", "adaptive", "careful"]
       name: "2.0.1"
+- image_type: short_read_assembler
+  name: koadman/docker-a5-miseq
+  versions:
+    - sha256: c3c5666f0bb73360a570d6bd192241806b66e7b57df87b8173be9c30efd2b3b2
+      tasks: ["default"]
+      name: "20160825"
+- image_type: short_read_assembler
+  name: bioboxes/gatb-minia
+  versions:
+    - sha256: be74a8b9ac628f4e829a9c614eb2c83020fa65fd3dc8a7e5eaee2cb427c5927d
+      tasks: ["default"]
+      name: "20161208-a4c6e8c"
+- image_type: short_read_assembler
+  name: bioboxes/light-assembler
+  versions:
+    - sha256: b056293ef637ac4a6ad70cf2bb1a57dbea5ff8fd52ae5dbec7d962b2643df5b8
+      tasks: ["default"]
+      name: "20161003-ed93715"
 
 
 - image_type: reference_assembly_evaluation
