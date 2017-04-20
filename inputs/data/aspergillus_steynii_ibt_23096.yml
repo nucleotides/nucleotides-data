@@ -7,8 +7,8 @@ source:
   source_type: microbe
   references:
     - file_type: reference_fasta
-      sha256: 27bdecea48040e05cdb97cddb175eb232fc706db6a16d607406d85279b549764
-      url: s3://nucleotides-prod/inputs/27/27bdecea48040e05cdb97cddb175eb232fc706db6a16d607406d85279b549764
+      sha256: 5c4c424826d705e46e3686223b6f111ce7a59cd4c5edeabe6490097cf8c3c49d
+      url: s3://nucleotides-prod/inputs/5c/5c4c424826d705e46e3686223b6f111ce7a59cd4c5edeabe6490097cf8c3c49d
 data:
   - material_type: dna
     name: regular_fragment_1
