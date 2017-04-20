@@ -98,7 +98,9 @@
 - name: total_length_gt_50000
   desc: Sum of contig lengths greather than 50kbp
 - name: unaligned_length
-  desc: A Quast assembly metric
+  desc: Total length of unaligned regions
+- name: total_aligned_length
+  desc: Total length of aligned region
 - name: n_misassembled_contigs
   desc: Number of missambled contigs
 - name: assembly.gene_count.bacteria_archea_rrna.16s_rrna
