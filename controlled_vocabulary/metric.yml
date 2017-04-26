@@ -475,3 +475,1645 @@
   desc: Whether the reference genome contains the minimum set of bacterial or archeal rRNA genes
 - name: assembly.minimum_gene_set.bacteria_archea_rrna
   desc: Whether the assembled genome contains the minimum set of bacterial or archeal rRNA genes
+- desc: Count of all genes only in the assembly
+  name: assembly.gene_type_size.all.count
+- desc: L50 of all gene lengths in the assembly
+  name: assembly.gene_type_size.all.l50
+- desc: N50 of all gene lengths in the assembly
+  name: assembly.gene_type_size.all.n50
+- desc: Sum of all gene lengths in the assembly
+  name: assembly.gene_type_size.all.sum_length
+- desc: Count of all coding genes only in the assembly
+  name: assembly.gene_type_size.cds.count
+- desc: L50 of all coding gene lengths in the assembly
+  name: assembly.gene_type_size.cds.l50
+- desc: N50 of all coding gene lengths in the assembly
+  name: assembly.gene_type_size.cds.n50
+- desc: Sum of all coding gene lengths in the assembly
+  name: assembly.gene_type_size.cds.sum_length
+- desc: Count of all repeat region genes only in the assembly
+  name: assembly.gene_type_size.repeat_region.count
+- desc: L50 of all repeat region gene lengths in the assembly
+  name: assembly.gene_type_size.repeat_region.l50
+- desc: N50 of all repeat region gene lengths in the assembly
+  name: assembly.gene_type_size.repeat_region.n50
+- desc: Sum of all repeat region gene lengths in the assembly
+  name: assembly.gene_type_size.repeat_region.sum_length
+- desc: Count of all ribosomal RNA genes only in the assembly
+  name: assembly.gene_type_size.rrna.count
+- desc: L50 of all ribosomal RNA gene lengths in the assembly
+  name: assembly.gene_type_size.rrna.l50
+- desc: N50 of all ribosomal RNA gene lengths in the assembly
+  name: assembly.gene_type_size.rrna.n50
+- desc: Sum of all ribosomal RNA gene lengths in the assembly
+  name: assembly.gene_type_size.rrna.sum_length
+- desc: Count of all transfer messenger genes only in the assembly
+  name: assembly.gene_type_size.tmrna.count
+- desc: L50 of all transfer messenger gene lengths in the assembly
+  name: assembly.gene_type_size.tmrna.l50
+- desc: N50 of all transfer messenger gene lengths in the assembly
+  name: assembly.gene_type_size.tmrna.n50
+- desc: Sum of all transfer messenger gene lengths in the assembly
+  name: assembly.gene_type_size.tmrna.sum_length
+- desc: Count of all transfer RNA genes only in the assembly
+  name: assembly.gene_type_size.trna.count
+- desc: L50 of all transfer RNA gene lengths in the assembly
+  name: assembly.gene_type_size.trna.l50
+- desc: N50 of all transfer RNA gene lengths in the assembly
+  name: assembly.gene_type_size.trna.n50
+- desc: Sum of all transfer RNA gene lengths in the assembly
+  name: assembly.gene_type_size.trna.sum_length
+- desc: L1 norm distance of 16S rRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.16s_rrna.l1_norm
+- desc: L2 norm distance of 16S rRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.16s_rrna.l2_norm
+- desc: 16S rRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.16s_rrna.n_assembly_only
+- desc: 16S rRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.16s_rrna.n_intersect
+- desc: 16S rRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.16s_rrna.n_reference_only
+- desc: 16S rRNA DNA sequence SHA256 digests found in only the assembly or only the
+    reference, but not both
+  name: comparison.gene_copy_distance.16s_rrna.n_symmetric_difference
+- desc: Percent 16S rRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.16s_rrna.perc_assembly_only
+- desc: 16S rRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.16s_rrna.perc_intersect
+- desc: Percent 16S rRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.16s_rrna.perc_reference_only
+- desc: Percent 16S rRNA DNA sequence SHA256 digests found in only the assembly or
+    only the reference, but not both
+  name: comparison.gene_copy_distance.16s_rrna.perc_symmetric_difference
+- desc: L1 norm distance of 18S rRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.18s_rrna.l1_norm
+- desc: L2 norm distance of 18S rRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.18s_rrna.l2_norm
+- desc: 18S rRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.18s_rrna.n_assembly_only
+- desc: 18S rRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.18s_rrna.n_intersect
+- desc: 18S rRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.18s_rrna.n_reference_only
+- desc: 18S rRNA DNA sequence SHA256 digests found in only the assembly or only the
+    reference, but not both
+  name: comparison.gene_copy_distance.18s_rrna.n_symmetric_difference
+- desc: Percent 18S rRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.18s_rrna.perc_assembly_only
+- desc: 18S rRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.18s_rrna.perc_intersect
+- desc: Percent 18S rRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.18s_rrna.perc_reference_only
+- desc: Percent 18S rRNA DNA sequence SHA256 digests found in only the assembly or
+    only the reference, but not both
+  name: comparison.gene_copy_distance.18s_rrna.perc_symmetric_difference
+- desc: L1 norm distance of 23S rRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.23s_rrna.l1_norm
+- desc: L2 norm distance of 23S rRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.23s_rrna.l2_norm
+- desc: 23S rRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.23s_rrna.n_assembly_only
+- desc: 23S rRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.23s_rrna.n_intersect
+- desc: 23S rRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.23s_rrna.n_reference_only
+- desc: 23S rRNA DNA sequence SHA256 digests found in only the assembly or only the
+    reference, but not both
+  name: comparison.gene_copy_distance.23s_rrna.n_symmetric_difference
+- desc: Percent 23S rRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.23s_rrna.perc_assembly_only
+- desc: 23S rRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.23s_rrna.perc_intersect
+- desc: Percent 23S rRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.23s_rrna.perc_reference_only
+- desc: Percent 23S rRNA DNA sequence SHA256 digests found in only the assembly or
+    only the reference, but not both
+  name: comparison.gene_copy_distance.23s_rrna.perc_symmetric_difference
+- desc: L1 norm distance of 5.8S rRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.5_8s_rrna.l1_norm
+- desc: L2 norm distance of 5.8S rRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.5_8s_rrna.l2_norm
+- desc: 5.8S rRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.5_8s_rrna.n_assembly_only
+- desc: 5.8S rRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.5_8s_rrna.n_intersect
+- desc: 5.8S rRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.5_8s_rrna.n_reference_only
+- desc: 5.8S rRNA DNA sequence SHA256 digests found in only the assembly or only the
+    reference, but not both
+  name: comparison.gene_copy_distance.5_8s_rrna.n_symmetric_difference
+- desc: Percent 5.8S rRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.5_8s_rrna.perc_assembly_only
+- desc: 5.8S rRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.5_8s_rrna.perc_intersect
+- desc: Percent 5.8S rRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.5_8s_rrna.perc_reference_only
+- desc: Percent 5.8S rRNA DNA sequence SHA256 digests found in only the assembly or
+    only the reference, but not both
+  name: comparison.gene_copy_distance.5_8s_rrna.perc_symmetric_difference
+- desc: L1 norm distance of 5S rRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.5s_rrna.l1_norm
+- desc: L2 norm distance of 5S rRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.5s_rrna.l2_norm
+- desc: 5S rRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.5s_rrna.n_assembly_only
+- desc: 5S rRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.5s_rrna.n_intersect
+- desc: 5S rRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.5s_rrna.n_reference_only
+- desc: 5S rRNA DNA sequence SHA256 digests found in only the assembly or only the
+    reference, but not both
+  name: comparison.gene_copy_distance.5s_rrna.n_symmetric_difference
+- desc: Percent 5S rRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.5s_rrna.perc_assembly_only
+- desc: 5S rRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.5s_rrna.perc_intersect
+- desc: Percent 5S rRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.5s_rrna.perc_reference_only
+- desc: Percent 5S rRNA DNA sequence SHA256 digests found in only the assembly or
+    only the reference, but not both
+  name: comparison.gene_copy_distance.5s_rrna.perc_symmetric_difference
+- desc: L1 norm distance of alanine tRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.ala_trna.l1_norm
+- desc: L2 norm distance of alanine tRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.ala_trna.l2_norm
+- desc: alanine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.ala_trna.n_assembly_only
+- desc: alanine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.ala_trna.n_intersect
+- desc: alanine tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.ala_trna.n_reference_only
+- desc: alanine tRNA DNA sequence SHA256 digests found in only the assembly or only
+    the reference, but not both
+  name: comparison.gene_copy_distance.ala_trna.n_symmetric_difference
+- desc: Percent alanine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.ala_trna.perc_assembly_only
+- desc: alanine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.ala_trna.perc_intersect
+- desc: Percent alanine tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.ala_trna.perc_reference_only
+- desc: Percent alanine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.ala_trna.perc_symmetric_difference
+- desc: L1 norm distance of arginine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.arg_trna.l1_norm
+- desc: L2 norm distance of arginine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.arg_trna.l2_norm
+- desc: arginine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.arg_trna.n_assembly_only
+- desc: arginine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.arg_trna.n_intersect
+- desc: arginine tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.arg_trna.n_reference_only
+- desc: arginine tRNA DNA sequence SHA256 digests found in only the assembly or only
+    the reference, but not both
+  name: comparison.gene_copy_distance.arg_trna.n_symmetric_difference
+- desc: Percent arginine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.arg_trna.perc_assembly_only
+- desc: arginine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.arg_trna.perc_intersect
+- desc: Percent arginine tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.arg_trna.perc_reference_only
+- desc: Percent arginine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.arg_trna.perc_symmetric_difference
+- desc: L1 norm distance of asparagine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.asn_trna.l1_norm
+- desc: L2 norm distance of asparagine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.asn_trna.l2_norm
+- desc: asparagine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.asn_trna.n_assembly_only
+- desc: asparagine tRNA DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_copy_distance.asn_trna.n_intersect
+- desc: asparagine tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.asn_trna.n_reference_only
+- desc: asparagine tRNA DNA sequence SHA256 digests found in only the assembly or
+    only the reference, but not both
+  name: comparison.gene_copy_distance.asn_trna.n_symmetric_difference
+- desc: Percent asparagine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.asn_trna.perc_assembly_only
+- desc: asparagine tRNA DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_copy_distance.asn_trna.perc_intersect
+- desc: Percent asparagine tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.asn_trna.perc_reference_only
+- desc: Percent asparagine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.asn_trna.perc_symmetric_difference
+- desc: L1 norm distance of aspartic acid tRNA DNA sequence SHA256 digests between
+    the reference and the assembly
+  name: comparison.gene_copy_distance.asp_trna.l1_norm
+- desc: L2 norm distance of aspartic acid tRNA DNA sequence SHA256 digests between
+    the reference and the assembly
+  name: comparison.gene_copy_distance.asp_trna.l2_norm
+- desc: aspartic acid tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.asp_trna.n_assembly_only
+- desc: aspartic acid tRNA DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_copy_distance.asp_trna.n_intersect
+- desc: aspartic acid tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.asp_trna.n_reference_only
+- desc: aspartic acid tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.asp_trna.n_symmetric_difference
+- desc: Percent aspartic acid tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.asp_trna.perc_assembly_only
+- desc: aspartic acid tRNA DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_copy_distance.asp_trna.perc_intersect
+- desc: Percent aspartic acid tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.asp_trna.perc_reference_only
+- desc: Percent aspartic acid tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.asp_trna.perc_symmetric_difference
+- desc: L1 norm distance of cysteine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.cys_trna.l1_norm
+- desc: L2 norm distance of cysteine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.cys_trna.l2_norm
+- desc: cysteine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.cys_trna.n_assembly_only
+- desc: cysteine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.cys_trna.n_intersect
+- desc: cysteine tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.cys_trna.n_reference_only
+- desc: cysteine tRNA DNA sequence SHA256 digests found in only the assembly or only
+    the reference, but not both
+  name: comparison.gene_copy_distance.cys_trna.n_symmetric_difference
+- desc: Percent cysteine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.cys_trna.perc_assembly_only
+- desc: cysteine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.cys_trna.perc_intersect
+- desc: Percent cysteine tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.cys_trna.perc_reference_only
+- desc: Percent cysteine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.cys_trna.perc_symmetric_difference
+- desc: L1 norm distance of glutamine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.gln_trna.l1_norm
+- desc: L2 norm distance of glutamine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.gln_trna.l2_norm
+- desc: glutamine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.gln_trna.n_assembly_only
+- desc: glutamine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.gln_trna.n_intersect
+- desc: glutamine tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.gln_trna.n_reference_only
+- desc: glutamine tRNA DNA sequence SHA256 digests found in only the assembly or only
+    the reference, but not both
+  name: comparison.gene_copy_distance.gln_trna.n_symmetric_difference
+- desc: Percent glutamine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.gln_trna.perc_assembly_only
+- desc: glutamine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.gln_trna.perc_intersect
+- desc: Percent glutamine tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.gln_trna.perc_reference_only
+- desc: Percent glutamine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.gln_trna.perc_symmetric_difference
+- desc: L1 norm distance of glutamic acid tRNA DNA sequence SHA256 digests between
+    the reference and the assembly
+  name: comparison.gene_copy_distance.glu_trna.l1_norm
+- desc: L2 norm distance of glutamic acid tRNA DNA sequence SHA256 digests between
+    the reference and the assembly
+  name: comparison.gene_copy_distance.glu_trna.l2_norm
+- desc: glutamic acid tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.glu_trna.n_assembly_only
+- desc: glutamic acid tRNA DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_copy_distance.glu_trna.n_intersect
+- desc: glutamic acid tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.glu_trna.n_reference_only
+- desc: glutamic acid tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.glu_trna.n_symmetric_difference
+- desc: Percent glutamic acid tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.glu_trna.perc_assembly_only
+- desc: glutamic acid tRNA DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_copy_distance.glu_trna.perc_intersect
+- desc: Percent glutamic acid tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.glu_trna.perc_reference_only
+- desc: Percent glutamic acid tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.glu_trna.perc_symmetric_difference
+- desc: L1 norm distance of glycine tRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.gly_trna.l1_norm
+- desc: L2 norm distance of glycine tRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.gly_trna.l2_norm
+- desc: glycine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.gly_trna.n_assembly_only
+- desc: glycine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.gly_trna.n_intersect
+- desc: glycine tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.gly_trna.n_reference_only
+- desc: glycine tRNA DNA sequence SHA256 digests found in only the assembly or only
+    the reference, but not both
+  name: comparison.gene_copy_distance.gly_trna.n_symmetric_difference
+- desc: Percent glycine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.gly_trna.perc_assembly_only
+- desc: glycine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.gly_trna.perc_intersect
+- desc: Percent glycine tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.gly_trna.perc_reference_only
+- desc: Percent glycine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.gly_trna.perc_symmetric_difference
+- desc: L1 norm distance of histidine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.his_trna.l1_norm
+- desc: L2 norm distance of histidine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.his_trna.l2_norm
+- desc: histidine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.his_trna.n_assembly_only
+- desc: histidine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.his_trna.n_intersect
+- desc: histidine tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.his_trna.n_reference_only
+- desc: histidine tRNA DNA sequence SHA256 digests found in only the assembly or only
+    the reference, but not both
+  name: comparison.gene_copy_distance.his_trna.n_symmetric_difference
+- desc: Percent histidine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.his_trna.perc_assembly_only
+- desc: histidine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.his_trna.perc_intersect
+- desc: Percent histidine tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.his_trna.perc_reference_only
+- desc: Percent histidine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.his_trna.perc_symmetric_difference
+- desc: L1 norm distance of isoleucine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.ile_trna.l1_norm
+- desc: L2 norm distance of isoleucine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.ile_trna.l2_norm
+- desc: isoleucine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.ile_trna.n_assembly_only
+- desc: isoleucine tRNA DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_copy_distance.ile_trna.n_intersect
+- desc: isoleucine tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.ile_trna.n_reference_only
+- desc: isoleucine tRNA DNA sequence SHA256 digests found in only the assembly or
+    only the reference, but not both
+  name: comparison.gene_copy_distance.ile_trna.n_symmetric_difference
+- desc: Percent isoleucine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.ile_trna.perc_assembly_only
+- desc: isoleucine tRNA DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_copy_distance.ile_trna.perc_intersect
+- desc: Percent isoleucine tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.ile_trna.perc_reference_only
+- desc: Percent isoleucine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.ile_trna.perc_symmetric_difference
+- desc: L1 norm distance of leucine tRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.leu_trna.l1_norm
+- desc: L2 norm distance of leucine tRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.leu_trna.l2_norm
+- desc: leucine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.leu_trna.n_assembly_only
+- desc: leucine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.leu_trna.n_intersect
+- desc: leucine tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.leu_trna.n_reference_only
+- desc: leucine tRNA DNA sequence SHA256 digests found in only the assembly or only
+    the reference, but not both
+  name: comparison.gene_copy_distance.leu_trna.n_symmetric_difference
+- desc: Percent leucine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.leu_trna.perc_assembly_only
+- desc: leucine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.leu_trna.perc_intersect
+- desc: Percent leucine tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.leu_trna.perc_reference_only
+- desc: Percent leucine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.leu_trna.perc_symmetric_difference
+- desc: L1 norm distance of lysine tRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.lys_trna.l1_norm
+- desc: L2 norm distance of lysine tRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.lys_trna.l2_norm
+- desc: lysine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.lys_trna.n_assembly_only
+- desc: lysine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.lys_trna.n_intersect
+- desc: lysine tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.lys_trna.n_reference_only
+- desc: lysine tRNA DNA sequence SHA256 digests found in only the assembly or only
+    the reference, but not both
+  name: comparison.gene_copy_distance.lys_trna.n_symmetric_difference
+- desc: Percent lysine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.lys_trna.perc_assembly_only
+- desc: lysine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.lys_trna.perc_intersect
+- desc: Percent lysine tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.lys_trna.perc_reference_only
+- desc: Percent lysine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.lys_trna.perc_symmetric_difference
+- desc: L1 norm distance of methionine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.met_trna.l1_norm
+- desc: L2 norm distance of methionine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.met_trna.l2_norm
+- desc: methionine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.met_trna.n_assembly_only
+- desc: methionine tRNA DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_copy_distance.met_trna.n_intersect
+- desc: methionine tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.met_trna.n_reference_only
+- desc: methionine tRNA DNA sequence SHA256 digests found in only the assembly or
+    only the reference, but not both
+  name: comparison.gene_copy_distance.met_trna.n_symmetric_difference
+- desc: Percent methionine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.met_trna.perc_assembly_only
+- desc: methionine tRNA DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_copy_distance.met_trna.perc_intersect
+- desc: Percent methionine tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.met_trna.perc_reference_only
+- desc: Percent methionine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.met_trna.perc_symmetric_difference
+- desc: L1 norm distance of phenylalanine tRNA DNA sequence SHA256 digests between
+    the reference and the assembly
+  name: comparison.gene_copy_distance.phe_trna.l1_norm
+- desc: L2 norm distance of phenylalanine tRNA DNA sequence SHA256 digests between
+    the reference and the assembly
+  name: comparison.gene_copy_distance.phe_trna.l2_norm
+- desc: phenylalanine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.phe_trna.n_assembly_only
+- desc: phenylalanine tRNA DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_copy_distance.phe_trna.n_intersect
+- desc: phenylalanine tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.phe_trna.n_reference_only
+- desc: phenylalanine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.phe_trna.n_symmetric_difference
+- desc: Percent phenylalanine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.phe_trna.perc_assembly_only
+- desc: phenylalanine tRNA DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_copy_distance.phe_trna.perc_intersect
+- desc: Percent phenylalanine tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.phe_trna.perc_reference_only
+- desc: Percent phenylalanine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.phe_trna.perc_symmetric_difference
+- desc: L1 norm distance of proline tRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.pro_trna.l1_norm
+- desc: L2 norm distance of proline tRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.pro_trna.l2_norm
+- desc: proline tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.pro_trna.n_assembly_only
+- desc: proline tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.pro_trna.n_intersect
+- desc: proline tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.pro_trna.n_reference_only
+- desc: proline tRNA DNA sequence SHA256 digests found in only the assembly or only
+    the reference, but not both
+  name: comparison.gene_copy_distance.pro_trna.n_symmetric_difference
+- desc: Percent proline tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.pro_trna.perc_assembly_only
+- desc: proline tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.pro_trna.perc_intersect
+- desc: Percent proline tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.pro_trna.perc_reference_only
+- desc: Percent proline tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.pro_trna.perc_symmetric_difference
+- desc: L1 norm distance of RnaseP DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.rnasep_rrna.l1_norm
+- desc: L2 norm distance of RnaseP DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.rnasep_rrna.l2_norm
+- desc: RnaseP DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.rnasep_rrna.n_assembly_only
+- desc: RnaseP DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.rnasep_rrna.n_intersect
+- desc: RnaseP DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.rnasep_rrna.n_reference_only
+- desc: RnaseP DNA sequence SHA256 digests found in only the assembly or only the
+    reference, but not both
+  name: comparison.gene_copy_distance.rnasep_rrna.n_symmetric_difference
+- desc: Percent RnaseP DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.rnasep_rrna.perc_assembly_only
+- desc: RnaseP DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.rnasep_rrna.perc_intersect
+- desc: Percent RnaseP DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.rnasep_rrna.perc_reference_only
+- desc: Percent RnaseP DNA sequence SHA256 digests found in only the assembly or only
+    the reference, but not both
+  name: comparison.gene_copy_distance.rnasep_rrna.perc_symmetric_difference
+- desc: L1 norm distance of serine tRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.ser_trna.l1_norm
+- desc: L2 norm distance of serine tRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.ser_trna.l2_norm
+- desc: serine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.ser_trna.n_assembly_only
+- desc: serine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.ser_trna.n_intersect
+- desc: serine tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.ser_trna.n_reference_only
+- desc: serine tRNA DNA sequence SHA256 digests found in only the assembly or only
+    the reference, but not both
+  name: comparison.gene_copy_distance.ser_trna.n_symmetric_difference
+- desc: Percent serine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.ser_trna.perc_assembly_only
+- desc: serine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.ser_trna.perc_intersect
+- desc: Percent serine tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.ser_trna.perc_reference_only
+- desc: Percent serine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.ser_trna.perc_symmetric_difference
+- desc: L1 norm distance of signal recognition particle DNA sequence SHA256 digests
+    between the reference and the assembly
+  name: comparison.gene_copy_distance.srp_rrna.l1_norm
+- desc: L2 norm distance of signal recognition particle DNA sequence SHA256 digests
+    between the reference and the assembly
+  name: comparison.gene_copy_distance.srp_rrna.l2_norm
+- desc: signal recognition particle DNA sequence SHA256 digests found in only the
+    assembly
+  name: comparison.gene_copy_distance.srp_rrna.n_assembly_only
+- desc: signal recognition particle DNA sequence SHA256 digests found in the intersect
+    of the assembly and the reference
+  name: comparison.gene_copy_distance.srp_rrna.n_intersect
+- desc: signal recognition particle DNA sequence SHA256 digests found in only the
+    reference
+  name: comparison.gene_copy_distance.srp_rrna.n_reference_only
+- desc: signal recognition particle DNA sequence SHA256 digests found in only the
+    assembly or only the reference, but not both
+  name: comparison.gene_copy_distance.srp_rrna.n_symmetric_difference
+- desc: Percent signal recognition particle DNA sequence SHA256 digests found in only
+    the assembly
+  name: comparison.gene_copy_distance.srp_rrna.perc_assembly_only
+- desc: signal recognition particle DNA sequence SHA256 digests found in the intersect
+    of the assembly and the reference
+  name: comparison.gene_copy_distance.srp_rrna.perc_intersect
+- desc: Percent signal recognition particle DNA sequence SHA256 digests found in only
+    the refernce
+  name: comparison.gene_copy_distance.srp_rrna.perc_reference_only
+- desc: Percent signal recognition particle DNA sequence SHA256 digests found in only
+    the assembly or only the reference, but not both
+  name: comparison.gene_copy_distance.srp_rrna.perc_symmetric_difference
+- desc: L1 norm distance of threonine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.thr_trna.l1_norm
+- desc: L2 norm distance of threonine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.thr_trna.l2_norm
+- desc: threonine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.thr_trna.n_assembly_only
+- desc: threonine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.thr_trna.n_intersect
+- desc: threonine tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.thr_trna.n_reference_only
+- desc: threonine tRNA DNA sequence SHA256 digests found in only the assembly or only
+    the reference, but not both
+  name: comparison.gene_copy_distance.thr_trna.n_symmetric_difference
+- desc: Percent threonine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.thr_trna.perc_assembly_only
+- desc: threonine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.thr_trna.perc_intersect
+- desc: Percent threonine tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.thr_trna.perc_reference_only
+- desc: Percent threonine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.thr_trna.perc_symmetric_difference
+- desc: L1 norm distance of tryptophan tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.trp_trna.l1_norm
+- desc: L2 norm distance of tryptophan tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.trp_trna.l2_norm
+- desc: tryptophan tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.trp_trna.n_assembly_only
+- desc: tryptophan tRNA DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_copy_distance.trp_trna.n_intersect
+- desc: tryptophan tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.trp_trna.n_reference_only
+- desc: tryptophan tRNA DNA sequence SHA256 digests found in only the assembly or
+    only the reference, but not both
+  name: comparison.gene_copy_distance.trp_trna.n_symmetric_difference
+- desc: Percent tryptophan tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.trp_trna.perc_assembly_only
+- desc: tryptophan tRNA DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_copy_distance.trp_trna.perc_intersect
+- desc: Percent tryptophan tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.trp_trna.perc_reference_only
+- desc: Percent tryptophan tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.trp_trna.perc_symmetric_difference
+- desc: L1 norm distance of tyrosine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.tyr_trna.l1_norm
+- desc: L2 norm distance of tyrosine tRNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_copy_distance.tyr_trna.l2_norm
+- desc: tyrosine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.tyr_trna.n_assembly_only
+- desc: tyrosine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.tyr_trna.n_intersect
+- desc: tyrosine tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.tyr_trna.n_reference_only
+- desc: tyrosine tRNA DNA sequence SHA256 digests found in only the assembly or only
+    the reference, but not both
+  name: comparison.gene_copy_distance.tyr_trna.n_symmetric_difference
+- desc: Percent tyrosine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.tyr_trna.perc_assembly_only
+- desc: tyrosine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.tyr_trna.perc_intersect
+- desc: Percent tyrosine tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.tyr_trna.perc_reference_only
+- desc: Percent tyrosine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.tyr_trna.perc_symmetric_difference
+- desc: L1 norm distance of valine tRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.val_trna.l1_norm
+- desc: L2 norm distance of valine tRNA DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_copy_distance.val_trna.l2_norm
+- desc: valine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.val_trna.n_assembly_only
+- desc: valine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.val_trna.n_intersect
+- desc: valine tRNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_copy_distance.val_trna.n_reference_only
+- desc: valine tRNA DNA sequence SHA256 digests found in only the assembly or only
+    the reference, but not both
+  name: comparison.gene_copy_distance.val_trna.n_symmetric_difference
+- desc: Percent valine tRNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_copy_distance.val_trna.perc_assembly_only
+- desc: valine tRNA DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_copy_distance.val_trna.perc_intersect
+- desc: Percent valine tRNA DNA sequence SHA256 digests found in only the refernce
+  name: comparison.gene_copy_distance.val_trna.perc_reference_only
+- desc: Percent valine tRNA DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_copy_distance.val_trna.perc_symmetric_difference
+- desc: Count of 16S rRNA genes only in the assembly
+  name: comparison.gene_copy_size.16s_rrna.count
+- desc: L50 of 16S rRNA genes
+  name: comparison.gene_copy_size.16s_rrna.l50
+- desc: L50 of 16S rRNA genes using the sum length of reference 16S rRNA genes as
+    the pivot
+  name: comparison.gene_copy_size.16s_rrna.lg50
+- desc: N50 of 16S rRNA genes
+  name: comparison.gene_copy_size.16s_rrna.n50
+- desc: N50 of 16S rRNA genes using the sum length of reference 16S rRNA genes as
+    the pivot
+  name: comparison.gene_copy_size.16s_rrna.ng50
+- desc: Sum length of 16S rRNA genes in the assembly
+  name: comparison.gene_copy_size.16s_rrna.sum_length
+- desc: Count of 18S rRNA genes only in the assembly
+  name: comparison.gene_copy_size.18s_rrna.count
+- desc: L50 of 18S rRNA genes
+  name: comparison.gene_copy_size.18s_rrna.l50
+- desc: L50 of 18S rRNA genes using the sum length of reference 18S rRNA genes as
+    the pivot
+  name: comparison.gene_copy_size.18s_rrna.lg50
+- desc: N50 of 18S rRNA genes
+  name: comparison.gene_copy_size.18s_rrna.n50
+- desc: N50 of 18S rRNA genes using the sum length of reference 18S rRNA genes as
+    the pivot
+  name: comparison.gene_copy_size.18s_rrna.ng50
+- desc: Sum length of 18S rRNA genes in the assembly
+  name: comparison.gene_copy_size.18s_rrna.sum_length
+- desc: Count of 23S rRNA genes only in the assembly
+  name: comparison.gene_copy_size.23s_rrna.count
+- desc: L50 of 23S rRNA genes
+  name: comparison.gene_copy_size.23s_rrna.l50
+- desc: L50 of 23S rRNA genes using the sum length of reference 23S rRNA genes as
+    the pivot
+  name: comparison.gene_copy_size.23s_rrna.lg50
+- desc: N50 of 23S rRNA genes
+  name: comparison.gene_copy_size.23s_rrna.n50
+- desc: N50 of 23S rRNA genes using the sum length of reference 23S rRNA genes as
+    the pivot
+  name: comparison.gene_copy_size.23s_rrna.ng50
+- desc: Sum length of 23S rRNA genes in the assembly
+  name: comparison.gene_copy_size.23s_rrna.sum_length
+- desc: Count of 5.8S rRNA genes only in the assembly
+  name: comparison.gene_copy_size.5_8s_rrna.count
+- desc: L50 of 5.8S rRNA genes
+  name: comparison.gene_copy_size.5_8s_rrna.l50
+- desc: L50 of 5.8S rRNA genes using the sum length of reference 5.8S rRNA genes as
+    the pivot
+  name: comparison.gene_copy_size.5_8s_rrna.lg50
+- desc: N50 of 5.8S rRNA genes
+  name: comparison.gene_copy_size.5_8s_rrna.n50
+- desc: N50 of 5.8S rRNA genes using the sum length of reference 5.8S rRNA genes as
+    the pivot
+  name: comparison.gene_copy_size.5_8s_rrna.ng50
+- desc: Sum length of 5.8S rRNA genes in the assembly
+  name: comparison.gene_copy_size.5_8s_rrna.sum_length
+- desc: Count of 5S rRNA genes only in the assembly
+  name: comparison.gene_copy_size.5s_rrna.count
+- desc: L50 of 5S rRNA genes
+  name: comparison.gene_copy_size.5s_rrna.l50
+- desc: L50 of 5S rRNA genes using the sum length of reference 5S rRNA genes as the
+    pivot
+  name: comparison.gene_copy_size.5s_rrna.lg50
+- desc: N50 of 5S rRNA genes
+  name: comparison.gene_copy_size.5s_rrna.n50
+- desc: N50 of 5S rRNA genes using the sum length of reference 5S rRNA genes as the
+    pivot
+  name: comparison.gene_copy_size.5s_rrna.ng50
+- desc: Sum length of 5S rRNA genes in the assembly
+  name: comparison.gene_copy_size.5s_rrna.sum_length
+- desc: Count of alanine tRNA genes only in the assembly
+  name: comparison.gene_copy_size.ala_trna.count
+- desc: L50 of alanine tRNA genes
+  name: comparison.gene_copy_size.ala_trna.l50
+- desc: L50 of alanine tRNA genes using the sum length of reference alanine tRNA genes
+    as the pivot
+  name: comparison.gene_copy_size.ala_trna.lg50
+- desc: N50 of alanine tRNA genes
+  name: comparison.gene_copy_size.ala_trna.n50
+- desc: N50 of alanine tRNA genes using the sum length of reference alanine tRNA genes
+    as the pivot
+  name: comparison.gene_copy_size.ala_trna.ng50
+- desc: Sum length of alanine tRNA genes in the assembly
+  name: comparison.gene_copy_size.ala_trna.sum_length
+- desc: Count of arginine tRNA genes only in the assembly
+  name: comparison.gene_copy_size.arg_trna.count
+- desc: L50 of arginine tRNA genes
+  name: comparison.gene_copy_size.arg_trna.l50
+- desc: L50 of arginine tRNA genes using the sum length of reference arginine tRNA
+    genes as the pivot
+  name: comparison.gene_copy_size.arg_trna.lg50
+- desc: N50 of arginine tRNA genes
+  name: comparison.gene_copy_size.arg_trna.n50
+- desc: N50 of arginine tRNA genes using the sum length of reference arginine tRNA
+    genes as the pivot
+  name: comparison.gene_copy_size.arg_trna.ng50
+- desc: Sum length of arginine tRNA genes in the assembly
+  name: comparison.gene_copy_size.arg_trna.sum_length
+- desc: Count of asparagine tRNA genes only in the assembly
+  name: comparison.gene_copy_size.asn_trna.count
+- desc: L50 of asparagine tRNA genes
+  name: comparison.gene_copy_size.asn_trna.l50
+- desc: L50 of asparagine tRNA genes using the sum length of reference asparagine
+    tRNA genes as the pivot
+  name: comparison.gene_copy_size.asn_trna.lg50
+- desc: N50 of asparagine tRNA genes
+  name: comparison.gene_copy_size.asn_trna.n50
+- desc: N50 of asparagine tRNA genes using the sum length of reference asparagine
+    tRNA genes as the pivot
+  name: comparison.gene_copy_size.asn_trna.ng50
+- desc: Sum length of asparagine tRNA genes in the assembly
+  name: comparison.gene_copy_size.asn_trna.sum_length
+- desc: Count of aspartic acid tRNA genes only in the assembly
+  name: comparison.gene_copy_size.asp_trna.count
+- desc: L50 of aspartic acid tRNA genes
+  name: comparison.gene_copy_size.asp_trna.l50
+- desc: L50 of aspartic acid tRNA genes using the sum length of reference aspartic
+    acid tRNA genes as the pivot
+  name: comparison.gene_copy_size.asp_trna.lg50
+- desc: N50 of aspartic acid tRNA genes
+  name: comparison.gene_copy_size.asp_trna.n50
+- desc: N50 of aspartic acid tRNA genes using the sum length of reference aspartic
+    acid tRNA genes as the pivot
+  name: comparison.gene_copy_size.asp_trna.ng50
+- desc: Sum length of aspartic acid tRNA genes in the assembly
+  name: comparison.gene_copy_size.asp_trna.sum_length
+- desc: Count of cysteine tRNA genes only in the assembly
+  name: comparison.gene_copy_size.cys_trna.count
+- desc: L50 of cysteine tRNA genes
+  name: comparison.gene_copy_size.cys_trna.l50
+- desc: L50 of cysteine tRNA genes using the sum length of reference cysteine tRNA
+    genes as the pivot
+  name: comparison.gene_copy_size.cys_trna.lg50
+- desc: N50 of cysteine tRNA genes
+  name: comparison.gene_copy_size.cys_trna.n50
+- desc: N50 of cysteine tRNA genes using the sum length of reference cysteine tRNA
+    genes as the pivot
+  name: comparison.gene_copy_size.cys_trna.ng50
+- desc: Sum length of cysteine tRNA genes in the assembly
+  name: comparison.gene_copy_size.cys_trna.sum_length
+- desc: Count of glutamine tRNA genes only in the assembly
+  name: comparison.gene_copy_size.gln_trna.count
+- desc: L50 of glutamine tRNA genes
+  name: comparison.gene_copy_size.gln_trna.l50
+- desc: L50 of glutamine tRNA genes using the sum length of reference glutamine tRNA
+    genes as the pivot
+  name: comparison.gene_copy_size.gln_trna.lg50
+- desc: N50 of glutamine tRNA genes
+  name: comparison.gene_copy_size.gln_trna.n50
+- desc: N50 of glutamine tRNA genes using the sum length of reference glutamine tRNA
+    genes as the pivot
+  name: comparison.gene_copy_size.gln_trna.ng50
+- desc: Sum length of glutamine tRNA genes in the assembly
+  name: comparison.gene_copy_size.gln_trna.sum_length
+- desc: Count of glutamic acid tRNA genes only in the assembly
+  name: comparison.gene_copy_size.glu_trna.count
+- desc: L50 of glutamic acid tRNA genes
+  name: comparison.gene_copy_size.glu_trna.l50
+- desc: L50 of glutamic acid tRNA genes using the sum length of reference glutamic
+    acid tRNA genes as the pivot
+  name: comparison.gene_copy_size.glu_trna.lg50
+- desc: N50 of glutamic acid tRNA genes
+  name: comparison.gene_copy_size.glu_trna.n50
+- desc: N50 of glutamic acid tRNA genes using the sum length of reference glutamic
+    acid tRNA genes as the pivot
+  name: comparison.gene_copy_size.glu_trna.ng50
+- desc: Sum length of glutamic acid tRNA genes in the assembly
+  name: comparison.gene_copy_size.glu_trna.sum_length
+- desc: Count of glycine tRNA genes only in the assembly
+  name: comparison.gene_copy_size.gly_trna.count
+- desc: L50 of glycine tRNA genes
+  name: comparison.gene_copy_size.gly_trna.l50
+- desc: L50 of glycine tRNA genes using the sum length of reference glycine tRNA genes
+    as the pivot
+  name: comparison.gene_copy_size.gly_trna.lg50
+- desc: N50 of glycine tRNA genes
+  name: comparison.gene_copy_size.gly_trna.n50
+- desc: N50 of glycine tRNA genes using the sum length of reference glycine tRNA genes
+    as the pivot
+  name: comparison.gene_copy_size.gly_trna.ng50
+- desc: Sum length of glycine tRNA genes in the assembly
+  name: comparison.gene_copy_size.gly_trna.sum_length
+- desc: Count of histidine tRNA genes only in the assembly
+  name: comparison.gene_copy_size.his_trna.count
+- desc: L50 of histidine tRNA genes
+  name: comparison.gene_copy_size.his_trna.l50
+- desc: L50 of histidine tRNA genes using the sum length of reference histidine tRNA
+    genes as the pivot
+  name: comparison.gene_copy_size.his_trna.lg50
+- desc: N50 of histidine tRNA genes
+  name: comparison.gene_copy_size.his_trna.n50
+- desc: N50 of histidine tRNA genes using the sum length of reference histidine tRNA
+    genes as the pivot
+  name: comparison.gene_copy_size.his_trna.ng50
+- desc: Sum length of histidine tRNA genes in the assembly
+  name: comparison.gene_copy_size.his_trna.sum_length
+- desc: Count of isoleucine tRNA genes only in the assembly
+  name: comparison.gene_copy_size.ile_trna.count
+- desc: L50 of isoleucine tRNA genes
+  name: comparison.gene_copy_size.ile_trna.l50
+- desc: L50 of isoleucine tRNA genes using the sum length of reference isoleucine
+    tRNA genes as the pivot
+  name: comparison.gene_copy_size.ile_trna.lg50
+- desc: N50 of isoleucine tRNA genes
+  name: comparison.gene_copy_size.ile_trna.n50
+- desc: N50 of isoleucine tRNA genes using the sum length of reference isoleucine
+    tRNA genes as the pivot
+  name: comparison.gene_copy_size.ile_trna.ng50
+- desc: Sum length of isoleucine tRNA genes in the assembly
+  name: comparison.gene_copy_size.ile_trna.sum_length
+- desc: Count of leucine tRNA genes only in the assembly
+  name: comparison.gene_copy_size.leu_trna.count
+- desc: L50 of leucine tRNA genes
+  name: comparison.gene_copy_size.leu_trna.l50
+- desc: L50 of leucine tRNA genes using the sum length of reference leucine tRNA genes
+    as the pivot
+  name: comparison.gene_copy_size.leu_trna.lg50
+- desc: N50 of leucine tRNA genes
+  name: comparison.gene_copy_size.leu_trna.n50
+- desc: N50 of leucine tRNA genes using the sum length of reference leucine tRNA genes
+    as the pivot
+  name: comparison.gene_copy_size.leu_trna.ng50
+- desc: Sum length of leucine tRNA genes in the assembly
+  name: comparison.gene_copy_size.leu_trna.sum_length
+- desc: Count of lysine tRNA genes only in the assembly
+  name: comparison.gene_copy_size.lys_trna.count
+- desc: L50 of lysine tRNA genes
+  name: comparison.gene_copy_size.lys_trna.l50
+- desc: L50 of lysine tRNA genes using the sum length of reference lysine tRNA genes
+    as the pivot
+  name: comparison.gene_copy_size.lys_trna.lg50
+- desc: N50 of lysine tRNA genes
+  name: comparison.gene_copy_size.lys_trna.n50
+- desc: N50 of lysine tRNA genes using the sum length of reference lysine tRNA genes
+    as the pivot
+  name: comparison.gene_copy_size.lys_trna.ng50
+- desc: Sum length of lysine tRNA genes in the assembly
+  name: comparison.gene_copy_size.lys_trna.sum_length
+- desc: Count of methionine tRNA genes only in the assembly
+  name: comparison.gene_copy_size.met_trna.count
+- desc: L50 of methionine tRNA genes
+  name: comparison.gene_copy_size.met_trna.l50
+- desc: L50 of methionine tRNA genes using the sum length of reference methionine
+    tRNA genes as the pivot
+  name: comparison.gene_copy_size.met_trna.lg50
+- desc: N50 of methionine tRNA genes
+  name: comparison.gene_copy_size.met_trna.n50
+- desc: N50 of methionine tRNA genes using the sum length of reference methionine
+    tRNA genes as the pivot
+  name: comparison.gene_copy_size.met_trna.ng50
+- desc: Sum length of methionine tRNA genes in the assembly
+  name: comparison.gene_copy_size.met_trna.sum_length
+- desc: Count of phenylalanine tRNA genes only in the assembly
+  name: comparison.gene_copy_size.phe_trna.count
+- desc: L50 of phenylalanine tRNA genes
+  name: comparison.gene_copy_size.phe_trna.l50
+- desc: L50 of phenylalanine tRNA genes using the sum length of reference phenylalanine
+    tRNA genes as the pivot
+  name: comparison.gene_copy_size.phe_trna.lg50
+- desc: N50 of phenylalanine tRNA genes
+  name: comparison.gene_copy_size.phe_trna.n50
+- desc: N50 of phenylalanine tRNA genes using the sum length of reference phenylalanine
+    tRNA genes as the pivot
+  name: comparison.gene_copy_size.phe_trna.ng50
+- desc: Sum length of phenylalanine tRNA genes in the assembly
+  name: comparison.gene_copy_size.phe_trna.sum_length
+- desc: Count of proline tRNA genes only in the assembly
+  name: comparison.gene_copy_size.pro_trna.count
+- desc: L50 of proline tRNA genes
+  name: comparison.gene_copy_size.pro_trna.l50
+- desc: L50 of proline tRNA genes using the sum length of reference proline tRNA genes
+    as the pivot
+  name: comparison.gene_copy_size.pro_trna.lg50
+- desc: N50 of proline tRNA genes
+  name: comparison.gene_copy_size.pro_trna.n50
+- desc: N50 of proline tRNA genes using the sum length of reference proline tRNA genes
+    as the pivot
+  name: comparison.gene_copy_size.pro_trna.ng50
+- desc: Sum length of proline tRNA genes in the assembly
+  name: comparison.gene_copy_size.pro_trna.sum_length
+- desc: Count of RnaseP genes only in the assembly
+  name: comparison.gene_copy_size.rnasep_rrna.count
+- desc: L50 of RnaseP genes
+  name: comparison.gene_copy_size.rnasep_rrna.l50
+- desc: L50 of RnaseP genes using the sum length of reference RnaseP genes as the
+    pivot
+  name: comparison.gene_copy_size.rnasep_rrna.lg50
+- desc: N50 of RnaseP genes
+  name: comparison.gene_copy_size.rnasep_rrna.n50
+- desc: N50 of RnaseP genes using the sum length of reference RnaseP genes as the
+    pivot
+  name: comparison.gene_copy_size.rnasep_rrna.ng50
+- desc: Sum length of RnaseP genes in the assembly
+  name: comparison.gene_copy_size.rnasep_rrna.sum_length
+- desc: Count of serine tRNA genes only in the assembly
+  name: comparison.gene_copy_size.ser_trna.count
+- desc: L50 of serine tRNA genes
+  name: comparison.gene_copy_size.ser_trna.l50
+- desc: L50 of serine tRNA genes using the sum length of reference serine tRNA genes
+    as the pivot
+  name: comparison.gene_copy_size.ser_trna.lg50
+- desc: N50 of serine tRNA genes
+  name: comparison.gene_copy_size.ser_trna.n50
+- desc: N50 of serine tRNA genes using the sum length of reference serine tRNA genes
+    as the pivot
+  name: comparison.gene_copy_size.ser_trna.ng50
+- desc: Sum length of serine tRNA genes in the assembly
+  name: comparison.gene_copy_size.ser_trna.sum_length
+- desc: Count of signal recognition particle genes only in the assembly
+  name: comparison.gene_copy_size.srp_rrna.count
+- desc: L50 of signal recognition particle genes
+  name: comparison.gene_copy_size.srp_rrna.l50
+- desc: L50 of signal recognition particle genes using the sum length of reference
+    signal recognition particle genes as the pivot
+  name: comparison.gene_copy_size.srp_rrna.lg50
+- desc: N50 of signal recognition particle genes
+  name: comparison.gene_copy_size.srp_rrna.n50
+- desc: N50 of signal recognition particle genes using the sum length of reference
+    signal recognition particle genes as the pivot
+  name: comparison.gene_copy_size.srp_rrna.ng50
+- desc: Sum length of signal recognition particle genes in the assembly
+  name: comparison.gene_copy_size.srp_rrna.sum_length
+- desc: Count of threonine tRNA genes only in the assembly
+  name: comparison.gene_copy_size.thr_trna.count
+- desc: L50 of threonine tRNA genes
+  name: comparison.gene_copy_size.thr_trna.l50
+- desc: L50 of threonine tRNA genes using the sum length of reference threonine tRNA
+    genes as the pivot
+  name: comparison.gene_copy_size.thr_trna.lg50
+- desc: N50 of threonine tRNA genes
+  name: comparison.gene_copy_size.thr_trna.n50
+- desc: N50 of threonine tRNA genes using the sum length of reference threonine tRNA
+    genes as the pivot
+  name: comparison.gene_copy_size.thr_trna.ng50
+- desc: Sum length of threonine tRNA genes in the assembly
+  name: comparison.gene_copy_size.thr_trna.sum_length
+- desc: Count of tryptophan tRNA genes only in the assembly
+  name: comparison.gene_copy_size.trp_trna.count
+- desc: L50 of tryptophan tRNA genes
+  name: comparison.gene_copy_size.trp_trna.l50
+- desc: L50 of tryptophan tRNA genes using the sum length of reference tryptophan
+    tRNA genes as the pivot
+  name: comparison.gene_copy_size.trp_trna.lg50
+- desc: N50 of tryptophan tRNA genes
+  name: comparison.gene_copy_size.trp_trna.n50
+- desc: N50 of tryptophan tRNA genes using the sum length of reference tryptophan
+    tRNA genes as the pivot
+  name: comparison.gene_copy_size.trp_trna.ng50
+- desc: Sum length of tryptophan tRNA genes in the assembly
+  name: comparison.gene_copy_size.trp_trna.sum_length
+- desc: Count of tyrosine tRNA genes only in the assembly
+  name: comparison.gene_copy_size.tyr_trna.count
+- desc: L50 of tyrosine tRNA genes
+  name: comparison.gene_copy_size.tyr_trna.l50
+- desc: L50 of tyrosine tRNA genes using the sum length of reference tyrosine tRNA
+    genes as the pivot
+  name: comparison.gene_copy_size.tyr_trna.lg50
+- desc: N50 of tyrosine tRNA genes
+  name: comparison.gene_copy_size.tyr_trna.n50
+- desc: N50 of tyrosine tRNA genes using the sum length of reference tyrosine tRNA
+    genes as the pivot
+  name: comparison.gene_copy_size.tyr_trna.ng50
+- desc: Sum length of tyrosine tRNA genes in the assembly
+  name: comparison.gene_copy_size.tyr_trna.sum_length
+- desc: Count of valine tRNA genes only in the assembly
+  name: comparison.gene_copy_size.val_trna.count
+- desc: L50 of valine tRNA genes
+  name: comparison.gene_copy_size.val_trna.l50
+- desc: L50 of valine tRNA genes using the sum length of reference valine tRNA genes
+    as the pivot
+  name: comparison.gene_copy_size.val_trna.lg50
+- desc: N50 of valine tRNA genes
+  name: comparison.gene_copy_size.val_trna.n50
+- desc: N50 of valine tRNA genes using the sum length of reference valine tRNA genes
+    as the pivot
+  name: comparison.gene_copy_size.val_trna.ng50
+- desc: Sum length of valine tRNA genes in the assembly
+  name: comparison.gene_copy_size.val_trna.sum_length
+- desc: L1 norm distance of all DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_type_distance.all.l1_norm
+- desc: L2 norm distance of all DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_type_distance.all.l2_norm
+- desc: All DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_type_distance.all.n_assembly_only
+- desc: All DNA sequence SHA256 digests found in the intersect of the assembly and
+    the reference
+  name: comparison.gene_type_distance.all.n_intersect
+- desc: All DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_type_distance.all.n_reference_only
+- desc: All DNA sequence SHA256 digests found in only the assembly or only the reference,
+    but not both
+  name: comparison.gene_type_distance.all.n_symmetric_difference
+- desc: Percent of all DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_type_distance.all.perc_assembly_only
+- desc: Percent of all DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_type_distance.all.perc_intersect
+- desc: Percent of all DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_type_distance.all.perc_reference_only
+- desc: Percent of all DNA sequence SHA256 digests found in only the assembly or only
+    the reference, but not both
+  name: comparison.gene_type_distance.all.perc_symmetric_difference
+- desc: L1 norm distance of all coding DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_type_distance.cds.l1_norm
+- desc: L2 norm distance of all coding DNA sequence SHA256 digests between the reference
+    and the assembly
+  name: comparison.gene_type_distance.cds.l2_norm
+- desc: All coding DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_type_distance.cds.n_assembly_only
+- desc: All coding DNA sequence SHA256 digests found in the intersect of the assembly
+    and the reference
+  name: comparison.gene_type_distance.cds.n_intersect
+- desc: All coding DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_type_distance.cds.n_reference_only
+- desc: All coding DNA sequence SHA256 digests found in only the assembly or only
+    the reference, but not both
+  name: comparison.gene_type_distance.cds.n_symmetric_difference
+- desc: Percent of all coding DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_type_distance.cds.perc_assembly_only
+- desc: Percent of all coding DNA sequence SHA256 digests found in the intersect of
+    the assembly and the reference
+  name: comparison.gene_type_distance.cds.perc_intersect
+- desc: Percent of all coding DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_type_distance.cds.perc_reference_only
+- desc: Percent of all coding DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_type_distance.cds.perc_symmetric_difference
+- desc: L1 norm distance of all repeat region DNA sequence SHA256 digests between
+    the reference and the assembly
+  name: comparison.gene_type_distance.repeat_region.l1_norm
+- desc: L2 norm distance of all repeat region DNA sequence SHA256 digests between
+    the reference and the assembly
+  name: comparison.gene_type_distance.repeat_region.l2_norm
+- desc: All repeat region DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_type_distance.repeat_region.n_assembly_only
+- desc: All repeat region DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_type_distance.repeat_region.n_intersect
+- desc: All repeat region DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_type_distance.repeat_region.n_reference_only
+- desc: All repeat region DNA sequence SHA256 digests found in only the assembly or
+    only the reference, but not both
+  name: comparison.gene_type_distance.repeat_region.n_symmetric_difference
+- desc: Percent of all repeat region DNA sequence SHA256 digests found in only the
+    assembly
+  name: comparison.gene_type_distance.repeat_region.perc_assembly_only
+- desc: Percent of all repeat region DNA sequence SHA256 digests found in the intersect
+    of the assembly and the reference
+  name: comparison.gene_type_distance.repeat_region.perc_intersect
+- desc: Percent of all repeat region DNA sequence SHA256 digests found in only the
+    reference
+  name: comparison.gene_type_distance.repeat_region.perc_reference_only
+- desc: Percent of all repeat region DNA sequence SHA256 digests found in only the
+    assembly or only the reference, but not both
+  name: comparison.gene_type_distance.repeat_region.perc_symmetric_difference
+- desc: L1 norm distance of all ribosomal RNA DNA sequence SHA256 digests between
+    the reference and the assembly
+  name: comparison.gene_type_distance.rrna.l1_norm
+- desc: L2 norm distance of all ribosomal RNA DNA sequence SHA256 digests between
+    the reference and the assembly
+  name: comparison.gene_type_distance.rrna.l2_norm
+- desc: All ribosomal RNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_type_distance.rrna.n_assembly_only
+- desc: All ribosomal RNA DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_type_distance.rrna.n_intersect
+- desc: All ribosomal RNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_type_distance.rrna.n_reference_only
+- desc: All ribosomal RNA DNA sequence SHA256 digests found in only the assembly or
+    only the reference, but not both
+  name: comparison.gene_type_distance.rrna.n_symmetric_difference
+- desc: Percent of all ribosomal RNA DNA sequence SHA256 digests found in only the
+    assembly
+  name: comparison.gene_type_distance.rrna.perc_assembly_only
+- desc: Percent of all ribosomal RNA DNA sequence SHA256 digests found in the intersect
+    of the assembly and the reference
+  name: comparison.gene_type_distance.rrna.perc_intersect
+- desc: Percent of all ribosomal RNA DNA sequence SHA256 digests found in only the
+    reference
+  name: comparison.gene_type_distance.rrna.perc_reference_only
+- desc: Percent of all ribosomal RNA DNA sequence SHA256 digests found in only the
+    assembly or only the reference, but not both
+  name: comparison.gene_type_distance.rrna.perc_symmetric_difference
+- desc: L1 norm distance of all transfer messenger DNA sequence SHA256 digests between
+    the reference and the assembly
+  name: comparison.gene_type_distance.tmrna.l1_norm
+- desc: L2 norm distance of all transfer messenger DNA sequence SHA256 digests between
+    the reference and the assembly
+  name: comparison.gene_type_distance.tmrna.l2_norm
+- desc: All transfer messenger DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_type_distance.tmrna.n_assembly_only
+- desc: All transfer messenger DNA sequence SHA256 digests found in the intersect
+    of the assembly and the reference
+  name: comparison.gene_type_distance.tmrna.n_intersect
+- desc: All transfer messenger DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_type_distance.tmrna.n_reference_only
+- desc: All transfer messenger DNA sequence SHA256 digests found in only the assembly
+    or only the reference, but not both
+  name: comparison.gene_type_distance.tmrna.n_symmetric_difference
+- desc: Percent of all transfer messenger DNA sequence SHA256 digests found in only
+    the assembly
+  name: comparison.gene_type_distance.tmrna.perc_assembly_only
+- desc: Percent of all transfer messenger DNA sequence SHA256 digests found in the
+    intersect of the assembly and the reference
+  name: comparison.gene_type_distance.tmrna.perc_intersect
+- desc: Percent of all transfer messenger DNA sequence SHA256 digests found in only
+    the reference
+  name: comparison.gene_type_distance.tmrna.perc_reference_only
+- desc: Percent of all transfer messenger DNA sequence SHA256 digests found in only
+    the assembly or only the reference, but not both
+  name: comparison.gene_type_distance.tmrna.perc_symmetric_difference
+- desc: L1 norm distance of all transfer RNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_type_distance.trna.l1_norm
+- desc: L2 norm distance of all transfer RNA DNA sequence SHA256 digests between the
+    reference and the assembly
+  name: comparison.gene_type_distance.trna.l2_norm
+- desc: All transfer RNA DNA sequence SHA256 digests found in only the assembly
+  name: comparison.gene_type_distance.trna.n_assembly_only
+- desc: All transfer RNA DNA sequence SHA256 digests found in the intersect of the
+    assembly and the reference
+  name: comparison.gene_type_distance.trna.n_intersect
+- desc: All transfer RNA DNA sequence SHA256 digests found in only the reference
+  name: comparison.gene_type_distance.trna.n_reference_only
+- desc: All transfer RNA DNA sequence SHA256 digests found in only the assembly or
+    only the reference, but not both
+  name: comparison.gene_type_distance.trna.n_symmetric_difference
+- desc: Percent of all transfer RNA DNA sequence SHA256 digests found in only the
+    assembly
+  name: comparison.gene_type_distance.trna.perc_assembly_only
+- desc: Percent of all transfer RNA DNA sequence SHA256 digests found in the intersect
+    of the assembly and the reference
+  name: comparison.gene_type_distance.trna.perc_intersect
+- desc: Percent of all transfer RNA DNA sequence SHA256 digests found in only the
+    reference
+  name: comparison.gene_type_distance.trna.perc_reference_only
+- desc: Percent of all transfer RNA DNA sequence SHA256 digests found in only the
+    assembly or only the reference, but not both
+  name: comparison.gene_type_distance.trna.perc_symmetric_difference
+- desc: Count of all genes in the assembly
+  name: comparison.gene_type_size.all.count
+- desc: L50 of all genes
+  name: comparison.gene_type_size.all.l50
+- desc: L50 of all genes using the sum length of reference genes as the pivot
+  name: comparison.gene_type_size.all.lg50
+- desc: N50 of all genes
+  name: comparison.gene_type_size.all.n50
+- desc: N50 of all genes using the sum length of reference genes as the pivot
+  name: comparison.gene_type_size.all.ng50
+- desc: Sum length of all genes in the assembly
+  name: comparison.gene_type_size.all.sum_length
+- desc: Count of all coding genes in the assembly
+  name: comparison.gene_type_size.cds.count
+- desc: L50 of all coding genes
+  name: comparison.gene_type_size.cds.l50
+- desc: L50 of all coding genes using the sum length of reference coding genes as
+    the pivot
+  name: comparison.gene_type_size.cds.lg50
+- desc: N50 of all coding genes
+  name: comparison.gene_type_size.cds.n50
+- desc: N50 of all coding genes using the sum length of reference coding genes as
+    the pivot
+  name: comparison.gene_type_size.cds.ng50
+- desc: Sum length of all coding genes in the assembly
+  name: comparison.gene_type_size.cds.sum_length
+- desc: Count of all repeat region genes in the assembly
+  name: comparison.gene_type_size.repeat_region.count
+- desc: L50 of all repeat region genes
+  name: comparison.gene_type_size.repeat_region.l50
+- desc: L50 of all repeat region genes using the sum length of reference repeat region
+    genes as the pivot
+  name: comparison.gene_type_size.repeat_region.lg50
+- desc: N50 of all repeat region genes
+  name: comparison.gene_type_size.repeat_region.n50
+- desc: N50 of all repeat region genes using the sum length of reference repeat region
+    genes as the pivot
+  name: comparison.gene_type_size.repeat_region.ng50
+- desc: Sum length of all repeat region genes in the assembly
+  name: comparison.gene_type_size.repeat_region.sum_length
+- desc: Count of all ribosomal RNA genes in the assembly
+  name: comparison.gene_type_size.rrna.count
+- desc: L50 of all ribosomal RNA genes
+  name: comparison.gene_type_size.rrna.l50
+- desc: L50 of all ribosomal RNA genes using the sum length of reference ribosomal
+    RNA genes as the pivot
+  name: comparison.gene_type_size.rrna.lg50
+- desc: N50 of all ribosomal RNA genes
+  name: comparison.gene_type_size.rrna.n50
+- desc: N50 of all ribosomal RNA genes using the sum length of reference ribosomal
+    RNA genes as the pivot
+  name: comparison.gene_type_size.rrna.ng50
+- desc: Sum length of all ribosomal RNA genes in the assembly
+  name: comparison.gene_type_size.rrna.sum_length
+- desc: Count of all transfer messenger genes in the assembly
+  name: comparison.gene_type_size.tmrna.count
+- desc: L50 of all transfer messenger genes
+  name: comparison.gene_type_size.tmrna.l50
+- desc: L50 of all transfer messenger genes using the sum length of reference transfer
+    messenger genes as the pivot
+  name: comparison.gene_type_size.tmrna.lg50
+- desc: N50 of all transfer messenger genes
+  name: comparison.gene_type_size.tmrna.n50
+- desc: N50 of all transfer messenger genes using the sum length of reference transfer
+    messenger genes as the pivot
+  name: comparison.gene_type_size.tmrna.ng50
+- desc: Sum length of all transfer messenger genes in the assembly
+  name: comparison.gene_type_size.tmrna.sum_length
+- desc: Count of all transfer RNA genes in the assembly
+  name: comparison.gene_type_size.trna.count
+- desc: L50 of all transfer RNA genes
+  name: comparison.gene_type_size.trna.l50
+- desc: L50 of all transfer RNA genes using the sum length of reference transfer RNA
+    genes as the pivot
+  name: comparison.gene_type_size.trna.lg50
+- desc: N50 of all transfer RNA genes
+  name: comparison.gene_type_size.trna.n50
+- desc: N50 of all transfer RNA genes using the sum length of reference transfer RNA
+    genes as the pivot
+  name: comparison.gene_type_size.trna.ng50
+- desc: Sum length of all transfer RNA genes in the assembly
+  name: comparison.gene_type_size.trna.sum_length
+- desc: Count of 16S rRNA genes only in the reference
+  name: reference.gene_copy_size.16s_rrna.count
+- desc: L50 for 16S rRNA genes in the reference
+  name: reference.gene_copy_size.16s_rrna.l50
+- desc: N50 for 16S rRNA genes in the reference
+  name: reference.gene_copy_size.16s_rrna.n50
+- desc: Sum length of 16S rRNA genes in the reference
+  name: reference.gene_copy_size.16s_rrna.sum_length
+- desc: Count of 18S rRNA genes only in the reference
+  name: reference.gene_copy_size.18s_rrna.count
+- desc: L50 for 18S rRNA genes in the reference
+  name: reference.gene_copy_size.18s_rrna.l50
+- desc: N50 for 18S rRNA genes in the reference
+  name: reference.gene_copy_size.18s_rrna.n50
+- desc: Sum length of 18S rRNA genes in the reference
+  name: reference.gene_copy_size.18s_rrna.sum_length
+- desc: Count of 23S rRNA genes only in the reference
+  name: reference.gene_copy_size.23s_rrna.count
+- desc: L50 for 23S rRNA genes in the reference
+  name: reference.gene_copy_size.23s_rrna.l50
+- desc: N50 for 23S rRNA genes in the reference
+  name: reference.gene_copy_size.23s_rrna.n50
+- desc: Sum length of 23S rRNA genes in the reference
+  name: reference.gene_copy_size.23s_rrna.sum_length
+- desc: Count of 5.8S rRNA genes only in the reference
+  name: reference.gene_copy_size.5_8s_rrna.count
+- desc: L50 for 5.8S rRNA genes in the reference
+  name: reference.gene_copy_size.5_8s_rrna.l50
+- desc: N50 for 5.8S rRNA genes in the reference
+  name: reference.gene_copy_size.5_8s_rrna.n50
+- desc: Sum length of 5.8S rRNA genes in the reference
+  name: reference.gene_copy_size.5_8s_rrna.sum_length
+- desc: Count of 5S rRNA genes only in the reference
+  name: reference.gene_copy_size.5s_rrna.count
+- desc: L50 for 5S rRNA genes in the reference
+  name: reference.gene_copy_size.5s_rrna.l50
+- desc: N50 for 5S rRNA genes in the reference
+  name: reference.gene_copy_size.5s_rrna.n50
+- desc: Sum length of 5S rRNA genes in the reference
+  name: reference.gene_copy_size.5s_rrna.sum_length
+- desc: Count of alanine tRNA genes only in the reference
+  name: reference.gene_copy_size.ala_trna.count
+- desc: L50 for alanine tRNA genes in the reference
+  name: reference.gene_copy_size.ala_trna.l50
+- desc: N50 for alanine tRNA genes in the reference
+  name: reference.gene_copy_size.ala_trna.n50
+- desc: Sum length of alanine tRNA genes in the reference
+  name: reference.gene_copy_size.ala_trna.sum_length
+- desc: Count of arginine tRNA genes only in the reference
+  name: reference.gene_copy_size.arg_trna.count
+- desc: L50 for arginine tRNA genes in the reference
+  name: reference.gene_copy_size.arg_trna.l50
+- desc: N50 for arginine tRNA genes in the reference
+  name: reference.gene_copy_size.arg_trna.n50
+- desc: Sum length of arginine tRNA genes in the reference
+  name: reference.gene_copy_size.arg_trna.sum_length
+- desc: Count of asparagine tRNA genes only in the reference
+  name: reference.gene_copy_size.asn_trna.count
+- desc: L50 for asparagine tRNA genes in the reference
+  name: reference.gene_copy_size.asn_trna.l50
+- desc: N50 for asparagine tRNA genes in the reference
+  name: reference.gene_copy_size.asn_trna.n50
+- desc: Sum length of asparagine tRNA genes in the reference
+  name: reference.gene_copy_size.asn_trna.sum_length
+- desc: Count of aspartic acid tRNA genes only in the reference
+  name: reference.gene_copy_size.asp_trna.count
+- desc: L50 for aspartic acid tRNA genes in the reference
+  name: reference.gene_copy_size.asp_trna.l50
+- desc: N50 for aspartic acid tRNA genes in the reference
+  name: reference.gene_copy_size.asp_trna.n50
+- desc: Sum length of aspartic acid tRNA genes in the reference
+  name: reference.gene_copy_size.asp_trna.sum_length
+- desc: Count of cysteine tRNA genes only in the reference
+  name: reference.gene_copy_size.cys_trna.count
+- desc: L50 for cysteine tRNA genes in the reference
+  name: reference.gene_copy_size.cys_trna.l50
+- desc: N50 for cysteine tRNA genes in the reference
+  name: reference.gene_copy_size.cys_trna.n50
+- desc: Sum length of cysteine tRNA genes in the reference
+  name: reference.gene_copy_size.cys_trna.sum_length
+- desc: Count of glutamine tRNA genes only in the reference
+  name: reference.gene_copy_size.gln_trna.count
+- desc: L50 for glutamine tRNA genes in the reference
+  name: reference.gene_copy_size.gln_trna.l50
+- desc: N50 for glutamine tRNA genes in the reference
+  name: reference.gene_copy_size.gln_trna.n50
+- desc: Sum length of glutamine tRNA genes in the reference
+  name: reference.gene_copy_size.gln_trna.sum_length
+- desc: Count of glutamic acid tRNA genes only in the reference
+  name: reference.gene_copy_size.glu_trna.count
+- desc: L50 for glutamic acid tRNA genes in the reference
+  name: reference.gene_copy_size.glu_trna.l50
+- desc: N50 for glutamic acid tRNA genes in the reference
+  name: reference.gene_copy_size.glu_trna.n50
+- desc: Sum length of glutamic acid tRNA genes in the reference
+  name: reference.gene_copy_size.glu_trna.sum_length
+- desc: Count of glycine tRNA genes only in the reference
+  name: reference.gene_copy_size.gly_trna.count
+- desc: L50 for glycine tRNA genes in the reference
+  name: reference.gene_copy_size.gly_trna.l50
+- desc: N50 for glycine tRNA genes in the reference
+  name: reference.gene_copy_size.gly_trna.n50
+- desc: Sum length of glycine tRNA genes in the reference
+  name: reference.gene_copy_size.gly_trna.sum_length
+- desc: Count of histidine tRNA genes only in the reference
+  name: reference.gene_copy_size.his_trna.count
+- desc: L50 for histidine tRNA genes in the reference
+  name: reference.gene_copy_size.his_trna.l50
+- desc: N50 for histidine tRNA genes in the reference
+  name: reference.gene_copy_size.his_trna.n50
+- desc: Sum length of histidine tRNA genes in the reference
+  name: reference.gene_copy_size.his_trna.sum_length
+- desc: Count of isoleucine tRNA genes only in the reference
+  name: reference.gene_copy_size.ile_trna.count
+- desc: L50 for isoleucine tRNA genes in the reference
+  name: reference.gene_copy_size.ile_trna.l50
+- desc: N50 for isoleucine tRNA genes in the reference
+  name: reference.gene_copy_size.ile_trna.n50
+- desc: Sum length of isoleucine tRNA genes in the reference
+  name: reference.gene_copy_size.ile_trna.sum_length
+- desc: Count of leucine tRNA genes only in the reference
+  name: reference.gene_copy_size.leu_trna.count
+- desc: L50 for leucine tRNA genes in the reference
+  name: reference.gene_copy_size.leu_trna.l50
+- desc: N50 for leucine tRNA genes in the reference
+  name: reference.gene_copy_size.leu_trna.n50
+- desc: Sum length of leucine tRNA genes in the reference
+  name: reference.gene_copy_size.leu_trna.sum_length
+- desc: Count of lysine tRNA genes only in the reference
+  name: reference.gene_copy_size.lys_trna.count
+- desc: L50 for lysine tRNA genes in the reference
+  name: reference.gene_copy_size.lys_trna.l50
+- desc: N50 for lysine tRNA genes in the reference
+  name: reference.gene_copy_size.lys_trna.n50
+- desc: Sum length of lysine tRNA genes in the reference
+  name: reference.gene_copy_size.lys_trna.sum_length
+- desc: Count of methionine tRNA genes only in the reference
+  name: reference.gene_copy_size.met_trna.count
+- desc: L50 for methionine tRNA genes in the reference
+  name: reference.gene_copy_size.met_trna.l50
+- desc: N50 for methionine tRNA genes in the reference
+  name: reference.gene_copy_size.met_trna.n50
+- desc: Sum length of methionine tRNA genes in the reference
+  name: reference.gene_copy_size.met_trna.sum_length
+- desc: Count of phenylalanine tRNA genes only in the reference
+  name: reference.gene_copy_size.phe_trna.count
+- desc: L50 for phenylalanine tRNA genes in the reference
+  name: reference.gene_copy_size.phe_trna.l50
+- desc: N50 for phenylalanine tRNA genes in the reference
+  name: reference.gene_copy_size.phe_trna.n50
+- desc: Sum length of phenylalanine tRNA genes in the reference
+  name: reference.gene_copy_size.phe_trna.sum_length
+- desc: Count of proline tRNA genes only in the reference
+  name: reference.gene_copy_size.pro_trna.count
+- desc: L50 for proline tRNA genes in the reference
+  name: reference.gene_copy_size.pro_trna.l50
+- desc: N50 for proline tRNA genes in the reference
+  name: reference.gene_copy_size.pro_trna.n50
+- desc: Sum length of proline tRNA genes in the reference
+  name: reference.gene_copy_size.pro_trna.sum_length
+- desc: Count of RnaseP genes only in the reference
+  name: reference.gene_copy_size.rnasep_rrna.count
+- desc: L50 for RnaseP genes in the reference
+  name: reference.gene_copy_size.rnasep_rrna.l50
+- desc: N50 for RnaseP genes in the reference
+  name: reference.gene_copy_size.rnasep_rrna.n50
+- desc: Sum length of RnaseP genes in the reference
+  name: reference.gene_copy_size.rnasep_rrna.sum_length
+- desc: Count of serine tRNA genes only in the reference
+  name: reference.gene_copy_size.ser_trna.count
+- desc: L50 for serine tRNA genes in the reference
+  name: reference.gene_copy_size.ser_trna.l50
+- desc: N50 for serine tRNA genes in the reference
+  name: reference.gene_copy_size.ser_trna.n50
+- desc: Sum length of serine tRNA genes in the reference
+  name: reference.gene_copy_size.ser_trna.sum_length
+- desc: Count of signal recognition particle genes only in the reference
+  name: reference.gene_copy_size.srp_rrna.count
+- desc: L50 for signal recognition particle genes in the reference
+  name: reference.gene_copy_size.srp_rrna.l50
+- desc: N50 for signal recognition particle genes in the reference
+  name: reference.gene_copy_size.srp_rrna.n50
+- desc: Sum length of signal recognition particle genes in the reference
+  name: reference.gene_copy_size.srp_rrna.sum_length
+- desc: Count of threonine tRNA genes only in the reference
+  name: reference.gene_copy_size.thr_trna.count
+- desc: L50 for threonine tRNA genes in the reference
+  name: reference.gene_copy_size.thr_trna.l50
+- desc: N50 for threonine tRNA genes in the reference
+  name: reference.gene_copy_size.thr_trna.n50
+- desc: Sum length of threonine tRNA genes in the reference
+  name: reference.gene_copy_size.thr_trna.sum_length
+- desc: Count of tryptophan tRNA genes only in the reference
+  name: reference.gene_copy_size.trp_trna.count
+- desc: L50 for tryptophan tRNA genes in the reference
+  name: reference.gene_copy_size.trp_trna.l50
+- desc: N50 for tryptophan tRNA genes in the reference
+  name: reference.gene_copy_size.trp_trna.n50
+- desc: Sum length of tryptophan tRNA genes in the reference
+  name: reference.gene_copy_size.trp_trna.sum_length
+- desc: Count of tyrosine tRNA genes only in the reference
+  name: reference.gene_copy_size.tyr_trna.count
+- desc: L50 for tyrosine tRNA genes in the reference
+  name: reference.gene_copy_size.tyr_trna.l50
+- desc: N50 for tyrosine tRNA genes in the reference
+  name: reference.gene_copy_size.tyr_trna.n50
+- desc: Sum length of tyrosine tRNA genes in the reference
+  name: reference.gene_copy_size.tyr_trna.sum_length
+- desc: Count of valine tRNA genes only in the reference
+  name: reference.gene_copy_size.val_trna.count
+- desc: L50 for valine tRNA genes in the reference
+  name: reference.gene_copy_size.val_trna.l50
+- desc: N50 for valine tRNA genes in the reference
+  name: reference.gene_copy_size.val_trna.n50
+- desc: Sum length of valine tRNA genes in the reference
+  name: reference.gene_copy_size.val_trna.sum_length
+- desc: Count of all genes only in the reference
+  name: reference.gene_type_size.all.count
+- desc: L50 of all gene lengths in the reference
+  name: reference.gene_type_size.all.l50
+- desc: N50 of all gene lengths in the reference
+  name: reference.gene_type_size.all.n50
+- desc: Sum of all gene lengths in the reference
+  name: reference.gene_type_size.all.sum_length
+- desc: Count of all coding genes only in the reference
+  name: reference.gene_type_size.cds.count
+- desc: L50 of all coding gene lengths in the reference
+  name: reference.gene_type_size.cds.l50
+- desc: N50 of all coding gene lengths in the reference
+  name: reference.gene_type_size.cds.n50
+- desc: Sum of all coding gene lengths in the reference
+  name: reference.gene_type_size.cds.sum_length
+- desc: Count of all repeat region genes only in the reference
+  name: reference.gene_type_size.repeat_region.count
+- desc: L50 of all repeat region gene lengths in the reference
+  name: reference.gene_type_size.repeat_region.l50
+- desc: N50 of all repeat region gene lengths in the reference
+  name: reference.gene_type_size.repeat_region.n50
+- desc: Sum of all repeat region gene lengths in the reference
+  name: reference.gene_type_size.repeat_region.sum_length
+- desc: Count of all ribosomal RNA genes only in the reference
+  name: reference.gene_type_size.rrna.count
+- desc: L50 of all ribosomal RNA gene lengths in the reference
+  name: reference.gene_type_size.rrna.l50
+- desc: N50 of all ribosomal RNA gene lengths in the reference
+  name: reference.gene_type_size.rrna.n50
+- desc: Sum of all ribosomal RNA gene lengths in the reference
+  name: reference.gene_type_size.rrna.sum_length
+- desc: Count of all transfer messenger genes only in the reference
+  name: reference.gene_type_size.tmrna.count
+- desc: L50 of all transfer messenger gene lengths in the reference
+  name: reference.gene_type_size.tmrna.l50
+- desc: N50 of all transfer messenger gene lengths in the reference
+  name: reference.gene_type_size.tmrna.n50
+- desc: Sum of all transfer messenger gene lengths in the reference
+  name: reference.gene_type_size.tmrna.sum_length
+- desc: Count of all transfer RNA genes only in the reference
+  name: reference.gene_type_size.trna.count
+- desc: L50 of all transfer RNA gene lengths in the reference
+  name: reference.gene_type_size.trna.l50
+- desc: N50 of all transfer RNA gene lengths in the reference
+  name: reference.gene_type_size.trna.n50
+- desc: Sum of all transfer RNA gene lengths in the reference
+  name: reference.gene_type_size.trna.sum_length
