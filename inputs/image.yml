@@ -69,16 +69,22 @@
       tasks: ["default"]
       name: "20161003-ed93715"
 
-
 - image_type: reference_assembly_evaluation
   name: bioboxes/quast
   versions:
     - sha256: 5af634ee3f1bc3f80a749ce768883a20f793e1791f8f404a316d7d7012423cb9
       tasks: ["default"]
       name: "4.2"
+    - sha256: 224ea8e44b5f1f8d992d8559990a503289cfb3343b625aa453271f6d9c8301c1
+      tasks: ["default"]
+      name: "4.4"
+
 - image_type: reference_assembly_evaluation
   name: bioboxes/gaet
   versions:
     - sha256: 6de025d0de174787882dd1cf0f01d064abc9ffb52beb251d89a07d880189e1e2
       tasks: ["default"]
       name: "gaet-0.3.0 mash-1.1.1 dpred-0.1.0"
+    - sha256: e6f9d92208176f4f8125fda6e5aaa300e26acb3ea05bd49b96e79da3d8fa61b4
+      tasks: ["default"]
+      name: "gaet-0.3.0-final mash-1.1.1 dpred-0.1.0"
