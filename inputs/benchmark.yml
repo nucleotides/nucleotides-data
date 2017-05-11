@@ -43,3 +43,9 @@
     - ['pseudomonas_putida_f1', 'mda_fragment_2']
     - ['shewanella_oneidensis_mr_1', 'mda_fragment_1']
     - ['shewanella_oneidensis_mr_1', 'mda_fragment_2']
+
+- name: illumina_fungal_reference_assembly
+  desc: Evaluate genome assemblers using fungal benchmarking data
+  product_image_type: short_read_assembler
+  evaluation_image_type: reference_assembly_evaluation
+  data_sets: []
