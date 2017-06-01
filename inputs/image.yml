@@ -41,12 +41,18 @@
     - sha256: 73d4ec25bd8321cdad8ca4a0718fe45fbd7fd1a7537b18aea120c93075bb53db
       tasks: ["default"]
       name: "0.2"
+    - sha256: 19a8681e85119d75c972b4ca1e0f527aba837270800fbcb027ed6cc9943acfd1
+      tasks: ["default"]
+      name: "0.4"
 - image_type: short_read_assembler
   name: bioboxes/megahit
   versions:
     - sha256: b6bc1475be3ff72b26e23903dfae24ceded227167ae7363b80954b11906deac7
       tasks: ["default", "no-mercy"]
       name: "1.0.6"
+    - sha256: 340c6c6087c80b3098ebd1b2a469d09a2c9b66646287d6c7f0af7aeba47f335e
+      tasks: ["default", "no-mercy"]
+      name: "1.1.1"
 - image_type: short_read_assembler
   name: bioboxes/abyss
   versions:
