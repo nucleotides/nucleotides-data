@@ -50,7 +50,7 @@
     - sha256: b6bc1475be3ff72b26e23903dfae24ceded227167ae7363b80954b11906deac7
       tasks: ["default", "no-mercy"]
       name: "1.0.6"
-    - sha256: 340c6c6087c80b3098ebd1b2a469d09a2c9b66646287d6c7f0af7aeba47f335e
+    - sha256: ff98f6ddeadb89c7535518fc8d3a1acca7f8278538bb480d2302b54d708ddb45
       tasks: ["default", "no-mercy"]
       name: "1.1.1"
 - image_type: short_read_assembler
