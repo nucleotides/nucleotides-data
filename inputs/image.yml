@@ -47,6 +47,9 @@
     - sha256: 19a8681e85119d75c972b4ca1e0f527aba837270800fbcb027ed6cc9943acfd1
       tasks: ["default"]
       name: "0.4"
+    - sha256: 7eda2e98749b1d9203d9899a510fdeec734e76ac47d64fa11c0ad77b760f1844
+      tasks: ["default"]
+      name: "0.7.1"
 - image_type: short_read_assembler
   name: bioboxes/megahit
   versions:
