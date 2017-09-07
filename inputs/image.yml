@@ -35,6 +35,9 @@
     - sha256: 7a2ecd695f795ef609352cd1ae02b089713dcbcd58a83e3f32dd7e60d63761c8
       tasks: ["default", "single-cell", "careful", "merge"]
       name: "3.10.1"
+    - sha256: 1ecfa9bae34277165bdd33605cee4e845757bdfe8131e4e1581fd4ac48c464aa
+      tasks: ["default", "single-cell", "careful", "merge"]
+      name: "3.11.0"
 - image_type: short_read_assembler
   name: bioboxes/shovill
   versions:
@@ -44,6 +47,9 @@
     - sha256: 19a8681e85119d75c972b4ca1e0f527aba837270800fbcb027ed6cc9943acfd1
       tasks: ["default"]
       name: "0.4"
+    - sha256: 7eda2e98749b1d9203d9899a510fdeec734e76ac47d64fa11c0ad77b760f1844
+      tasks: ["default"]
+      name: "0.7.1"
 - image_type: short_read_assembler
   name: bioboxes/megahit
   versions:
@@ -77,6 +83,16 @@
     - sha256: b056293ef637ac4a6ad70cf2bb1a57dbea5ff8fd52ae5dbec7d962b2643df5b8
       tasks: ["default"]
       name: "20161003-ed93715"
+- image_type: short_read_assembler
+  name: bioboxes/jgi-isolate-pipeline
+  versions:
+    - sha256: c7dbc019c6ad3785de9bb7eb00da10617066a32b0252af81e3b9b6e2d0b667ef
+      tasks: ["default", "experimental"]
+      name: "v0.10.0"
+    - sha256: 2b5e8295ae32089f10a3b437f8d308572824c827022ef6f0d09a140311691a69
+      tasks: ["default", "experimental"]
+      name: "v0.11.0"
+
 
 - image_type: reference_assembly_evaluation
   name: bioboxes/quast
