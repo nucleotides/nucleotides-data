@@ -92,6 +92,10 @@
     - sha256: 2b5e8295ae32089f10a3b437f8d308572824c827022ef6f0d09a140311691a69
       tasks: ["default", "experimental"]
       name: "v0.11.0"
+    - sha256: 6928b58476b07d6669ac95905d38b53b91a027c4577aeb71da688e4ad9078d2f
+      tasks: ["merge", "experimental"]
+      name: "v0.12.0"
+
 
 
 - image_type: reference_assembly_evaluation
