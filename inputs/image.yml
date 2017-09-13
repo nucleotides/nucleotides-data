@@ -38,6 +38,9 @@
     - sha256: 1ecfa9bae34277165bdd33605cee4e845757bdfe8131e4e1581fd4ac48c464aa
       tasks: ["default", "single-cell", "careful", "merge"]
       name: "3.11.0"
+    - sha256: 2916a4e4acdbd63bef3dbcbb2abab0358ddb7e9d3483b9b125f14bcd6a3966be
+      tasks: ["merge"]
+      name: "3.11.0-fix-merge-task"
 - image_type: short_read_assembler
   name: bioboxes/shovill
   versions:
