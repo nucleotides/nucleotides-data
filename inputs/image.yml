@@ -95,6 +95,13 @@
     - sha256: 6928b58476b07d6669ac95905d38b53b91a027c4577aeb71da688e4ad9078d2f
       tasks: ["merge", "experimental"]
       name: "v0.12.0"
+- image_type: short_read_assembler
+  name: bioboxes/unicycler
+  versions:
+    - sha256: ecf882178d72d64b924974577915321ded16f16caf67334f6d8f7ac099c2c4cb
+      tasks: ["default", "conservative", "bold"]
+      name: "v0.4.1"
+
 
 
 
