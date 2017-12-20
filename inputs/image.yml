@@ -104,6 +104,13 @@
     - sha256: ecf882178d72d64b924974577915321ded16f16caf67334f6d8f7ac099c2c4cb
       tasks: ["default", "conservative", "bold"]
       name: "v0.4.1"
+- image_type: short_read_assembler
+  name: bioboxes/fast-sga
+  versions:
+    - sha256: b562c352bfee4f4387ea95e2f1ba37729b5566ba63ac5c16059d5a6f2591ec72
+      tasks: ["default"]
+      name: "20171207-6042fe7"
+
 
 
 
