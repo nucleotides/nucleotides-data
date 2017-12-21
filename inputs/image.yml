@@ -110,6 +110,12 @@
     - sha256: b562c352bfee4f4387ea95e2f1ba37729b5566ba63ac5c16059d5a6f2591ec72
       tasks: ["default"]
       name: "20171207-6042fe7"
+- image_type: short_read_assembler
+  name: bioboxes/jgi-single-cell-pipeline
+  versions:
+    - sha256: e9bfe7622654dd63e2be184016f79ff809f6dbcf94c76adc049cf39420ecf282
+      tasks: ["default"]
+      name: "v0.1.0"
 
 
 
