@@ -23,7 +23,7 @@
     - sha256: c710a81733d95b4fdc3e3fd9d7263c8251899c293ac446227b193d26545c1914
       tasks: ["default"]
       name: "0.0.1"
-    - sha256: e9bfe7622654dd63e2be184016f79ff809f6dbcf94c76adc049cf39420ecf282
+    - sha256: 5f4b8fea30181416146c40a5f4e3dc5ed5e61c7b5b5e9e9f7ff5a42c04e38b4a
       tasks: ["single-cell", "isolate"]
       name: "0.0.1-preprocessing"
 - image_type: short_read_assembler
