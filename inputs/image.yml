@@ -45,6 +45,12 @@
       tasks: ["merge"]
       name: "3.11.0-fix-merge-task"
 - image_type: short_read_assembler
+  name: kduffy/jgibioboxspades
+  versions:
+    - sha256: 946ebc429ed2cb2bbffa25a41af95426585ebea91b557f5e0836c23af25890ff
+      tasks: ["default", "single-cell", "careful", "merge"]
+      name: "v0.1.0"
+- image_type: short_read_assembler
   name: bioboxes/shovill
   versions:
     - sha256: 73d4ec25bd8321cdad8ca4a0718fe45fbd7fd1a7537b18aea120c93075bb53db
